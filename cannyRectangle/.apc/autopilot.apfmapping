@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="canny_edge_rectangle.cpp" path="C:\Users\ASUS\AppData\Roaming\Xilinx\Vivado\cannyRectangle\canny_edge_rectangle.cpp"/>
+    <originFiles name="canny_edge_rectangle.h" path="C:\Users\ASUS\AppData\Roaming\Xilinx\Vivado\cannyRectangle\canny_edge_rectangle.h"/>
+    <originFiles name="HlsImProc.hpp" path="C:\Users\ASUS\AppData\Roaming\Xilinx\Vivado\cannyRectangle\HlsImProc.hpp"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>

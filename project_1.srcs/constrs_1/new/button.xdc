@@ -1,0 +1,8 @@
+set_property PACKAGE_PIN D19 [get_ports btn_a_0]
+set_property PACKAGE_PIN D20 [get_ports btn_b_0]
+set_property PACKAGE_PIN L20 [get_ports btn_c_0]
+set_property PACKAGE_PIN L19 [get_ports btn_d_0]
+set_property IOSTANDARD LVCMOS33 [get_ports btn_a_0]
+set_property IOSTANDARD LVCMOS33 [get_ports btn_b_0]
+set_property IOSTANDARD LVCMOS33 [get_ports btn_c_0]
+set_property IOSTANDARD LVCMOS33 [get_ports btn_d_0]

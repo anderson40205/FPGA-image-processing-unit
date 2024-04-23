@@ -1,0 +1,216 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'GaussianBlur'" level="0">
+<item name = "Date">Sat May 20 12:00:31 2023
+</item>
+<item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
+<item name = "Project">cannyReal</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.65, 8.919, 1.33</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">264705, 264705, 264705, 264705, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">264704, 264704, 517, -, -, 512, no</column>
+<column name=" + Loop 1.1">514, 514, 4, 1, 1, 512, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 556, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, -, -, -</column>
+<column name="Memory">2, -, 0, 0, 0</column>
+<column name="Multiplexer">-, -, -, 99, -</column>
+<column name="Register">0, -, 418, 32, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">~0, 0, ~0, 1, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+</table>
+</item>
+<item name = "DSP48E"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="line_buf_U">GaussianBlur_lineeOg, 2, 0, 0, 0, 512, 40, 1, 20480</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln182_10_fu_1098_p2">+, 0, 0, 11, 16, 16</column>
+<column name="add_ln182_11_fu_682_p2">+, 0, 0, 17, 13, 13</column>
+<column name="add_ln182_12_fu_1107_p2">+, 0, 0, 19, 14, 14</column>
+<column name="add_ln182_13_fu_1117_p2">+, 0, 0, 11, 16, 16</column>
+<column name="add_ln182_14_fu_1139_p2">+, 0, 0, 11, 16, 16</column>
+<column name="add_ln182_15_fu_688_p2">+, 0, 0, 17, 13, 13</column>
+<column name="add_ln182_16_fu_698_p2">+, 0, 0, 13, 11, 11</column>
+<column name="add_ln182_17_fu_708_p2">+, 0, 0, 17, 13, 13</column>
+<column name="add_ln182_18_fu_718_p2">+, 0, 0, 19, 14, 14</column>
+<column name="add_ln182_19_fu_724_p2">+, 0, 0, 13, 11, 11</column>
+<column name="add_ln182_1_fu_450_p2">+, 0, 0, 17, 13, 13</column>
+<column name="add_ln182_20_fu_734_p2">+, 0, 0, 15, 9, 9</column>
+<column name="add_ln182_21_fu_744_p2">+, 0, 0, 13, 11, 11</column>
+<column name="add_ln182_22_fu_754_p2">+, 0, 0, 12, 12, 12</column>
+<column name="add_ln182_23_fu_1129_p2">+, 0, 0, 21, 15, 15</column>
+<column name="add_ln182_24_fu_1146_p2">+, 0, 0, 11, 16, 16</column>
+<column name="add_ln182_2_fu_488_p2">+, 0, 0, 11, 14, 14</column>
+<column name="add_ln182_3_fu_494_p2">+, 0, 0, 13, 11, 11</column>
+<column name="add_ln182_4_fu_504_p2">+, 0, 0, 11, 14, 14</column>
+<column name="add_ln182_5_fu_872_p2">+, 0, 0, 21, 15, 15</column>
+<column name="add_ln182_6_fu_1002_p2">+, 0, 0, 19, 14, 14</column>
+<column name="add_ln182_7_fu_1076_p2">+, 0, 0, 11, 16, 16</column>
+<column name="add_ln182_8_fu_1082_p2">+, 0, 0, 21, 15, 15</column>
+<column name="add_ln182_9_fu_1092_p2">+, 0, 0, 11, 16, 16</column>
+<column name="add_ln182_fu_406_p2">+, 0, 0, 13, 11, 11</column>
+<column name="xi_fu_263_p2">+, 0, 0, 14, 10, 1</column>
+<column name="yi_fu_251_p2">+, 0, 0, 14, 10, 1</column>
+<column name="sub_ln182_1_fu_904_p2">-, 0, 0, 19, 14, 14</column>
+<column name="sub_ln182_2_fu_938_p2">-, 0, 0, 12, 12, 12</column>
+<column name="sub_ln182_3_fu_970_p2">-, 0, 0, 19, 14, 14</column>
+<column name="sub_ln182_4_fu_1034_p2">-, 0, 0, 19, 14, 14</column>
+<column name="sub_ln182_5_fu_558_p2">-, 0, 0, 12, 12, 12</column>
+<column name="sub_ln182_6_fu_1066_p2">-, 0, 0, 19, 14, 14</column>
+<column name="sub_ln182_7_fu_656_p2">-, 0, 0, 12, 12, 12</column>
+<column name="sub_ln182_fu_440_p2">-, 0, 0, 12, 12, 12</column>
+<column name="ap_block_state4_pp0_stage0_iter1">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state6_pp0_stage0_iter3">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln150_fu_245_p2">icmp, 0, 0, 13, 10, 11</column>
+<column name="icmp_ln151_fu_257_p2">icmp, 0, 0, 13, 10, 11</column>
+<column name="ap_block_pp0_stage0_01001">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">27, 5, 1, 5</column>
+<column name="ap_done">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter2">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter3">9, 2, 1, 2</column>
+<column name="fifo1_blk_n">9, 2, 1, 2</column>
+<column name="fifo2_blk_n">9, 2, 1, 2</column>
+<column name="real_start">9, 2, 1, 2</column>
+<column name="xi_0_i_reg_234">9, 2, 10, 20</column>
+<column name="yi_0_i_reg_223">9, 2, 10, 20</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="add_ln182_11_reg_1348">12, 0, 13, 1</column>
+<column name="add_ln182_13_reg_1368">15, 0, 16, 1</column>
+<column name="add_ln182_18_reg_1353">12, 0, 14, 2</column>
+<column name="add_ln182_22_reg_1358">12, 0, 12, 0</column>
+<column name="add_ln182_23_reg_1373">15, 0, 15, 0</column>
+<column name="add_ln182_4_reg_1343">14, 0, 14, 0</column>
+<column name="add_ln182_9_reg_1363">16, 0, 16, 0</column>
+<column name="ap_CS_fsm">4, 0, 4, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter0">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter3">1, 0, 1, 0</column>
+<column name="icmp_ln151_reg_1292">1, 0, 1, 0</column>
+<column name="line_buf_addr_reg_1301">9, 0, 9, 0</column>
+<column name="start_once_reg">1, 0, 1, 0</column>
+<column name="window_buf_0_1_5_fu_114">8, 0, 8, 0</column>
+<column name="window_buf_0_1_fu_110">8, 0, 8, 0</column>
+<column name="window_buf_0_2_fu_118">8, 0, 8, 0</column>
+<column name="window_buf_0_3_fu_122">8, 0, 8, 0</column>
+<column name="window_buf_1_1_5_fu_130">8, 0, 8, 0</column>
+<column name="window_buf_1_1_6_reg_1307">8, 0, 8, 0</column>
+<column name="window_buf_1_1_fu_126">8, 0, 8, 0</column>
+<column name="window_buf_1_2_1_reg_1312">8, 0, 8, 0</column>
+<column name="window_buf_1_2_fu_134">8, 0, 8, 0</column>
+<column name="window_buf_1_3_fu_138">8, 0, 8, 0</column>
+<column name="window_buf_2_1_5_fu_146">8, 0, 8, 0</column>
+<column name="window_buf_2_1_6_reg_1318">8, 0, 8, 0</column>
+<column name="window_buf_2_1_fu_142">8, 0, 8, 0</column>
+<column name="window_buf_2_2_1_reg_1325">8, 0, 8, 0</column>
+<column name="window_buf_2_2_fu_150">8, 0, 8, 0</column>
+<column name="window_buf_2_3_1_reg_1331">8, 0, 8, 0</column>
+<column name="window_buf_2_3_fu_154">8, 0, 8, 0</column>
+<column name="window_buf_3_1_1_fu_162">8, 0, 8, 0</column>
+<column name="window_buf_3_1_fu_158">8, 0, 8, 0</column>
+<column name="window_buf_3_2_1_reg_1337">8, 0, 8, 0</column>
+<column name="window_buf_3_2_fu_166">8, 0, 8, 0</column>
+<column name="window_buf_3_3_fu_170">8, 0, 8, 0</column>
+<column name="window_buf_4_1_1_fu_178">8, 0, 8, 0</column>
+<column name="window_buf_4_1_fu_174">8, 0, 8, 0</column>
+<column name="window_buf_4_2_fu_182">8, 0, 8, 0</column>
+<column name="window_buf_4_3_fu_186">8, 0, 8, 0</column>
+<column name="xi_0_i_reg_234">10, 0, 10, 0</column>
+<column name="yi_0_i_reg_223">10, 0, 10, 0</column>
+<column name="yi_reg_1287">10, 0, 10, 0</column>
+<column name="icmp_ln151_reg_1292">64, 32, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, GaussianBlur, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, GaussianBlur, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, GaussianBlur, return value</column>
+<column name="start_full_n">in, 1, ap_ctrl_hs, GaussianBlur, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, GaussianBlur, return value</column>
+<column name="ap_continue">in, 1, ap_ctrl_hs, GaussianBlur, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, GaussianBlur, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, GaussianBlur, return value</column>
+<column name="start_out">out, 1, ap_ctrl_hs, GaussianBlur, return value</column>
+<column name="start_write">out, 1, ap_ctrl_hs, GaussianBlur, return value</column>
+<column name="fifo1_dout">in, 8, ap_fifo, fifo1, pointer</column>
+<column name="fifo1_empty_n">in, 1, ap_fifo, fifo1, pointer</column>
+<column name="fifo1_read">out, 1, ap_fifo, fifo1, pointer</column>
+<column name="fifo2_din">out, 8, ap_fifo, fifo2, pointer</column>
+<column name="fifo2_full_n">in, 1, ap_fifo, fifo2, pointer</column>
+<column name="fifo2_write">out, 1, ap_fifo, fifo2, pointer</column>
+</table>
+</item>
+</section>
+</profile>

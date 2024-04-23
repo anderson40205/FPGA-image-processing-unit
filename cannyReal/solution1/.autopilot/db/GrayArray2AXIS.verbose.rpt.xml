@@ -1,0 +1,172 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'GrayArray2AXIS'" level="0">
+<item name = "Date">Sat May 20 12:00:33 2023
+</item>
+<item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
+<item name = "Project">cannyReal</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.65, 3.634, 1.33</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">264193, 264193, 264193, 264193, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">264192, 264192, 516, -, -, 512, no</column>
+<column name=" + Loop 1.1">513, 513, 3, 1, 1, 512, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 124, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, -, -, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 138, -</column>
+<column name="Register">-, -, 100, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+</table>
+</item>
+<item name = "DSP48E"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="xi_fu_124_p2">+, 0, 0, 14, 10, 1</column>
+<column name="yi_fu_106_p2">+, 0, 0, 14, 10, 1</column>
+<column name="and_ln125_fu_136_p2">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_pp0_stage0_01001">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state4_io">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state4_pp0_stage0_iter1">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state5_io">and, 0, 0, 2, 1, 1</column>
+<column name="axis_dst_data_V_1_load_A">and, 0, 0, 2, 1, 1</column>
+<column name="axis_dst_data_V_1_load_B">and, 0, 0, 2, 1, 1</column>
+<column name="axis_dst_last_V_1_load_A">and, 0, 0, 2, 1, 1</column>
+<column name="axis_dst_last_V_1_load_B">and, 0, 0, 2, 1, 1</column>
+<column name="axis_dst_data_V_1_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
+<column name="axis_dst_last_V_1_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
+<column name="icmp_ln118_fu_100_p2">icmp, 0, 0, 13, 10, 11</column>
+<column name="icmp_ln119_fu_118_p2">icmp, 0, 0, 13, 10, 11</column>
+<column name="icmp_ln125_1_fu_130_p2">icmp, 0, 0, 13, 10, 9</column>
+<column name="icmp_ln125_fu_112_p2">icmp, 0, 0, 13, 10, 9</column>
+<column name="ap_block_pp0_stage0_11001">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state2">or, 0, 0, 2, 1, 1</column>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter1">xor, 0, 0, 2, 2, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">27, 5, 1, 5</column>
+<column name="ap_done">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter2">9, 2, 1, 2</column>
+<column name="axis_dst_data_V_1_data_out">9, 2, 24, 48</column>
+<column name="axis_dst_data_V_1_state">15, 3, 2, 6</column>
+<column name="axis_dst_last_V_1_data_out">9, 2, 1, 2</column>
+<column name="axis_dst_last_V_1_state">15, 3, 2, 6</column>
+<column name="axis_out_TDATA_blk_n">9, 2, 1, 2</column>
+<column name="fifo7_blk_n">9, 2, 1, 2</column>
+<column name="xi_0_i_reg_89">9, 2, 10, 20</column>
+<column name="yi_0_i_reg_78">9, 2, 10, 20</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="and_ln125_reg_175">1, 0, 1, 0</column>
+<column name="ap_CS_fsm">4, 0, 4, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter0">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
+<column name="axis_dst_data_V_1_payload_A">24, 0, 24, 0</column>
+<column name="axis_dst_data_V_1_payload_B">24, 0, 24, 0</column>
+<column name="axis_dst_data_V_1_sel_rd">1, 0, 1, 0</column>
+<column name="axis_dst_data_V_1_sel_wr">1, 0, 1, 0</column>
+<column name="axis_dst_data_V_1_state">2, 0, 2, 0</column>
+<column name="axis_dst_last_V_1_payload_A">1, 0, 1, 0</column>
+<column name="axis_dst_last_V_1_payload_B">1, 0, 1, 0</column>
+<column name="axis_dst_last_V_1_sel_rd">1, 0, 1, 0</column>
+<column name="axis_dst_last_V_1_sel_wr">1, 0, 1, 0</column>
+<column name="axis_dst_last_V_1_state">2, 0, 2, 0</column>
+<column name="icmp_ln119_reg_166">1, 0, 1, 0</column>
+<column name="icmp_ln119_reg_166_pp0_iter1_reg">1, 0, 1, 0</column>
+<column name="icmp_ln125_reg_161">1, 0, 1, 0</column>
+<column name="xi_0_i_reg_89">10, 0, 10, 0</column>
+<column name="yi_0_i_reg_78">10, 0, 10, 0</column>
+<column name="yi_reg_156">10, 0, 10, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, GrayArray2AXIS, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, GrayArray2AXIS, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, GrayArray2AXIS, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, GrayArray2AXIS, return value</column>
+<column name="ap_continue">in, 1, ap_ctrl_hs, GrayArray2AXIS, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, GrayArray2AXIS, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, GrayArray2AXIS, return value</column>
+<column name="axis_out_TDATA">out, 24, axis, axis_dst_data_V, pointer</column>
+<column name="axis_out_TREADY">in, 1, axis, axis_dst_data_V, pointer</column>
+<column name="axis_out_TVALID">out, 1, axis, axis_dst_last_V, pointer</column>
+<column name="axis_out_TLAST">out, 1, axis, axis_dst_last_V, pointer</column>
+<column name="fifo7_dout">in, 8, ap_fifo, fifo7, pointer</column>
+<column name="fifo7_empty_n">in, 1, ap_fifo, fifo7, pointer</column>
+<column name="fifo7_read">out, 1, ap_fifo, fifo7, pointer</column>
+</table>
+</item>
+</section>
+</profile>

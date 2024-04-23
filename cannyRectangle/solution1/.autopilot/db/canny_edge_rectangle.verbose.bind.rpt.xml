@@ -1,0 +1,56 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'canny_edge_rectangle'" level="0">
+<item name = "Date">Fri May 26 21:01:37 2023
+</item>
+<item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
+<item name = "Project">cannyRectangle</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">11.00, 10.648, 1.38</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">2103846, 2103846, 2103842, 2103842, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_Sobel_1920u_1080u_s_fu_354">Sobel_1920u_1080u_s, 2103841, 2103841, 2103841, 2103841, none</column>
+<column name="grp_GaussianBlur_fu_364">GaussianBlur, 2079001, 2079001, 2079001, 2079001, none</column>
+<column name="grp_NonMaxSuppression_fu_372">NonMaxSuppression, 2077921, 2077921, 2077921, 2077921, none</column>
+<column name="grp_HystThresholdComp_fu_382">HystThresholdComp, 2077921, 2077921, 2077921, 2077921, none</column>
+<column name="grp_AXIS2GrayArray_fu_390">AXIS2GrayArray, 2077921, 2077921, 2077921, 2077921, none</column>
+<column name="grp_ZeroPadding_fu_398">ZeroPadding, 2076841, 2076841, 2076841, 2076841, none</column>
+<column name="grp_GrayArray2AXIS_fu_406">GrayArray2AXIS, 2077921, 2077921, 2077921, 2077921, none</column>
+<column name="grp_HystThreshold_fu_416">HystThreshold, 2077921, 2077921, 2077921, 2077921, none</column>
+<column name="call_ln47_canny_edge_rectangle_2_fu_426">canny_edge_rectangle_2, 0, 0, 0, 0, none</column>
+<column name="call_ln39_canny_edge_rectangle_1_2_fu_436">canny_edge_rectangle_1_2, 0, 0, 0, 0, none</column>
+<column name="call_ln39_Block_proc_fu_446">Block_proc, 0, 0, 0, 0, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

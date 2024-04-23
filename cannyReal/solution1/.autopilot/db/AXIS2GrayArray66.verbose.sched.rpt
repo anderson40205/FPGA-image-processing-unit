@@ -1,0 +1,223 @@
+
+
+================================================================
+== Vivado HLS Report for 'AXIS2GrayArray66'
+================================================================
+* Date:           Sat May 20 12:00:27 2023
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        cannyReal
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.65|    10.648|        1.33|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +--------+--------+--------+--------+---------+
+    |     Latency     |     Interval    | Pipeline|
+    |   min  |   max  |   min  |   max  |   Type  |
+    +--------+--------+--------+--------+---------+
+    |  264193|  264193|  264193|  264193|   none  |
+    +--------+--------+--------+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+--------+--------+----------+-----------+-----------+------+----------+
+        |             |     Latency     | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name  |   min  |   max  |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------+--------+--------+----------+-----------+-----------+------+----------+
+        |- Loop 1     |  264192|  264192|       516|          -|          -|   512|    no    |
+        | + Loop 1.1  |     513|     513|         3|          1|          1|   512|    yes   |
+        +-------------+--------+--------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 3
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 6
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 3, States = { 3 4 5 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 6 4 
+4 --> 5 
+5 --> 3 
+6 --> 2 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 7.26>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i24* %axis_src_data_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)"   --->   Operation 7 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i24* %axis_src_data_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)"   --->   Operation 8 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i24* %axis_src_data_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)"   --->   Operation 9 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i24* %axis_src_data_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)"   --->   Operation 10 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i24* %axis_src_data_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)"   --->   Operation 11 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i24* %axis_src_data_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)"   --->   Operation 12 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i24* %axis_src_data_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)"   --->   Operation 13 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i24* %axis_src_data_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)"   --->   Operation 14 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i24* %axis_src_data_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)"   --->   Operation 15 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %hist_hthr_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str68, i32 0, i32 0, [1 x i8]* @p_str69, [1 x i8]* @p_str70, [1 x i8]* @p_str71, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str72, [11 x i8]* @ScalarProp_str)"   --->   Operation 16 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %hist_lthr_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str73, i32 0, i32 0, [1 x i8]* @p_str74, [1 x i8]* @p_str75, [1 x i8]* @p_str76, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str77, [11 x i8]* @ScalarProp_str)"   --->   Operation 17 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %hist_lthr, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str42, i32 0, i32 0, [1 x i8]* @p_str43, [1 x i8]* @p_str44, [1 x i8]* @p_str45, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str46, [11 x i8]* @ScalarProp_str)"   --->   Operation 18 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %hist_hthr, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str37, i32 0, i32 0, [1 x i8]* @p_str38, [1 x i8]* @p_str39, [1 x i8]* @p_str40, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str41, [11 x i8]* @ScalarProp_str)"   --->   Operation 19 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (3.63ns)   --->   "%hist_hthr_read = call i8 @_ssdm_op_Read.ap_fifo.i8P(i8* %hist_hthr)" [../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47]   --->   Operation 20 'read' 'hist_hthr_read' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_1 : Operation 21 [1/1] (3.63ns)   --->   "%hist_lthr_read = call i8 @_ssdm_op_Read.ap_fifo.i8P(i8* %hist_lthr)" [../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47]   --->   Operation 21 'read' 'hist_lthr_read' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* @fifo1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str169, i32 0, i32 0, [1 x i8]* @p_str170, [1 x i8]* @p_str171, [1 x i8]* @p_str172, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str173, [1 x i8]* @p_str174)"   --->   Operation 22 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i24* %axis_src_data_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)"   --->   Operation 23 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i24* %axis_src_data_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)"   --->   Operation 24 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i24* %axis_src_data_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)"   --->   Operation 25 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i24* %axis_src_data_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)"   --->   Operation 26 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i24* %axis_src_data_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)"   --->   Operation 27 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i24* %axis_src_data_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)"   --->   Operation 28 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %hist_hthr_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str68, i32 0, i32 0, [1 x i8]* @p_str69, [1 x i8]* @p_str70, [1 x i8]* @p_str71, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str72, [11 x i8]* @ScalarProp_str)"   --->   Operation 29 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (3.63ns)   --->   "call void @_ssdm_op_Write.ap_fifo.i8P(i8* %hist_hthr_out, i8 %hist_hthr_read)" [../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39]   --->   Operation 30 'write' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %hist_lthr_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str73, i32 0, i32 0, [1 x i8]* @p_str74, [1 x i8]* @p_str75, [1 x i8]* @p_str76, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str77, [11 x i8]* @ScalarProp_str)"   --->   Operation 31 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (3.63ns)   --->   "call void @_ssdm_op_Write.ap_fifo.i8P(i8* %hist_lthr_out, i8 %hist_lthr_read)" [../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39]   --->   Operation 32 'write' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i24* %axis_src_data_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)"   --->   Operation 33 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i24* %axis_src_data_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)"   --->   Operation 34 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i24* %axis_src_data_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)"   --->   Operation 35 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (1.76ns)   --->   "br label %.loopexit" [../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:86->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39]   --->   Operation 36 'br' <Predicate = true> <Delay = 1.76>
+
+State 2 <SV = 1> <Delay = 2.74>
+ST_2 : Operation 37 [1/1] (0.00ns)   --->   "%yi_0_i_i_i = phi i10 [ 0, %entry ], [ %yi, %.loopexit.loopexit ]"   --->   Operation 37 'phi' 'yi_0_i_i_i' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 38 [1/1] (1.77ns)   --->   "%icmp_ln86 = icmp eq i10 %yi_0_i_i_i, -512" [../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:86->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39]   --->   Operation 38 'icmp' 'icmp_ln86' <Predicate = true> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 39 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 512, i64 512, i64 512)"   --->   Operation 39 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 40 [1/1] (1.73ns)   --->   "%yi = add i10 %yi_0_i_i_i, 1" [../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:86->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39]   --->   Operation 40 'add' 'yi' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 41 [1/1] (0.00ns)   --->   "br i1 %icmp_ln86, label %.exit, label %.preheader.i.i.i.preheader" [../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:86->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39]   --->   Operation 41 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 42 [1/1] (1.76ns)   --->   "br label %.preheader.i.i.i" [../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:87->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39]   --->   Operation 42 'br' <Predicate = (!icmp_ln86)> <Delay = 1.76>
+ST_2 : Operation 43 [1/1] (0.00ns)   --->   "ret void" [../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39]   --->   Operation 43 'ret' <Predicate = (icmp_ln86)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 6.38>
+ST_3 : Operation 44 [1/1] (0.00ns)   --->   "%xi_0_i_i_i = phi i10 [ %xi, %hls_label_0 ], [ 0, %.preheader.i.i.i.preheader ]"   --->   Operation 44 'phi' 'xi_0_i_i_i' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 45 [1/1] (1.77ns)   --->   "%icmp_ln87 = icmp eq i10 %xi_0_i_i_i, -512" [../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:87->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39]   --->   Operation 45 'icmp' 'icmp_ln87' <Predicate = true> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 46 [1/1] (0.00ns)   --->   "%empty_108 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 512, i64 512, i64 512)"   --->   Operation 46 'speclooptripcount' 'empty_108' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 47 [1/1] (1.73ns)   --->   "%xi = add i10 %xi_0_i_i_i, 1" [../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:87->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39]   --->   Operation 47 'add' 'xi' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 48 [1/1] (0.00ns)   --->   "br i1 %icmp_ln87, label %.loopexit.loopexit, label %hls_label_0" [../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:87->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39]   --->   Operation 48 'br' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 49 [1/1] (0.00ns)   --->   "%axis_src_data_V_read = call i24 @_ssdm_op_Read.axis.volatile.i24P(i24* %axis_src_data_V)" [../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:95->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39]   --->   Operation 49 'read' 'axis_src_data_V_read' <Predicate = (!icmp_ln87)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_3 : Operation 50 [1/1] (0.00ns)   --->   "%ret_V = trunc i24 %axis_src_data_V_read to i8" [../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:95->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39]   --->   Operation 50 'trunc' 'ret_V' <Predicate = (!icmp_ln87)> <Delay = 0.00>
+ST_3 : Operation 51 [1/1] (0.00ns)   --->   "%zext_ln1355 = zext i8 %ret_V to i23" [../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:95->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39]   --->   Operation 51 'zext' 'zext_ln1355' <Predicate = (!icmp_ln87)> <Delay = 0.00>
+ST_3 : Operation 52 [1/1] (6.38ns) (root node of the DSP)   --->   "%mul_ln544 = mul i23 9437, %zext_ln1355" [../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:97->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39]   --->   Operation 52 'mul' 'mul_ln544' <Predicate = (!icmp_ln87)> <Delay = 6.38> <Core = "DSP48">   --->   Core 88 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_3 : Operation 53 [1/1] (0.00ns)   --->   "%trunc_ln_i = call i8 @_ssdm_op_PartSelect.i8.i24.i32.i32(i24 %axis_src_data_V_read, i32 8, i32 15)" [../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:96->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39]   --->   Operation 53 'partselect' 'trunc_ln_i' <Predicate = (!icmp_ln87)> <Delay = 0.00>
+ST_3 : Operation 54 [1/1] (0.00ns)   --->   "%tmp_8_i = call i8 @_ssdm_op_PartSelect.i8.i24.i32.i32(i24 %axis_src_data_V_read, i32 16, i32 23)" [../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:97->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39]   --->   Operation 54 'partselect' 'tmp_8_i' <Predicate = (!icmp_ln87)> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 10.6>
+ST_4 : Operation 55 [1/1] (0.00ns)   --->   "%zext_ln1503 = zext i8 %trunc_ln_i to i25" [../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:96->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39]   --->   Operation 55 'zext' 'zext_ln1503' <Predicate = (!icmp_ln87)> <Delay = 0.00>
+ST_4 : Operation 56 [1/1] (3.36ns) (grouped into DSP with root node pix_gray)   --->   "%mul_ln1503 = mul i25 38469, %zext_ln1503" [../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:96->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39]   --->   Operation 56 'mul' 'mul_ln1503' <Predicate = (!icmp_ln87)> <Delay = 3.36> <Core = "DSP48">   --->   Core 88 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 57 [1/1] (0.00ns)   --->   "%zext_ln1503_1 = zext i8 %tmp_8_i to i23" [../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:97->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39]   --->   Operation 57 'zext' 'zext_ln1503_1' <Predicate = (!icmp_ln87)> <Delay = 0.00>
+ST_4 : Operation 58 [1/1] (3.36ns) (grouped into DSP with root node add_ln544)   --->   "%mul_ln544_1 = mul i23 19595, %zext_ln1503_1" [../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:97->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39]   --->   Operation 58 'mul' 'mul_ln544_1' <Predicate = (!icmp_ln87)> <Delay = 3.36> <Core = "DSP48">   --->   Core 88 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 59 [1/1] (3.02ns) (root node of the DSP)   --->   "%add_ln544 = add i23 %mul_ln544, %mul_ln544_1" [../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:97->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39]   --->   Operation 59 'add' 'add_ln544' <Predicate = (!icmp_ln87)> <Delay = 3.02> <Core = "DSP48">   --->   Core 88 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 60 [1/1] (0.00ns)   --->   "%zext_ln544 = zext i23 %add_ln544 to i25" [../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:97->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39]   --->   Operation 60 'zext' 'zext_ln544' <Predicate = (!icmp_ln87)> <Delay = 0.00>
+ST_4 : Operation 61 [1/1] (3.02ns) (root node of the DSP)   --->   "%pix_gray = add i25 %zext_ln544, %mul_ln1503" [../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:97->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39]   --->   Operation 61 'add' 'pix_gray' <Predicate = (!icmp_ln87)> <Delay = 3.02> <Core = "DSP48">   --->   Core 88 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 62 [1/1] (0.00ns)   --->   "%tmp = call i1 @_ssdm_op_BitSelect.i1.i25.i32(i25 %pix_gray, i32 24)" [../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:105->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39]   --->   Operation 62 'bitselect' 'tmp' <Predicate = (!icmp_ln87)> <Delay = 0.00>
+ST_4 : Operation 63 [1/1] (0.00ns)   --->   "%tmp_9_i = call i8 @_ssdm_op_PartSelect.i8.i25.i32.i32(i25 %pix_gray, i32 16, i32 23)" [../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:97->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39]   --->   Operation 63 'partselect' 'tmp_9_i' <Predicate = (!icmp_ln87)> <Delay = 0.00>
+ST_4 : Operation 64 [1/1] (1.24ns)   --->   "%phitmp318_i_i_i = select i1 %tmp, i8 -1, i8 %tmp_9_i" [../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:105->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39]   --->   Operation 64 'select' 'phitmp318_i_i_i' <Predicate = (!icmp_ln87)> <Delay = 1.24> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 3.63>
+ST_5 : Operation 65 [1/1] (0.00ns)   --->   "%tmp_i_i_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str12)" [../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:87->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39]   --->   Operation 65 'specregionbegin' 'tmp_i_i_i' <Predicate = (!icmp_ln87)> <Delay = 0.00>
+ST_5 : Operation 66 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str2) nounwind" [../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:88->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39]   --->   Operation 66 'specpipeline' <Predicate = (!icmp_ln87)> <Delay = 0.00>
+ST_5 : Operation 67 [1/1] (3.63ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i8P(i8* @fifo1, i8 %phitmp318_i_i_i)" [../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:110->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39]   --->   Operation 67 'write' <Predicate = (!icmp_ln87)> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_5 : Operation 68 [1/1] (0.00ns)   --->   "%empty_109 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str12, i32 %tmp_i_i_i)" [../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:111->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39]   --->   Operation 68 'specregionend' 'empty_109' <Predicate = (!icmp_ln87)> <Delay = 0.00>
+ST_5 : Operation 69 [1/1] (0.00ns)   --->   "br label %.preheader.i.i.i" [../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:87->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39]   --->   Operation 69 'br' <Predicate = (!icmp_ln87)> <Delay = 0.00>
+
+State 6 <SV = 3> <Delay = 0.00>
+ST_6 : Operation 70 [1/1] (0.00ns)   --->   "br label %.loopexit"   --->   Operation 70 'br' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.6ns, clock uncertainty: 1.33ns.
+
+ <State 1>: 7.27ns
+The critical path consists of the following:
+	fifo read on port 'hist_hthr' (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47) [20]  (3.63 ns)
+	fifo write on port 'hist_hthr_out' (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39) [30]  (3.63 ns)
+
+ <State 2>: 2.75ns
+The critical path consists of the following:
+	'icmp' operation ('icmp_ln86', ../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:86->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39) [39]  (1.77 ns)
+	blocking operation 0.978 ns on control path)
+
+ <State 3>: 6.38ns
+The critical path consists of the following:
+	axis read on port 'axis_src_data_V' (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:95->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39) [54]  (0 ns)
+	'mul' operation of DSP[57] ('mul_ln544', ../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:97->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39) [57]  (6.38 ns)
+
+ <State 4>: 10.6ns
+The critical path consists of the following:
+	'mul' operation of DSP[64] ('mul_ln544_1', ../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:97->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39) [63]  (3.36 ns)
+	'add' operation of DSP[64] ('add_ln544', ../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:97->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39) [64]  (3.02 ns)
+	'add' operation of DSP[66] ('pix_gray', ../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:97->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39) [66]  (3.02 ns)
+	'select' operation ('phitmp318_i_i_i', ../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:105->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39) [69]  (1.25 ns)
+
+ <State 5>: 3.63ns
+The critical path consists of the following:
+	fifo write on port 'fifo1' (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:110->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39) [70]  (3.63 ns)
+
+ <State 6>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

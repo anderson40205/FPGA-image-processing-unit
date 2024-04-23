@@ -1,0 +1,54 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'canny_edge_detection'" level="0">
+<item name = "Date">Sat May 20 12:00:30 2023
+</item>
+<item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
+<item name = "Project">cannyReal</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.65, 10.648, 1.33</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">276999, 276999, 276994, 276994, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_Sobel_512u_512u_s_fu_306">Sobel_512u_512u_s, 276993, 276993, 276993, 276993, none</column>
+<column name="grp_GaussianBlur_fu_316">GaussianBlur, 264705, 264705, 264705, 264705, none</column>
+<column name="grp_NonMaxSuppression_fu_324">NonMaxSuppression, 264193, 264193, 264193, 264193, none</column>
+<column name="grp_HystThresholdComp_fu_334">HystThresholdComp, 264193, 264193, 264193, 264193, none</column>
+<column name="grp_AXIS2GrayArray66_fu_342">AXIS2GrayArray66, 264193, 264193, 264193, 264193, none</column>
+<column name="grp_ZeroPadding_fu_354">ZeroPadding, 263681, 263681, 263681, 263681, none</column>
+<column name="grp_GrayArray2AXIS_fu_362">GrayArray2AXIS, 264193, 264193, 264193, 264193, none</column>
+<column name="grp_HystThreshold_fu_372">HystThreshold, 264193, 264193, 264193, 264193, none</column>
+<column name="call_ln39_canny_edge_detection_1_1_fu_382">canny_edge_detection_1_1, 0, 0, 0, 0, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

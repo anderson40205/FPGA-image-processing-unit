@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Port 'canny_edge_rectangle/axis_in_TLAST' has no fanin or fanout and is left dangling.&#xD;&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="cannyRectangle" solutionName="solution1" date="2023-05-26T21:01:40.933+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-21] The critical path in module 'AXIS2GrayArray' consists of the following:&#xD;&#xA;&#x9;'mul' operation of DSP[33] ('mul_ln544_1', cannyRectangle/HlsImProc.hpp:97) [32]  (3.36 ns)&#xD;&#xA;&#x9;'add' operation of DSP[33] ('add_ln544', cannyRectangle/HlsImProc.hpp:97) [33]  (3.02 ns)&#xD;&#xA;&#x9;'add' operation of DSP[35] ('pix_gray', cannyRectangle/HlsImProc.hpp:97) [35]  (3.02 ns)&#xD;&#xA;&#x9;'select' operation ('phitmp318', cannyRectangle/HlsImProc.hpp:105) [38]  (1.25 ns)" projectName="cannyRectangle" solutionName="solution1" date="2023-05-26T21:01:33.592+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-21] Estimated clock period (10.648ns) exceeds the target (target clock period: 11ns, clock uncertainty: 1.375ns, effective delay budget: 9.625ns)." projectName="cannyRectangle" solutionName="solution1" date="2023-05-26T21:01:33.588+0800" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'Sobel&lt;1920u, 1080u>' to 'Sobel_1920u_1080u_s'." projectName="cannyRectangle" solutionName="solution1" date="2023-05-26T21:01:32.753+0800" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'Block__proc' to 'Block_proc'." projectName="cannyRectangle" solutionName="solution1" date="2023-05-26T21:01:32.737+0800" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'canny_edge_rectangle.2' to 'canny_edge_rectangle_2'." projectName="cannyRectangle" solutionName="solution1" date="2023-05-26T21:01:32.734+0800" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'canny_edge_rectangle.1.2' to 'canny_edge_rectangle_1_2'." projectName="cannyRectangle" solutionName="solution1" date="2023-05-26T21:01:32.730+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'canny_edge_rectangle.1.1' to 'canny_edge_rectangle.2' (cannyRectangle/canny_edge_rectangle.cpp:39:130)" projectName="cannyRectangle" solutionName="solution1" date="2023-05-26T21:01:32.718+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'canny_edge_rectangle.entry3' to 'canny_edge_rectangle.1.2' " projectName="cannyRectangle" solutionName="solution1" date="2023-05-26T21:01:32.513+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'canny_edge_rectangle.entry66' to 'canny_edge_rectangle.1.1' (cannyRectangle/canny_edge_rectangle.cpp:47:1)" projectName="cannyRectangle" solutionName="solution1" date="2023-05-26T21:01:32.510+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hlsimproc::HlsImProc::AXIS2GrayArray&lt;1920u, 1080u>' to 'AXIS2GrayArray' (cannyRectangle/HlsImProc.hpp:86:41)" projectName="cannyRectangle" solutionName="solution1" date="2023-05-26T21:01:31.930+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hlsimproc::HlsImProc::GaussianBlur&lt;1920u, 1080u>' to 'GaussianBlur' (cannyRectangle/HlsImProc.hpp:138:41)" projectName="cannyRectangle" solutionName="solution1" date="2023-05-26T21:01:31.926+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hlsimproc::HlsImProc::GrayArray2AXIS&lt;1920u, 1080u>' to 'GrayArray2AXIS' (cannyRectangle/HlsImProc.hpp:116:41)" projectName="cannyRectangle" solutionName="solution1" date="2023-05-26T21:01:31.922+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hlsimproc::HlsImProc::HystThreshold&lt;1920u, 1080u>' to 'HystThreshold' (cannyRectangle/HlsImProc.hpp:39:41)" projectName="cannyRectangle" solutionName="solution1" date="2023-05-26T21:01:31.919+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hlsimproc::HlsImProc::HystThresholdComp&lt;1920u, 1080u>' to 'HystThresholdComp' (cannyRectangle/HlsImProc.hpp:424:41)" projectName="cannyRectangle" solutionName="solution1" date="2023-05-26T21:01:31.913+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hlsimproc::HlsImProc::NonMaxSuppression&lt;1920u, 1080u>' to 'NonMaxSuppression' (cannyRectangle/HlsImProc.hpp:316:41)" projectName="cannyRectangle" solutionName="solution1" date="2023-05-26T21:01:31.907+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hlsimproc::HlsImProc::Sobel&lt;1920u, 1080u>' to 'Sobel&lt;1920u, 1080u>' (cannyRectangle/HlsImProc.hpp:7:41)" projectName="cannyRectangle" solutionName="solution1" date="2023-05-26T21:01:31.901+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hlsimproc::HlsImProc::ZeroPadding&lt;1920u, 1080u>' to 'ZeroPadding' (cannyRectangle/HlsImProc.hpp:475:41)" projectName="cannyRectangle" solutionName="solution1" date="2023-05-26T21:01:31.895+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-124] Array  'fifo3.grad' : may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order." projectName="cannyRectangle" solutionName="solution1" date="2023-05-26T21:01:31.126+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-124] Array  'fifo3.value' : may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order." projectName="cannyRectangle" solutionName="solution1" date="2023-05-26T21:01:30.707+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'axis_in.data.V' (cannyRectangle/canny_edge_rectangle.cpp:39)." projectName="cannyRectangle" solutionName="solution1" date="2023-05-26T21:01:30.045+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'axis_out.data.V' (cannyRectangle/canny_edge_rectangle.cpp:39)." projectName="cannyRectangle" solutionName="solution1" date="2023-05-26T21:01:29.962+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file cannyRectangle/canny_edge_rectangle.cpp" projectName="cannyRectangle" solutionName="solution1" date="2023-05-26T21:01:26.822+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-114] Only function calls and local variable declarations are allowed in a dataflow region: cannyRectangle/canny_edge_rectangle.cpp:56:2" projectName="cannyRectangle" solutionName="solution1" date="2023-05-26T21:01:18.364+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'canny_edge_rectangle_ap_sitofp_3_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="cannyRectangle" solutionName="solution1" date="2020-05-26T21:03:30.846+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'canny_edge_rectangle_ap_fsqrt_10_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="cannyRectangle" solutionName="solution1" date="2020-05-26T21:03:27.726+0800" type="Warning"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

@@ -1,0 +1,203 @@
+
+
+================================================================
+== Vivado HLS Report for 'canny_edge_detection'
+================================================================
+* Date:           Sat May 20 12:00:33 2023
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        cannyReal
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.65|    10.648|        1.33|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +--------+--------+--------+--------+----------+
+    |     Latency     |     Interval    | Pipeline |
+    |   min  |   max  |   min  |   max  |   Type   |
+    +--------+--------+--------+--------+----------+
+    |  276999|  276999|  276994|  276994| dataflow |
+    +--------+--------+--------+--------+----------+
+
+    + Detail: 
+        * Instance: 
+        +-----------------------------+--------------------------+--------+--------+--------+--------+---------+
+        |                             |                          |     Latency     |     Interval    | Pipeline|
+        |           Instance          |          Module          |   min  |   max  |   min  |   max  |   Type  |
+        +-----------------------------+--------------------------+--------+--------+--------+--------+---------+
+        |Sobel_512u_512u_U0           |Sobel_512u_512u_s         |  276993|  276993|  276993|  276993|   none  |
+        |GaussianBlur_U0              |GaussianBlur              |  264705|  264705|  264705|  264705|   none  |
+        |NonMaxSuppression_U0         |NonMaxSuppression         |  264193|  264193|  264193|  264193|   none  |
+        |HystThresholdComp_U0         |HystThresholdComp         |  264193|  264193|  264193|  264193|   none  |
+        |AXIS2GrayArray66_U0          |AXIS2GrayArray66          |  264193|  264193|  264193|  264193|   none  |
+        |ZeroPadding_U0               |ZeroPadding               |  263681|  263681|  263681|  263681|   none  |
+        |GrayArray2AXIS_U0            |GrayArray2AXIS            |  264193|  264193|  264193|  264193|   none  |
+        |HystThreshold_U0             |HystThreshold             |  264193|  264193|  264193|  264193|   none  |
+        |canny_edge_detection_1_1_U0  |canny_edge_detection_1_1  |       0|       0|       0|       0|   none  |
+        +-----------------------------+--------------------------+--------+--------+--------+--------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  | URAM|
++-----------------+---------+-------+--------+-------+-----+
+|DSP              |        -|      -|       -|      -|    -|
+|Expression       |        -|      -|       0|     34|    -|
+|FIFO             |        0|      -|      60|    238|    -|
+|Instance         |        6|      5|    4213|   5575|    0|
+|Memory           |        -|      -|       -|      -|    -|
+|Multiplexer      |        -|      -|       -|     36|    -|
+|Register         |        -|      -|       6|      -|    -|
++-----------------+---------+-------+--------+-------+-----+
+|Total            |        6|      5|    4279|   5883|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Available        |      280|    220|  106400|  53200|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Utilization (%)  |        2|      2|       4|     11|    0|
++-----------------+---------+-------+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +---------------------------------------+-------------------------------------+---------+-------+------+------+-----+
+    |                Instance               |                Module               | BRAM_18K| DSP48E|  FF  |  LUT | URAM|
+    +---------------------------------------+-------------------------------------+---------+-------+------+------+-----+
+    |AXIS2GrayArray66_U0                    |AXIS2GrayArray66                     |        0|      3|   140|   245|    0|
+    |GaussianBlur_U0                        |GaussianBlur                         |        2|      0|   418|   687|    0|
+    |GrayArray2AXIS_U0                      |GrayArray2AXIS                       |        0|      0|   100|   262|    0|
+    |HystThreshold_U0                       |HystThreshold                        |        0|      0|    59|   213|    0|
+    |HystThresholdComp_U0                   |HystThresholdComp                    |        1|      0|   103|   303|    0|
+    |NonMaxSuppression_U0                   |NonMaxSuppression                    |        2|      0|   133|   438|    0|
+    |Sobel_512u_512u_U0                     |Sobel_512u_512u_s                    |        1|      2|  3153|  3109|    0|
+    |ZeroPadding_U0                         |ZeroPadding                          |        0|      0|    41|   217|    0|
+    |canny_edge_detection_1_1_U0            |canny_edge_detection_1_1             |        0|      0|     2|    29|    0|
+    |canny_edge_detection_AXILiteS_s_axi_U  |canny_edge_detection_AXILiteS_s_axi  |        0|      0|    64|    72|    0|
+    +---------------------------------------+-------------------------------------+---------+-------+------+------+-----+
+    |Total                                  |                                     |        6|      5|  4213|  5575|    0|
+    +---------------------------------------+-------------------------------------+---------+-------+------+------+-----+
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +----------------+---------+---+----+-----+------+-----+---------+
+    |      Name      | BRAM_18K| FF| LUT| URAM| Depth| Bits| Size:D*B|
+    +----------------+---------+---+----+-----+------+-----+---------+
+    |fifo1_U         |        0|  5|   0|    -|     1|    8|        8|
+    |fifo2_U         |        0|  5|   0|    -|     1|    8|        8|
+    |fifo3_grad_U    |        0|  5|   0|    -|     1|    2|        2|
+    |fifo3_value_U   |        0|  5|   0|    -|     1|    8|        8|
+    |fifo4_U         |        0|  5|   0|    -|     1|    8|        8|
+    |fifo5_U         |        0|  5|   0|    -|     1|    8|        8|
+    |fifo6_U         |        0|  5|   0|    -|     1|    8|        8|
+    |fifo7_U         |        0|  5|   0|    -|     1|    8|        8|
+    |hist_hthr_c1_U  |        0|  5|   0|    -|     2|    8|       16|
+    |hist_hthr_c_U   |        0|  5|   0|    -|     6|    8|       48|
+    |hist_lthr_c2_U  |        0|  5|   0|    -|     2|    8|       16|
+    |hist_lthr_c_U   |        0|  5|   0|    -|     6|    8|       48|
+    +----------------+---------+---+----+-----+------+-----+---------+
+    |Total           |        0| 60|   0|    0|    24|   90|      186|
+    +----------------+---------+---+----+-----+------+-----+---------+
+
+    * Expression: 
+    +----------------------------------------------+----------+-------+---+----+------------+------------+
+    |                 Variable Name                | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------------------+----------+-------+---+----+------------+------------+
+    |AXIS2GrayArray66_U0_ap_ready_count            |     +    |      0|  0|  10|           2|           1|
+    |canny_edge_detection_1_1_U0_ap_ready_count    |     +    |      0|  0|  10|           2|           1|
+    |AXIS2GrayArray66_U0_ap_start                  |    and   |      0|  0|   2|           1|           1|
+    |AXIS2GrayArray66_U0_start_full_n              |    and   |      0|  0|   2|           1|           1|
+    |ap_idle                                       |    and   |      0|  0|   2|           1|           1|
+    |ap_sync_ready                                 |    and   |      0|  0|   2|           1|           1|
+    |canny_edge_detection_1_1_U0_ap_start          |    and   |      0|  0|   2|           1|           1|
+    |ap_sync_AXIS2GrayArray66_U0_ap_ready          |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_canny_edge_detection_1_1_U0_ap_ready  |    or    |      0|  0|   2|           1|           1|
+    +----------------------------------------------+----------+-------+---+----+------------+------------+
+    |Total                                         |          |      0|  0|  34|          11|           9|
+    +----------------------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------------------------------+----+-----------+-----+-----------+
+    |                       Name                       | LUT| Input Size| Bits| Total Bits|
+    +--------------------------------------------------+----+-----------+-----+-----------+
+    |AXIS2GrayArray66_U0_ap_ready_count                |   9|          2|    2|          4|
+    |ap_sync_reg_AXIS2GrayArray66_U0_ap_ready          |   9|          2|    1|          2|
+    |ap_sync_reg_canny_edge_detection_1_1_U0_ap_ready  |   9|          2|    1|          2|
+    |canny_edge_detection_1_1_U0_ap_ready_count        |   9|          2|    2|          4|
+    +--------------------------------------------------+----+-----------+-----+-----------+
+    |Total                                             |  36|          8|    6|         12|
+    +--------------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------------------------------+---+----+-----+-----------+
+    |                       Name                       | FF| LUT| Bits| Const Bits|
+    +--------------------------------------------------+---+----+-----+-----------+
+    |AXIS2GrayArray66_U0_ap_ready_count                |  2|   0|    2|          0|
+    |ap_sync_reg_AXIS2GrayArray66_U0_ap_ready          |  1|   0|    1|          0|
+    |ap_sync_reg_canny_edge_detection_1_1_U0_ap_ready  |  1|   0|    1|          0|
+    |canny_edge_detection_1_1_U0_ap_ready_count        |  2|   0|    2|          0|
+    +--------------------------------------------------+---+----+-----+-----------+
+    |Total                                             |  6|   0|    6|          0|
+    +--------------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------+-----+-----+------------+----------------------+--------------+
+|        RTL Ports       | Dir | Bits|  Protocol  |     Source Object    |    C Type    |
++------------------------+-----+-----+------------+----------------------+--------------+
+|s_axi_AXILiteS_AWVALID  |  in |    1|    s_axi   |       AXILiteS       |    scalar    |
+|s_axi_AXILiteS_AWREADY  | out |    1|    s_axi   |       AXILiteS       |    scalar    |
+|s_axi_AXILiteS_AWADDR   |  in |    5|    s_axi   |       AXILiteS       |    scalar    |
+|s_axi_AXILiteS_WVALID   |  in |    1|    s_axi   |       AXILiteS       |    scalar    |
+|s_axi_AXILiteS_WREADY   | out |    1|    s_axi   |       AXILiteS       |    scalar    |
+|s_axi_AXILiteS_WDATA    |  in |   32|    s_axi   |       AXILiteS       |    scalar    |
+|s_axi_AXILiteS_WSTRB    |  in |    4|    s_axi   |       AXILiteS       |    scalar    |
+|s_axi_AXILiteS_ARVALID  |  in |    1|    s_axi   |       AXILiteS       |    scalar    |
+|s_axi_AXILiteS_ARREADY  | out |    1|    s_axi   |       AXILiteS       |    scalar    |
+|s_axi_AXILiteS_ARADDR   |  in |    5|    s_axi   |       AXILiteS       |    scalar    |
+|s_axi_AXILiteS_RVALID   | out |    1|    s_axi   |       AXILiteS       |    scalar    |
+|s_axi_AXILiteS_RREADY   |  in |    1|    s_axi   |       AXILiteS       |    scalar    |
+|s_axi_AXILiteS_RDATA    | out |   32|    s_axi   |       AXILiteS       |    scalar    |
+|s_axi_AXILiteS_RRESP    | out |    2|    s_axi   |       AXILiteS       |    scalar    |
+|s_axi_AXILiteS_BVALID   | out |    1|    s_axi   |       AXILiteS       |    scalar    |
+|s_axi_AXILiteS_BREADY   |  in |    1|    s_axi   |       AXILiteS       |    scalar    |
+|s_axi_AXILiteS_BRESP    | out |    2|    s_axi   |       AXILiteS       |    scalar    |
+|ap_clk                  |  in |    1| ap_ctrl_hs | canny_edge_detection | return value |
+|ap_rst_n                |  in |    1| ap_ctrl_hs | canny_edge_detection | return value |
+|interrupt               | out |    1| ap_ctrl_hs | canny_edge_detection | return value |
+|axis_in_TDATA           |  in |   24|    axis    |    axis_in_data_V    |    pointer   |
+|axis_in_TVALID          |  in |    1|    axis    |    axis_in_data_V    |    pointer   |
+|axis_in_TREADY          | out |    1|    axis    |    axis_in_data_V    |    pointer   |
+|axis_in_TLAST           |  in |    1|    axis    |    axis_in_last_V    |    pointer   |
+|axis_out_TDATA          | out |   24|    axis    |    axis_out_data_V   |    pointer   |
+|axis_out_TLAST          | out |    1|    axis    |    axis_out_last_V   |    pointer   |
+|axis_out_TVALID         | out |    1|    axis    |    axis_out_last_V   |    pointer   |
+|axis_out_TREADY         |  in |    1|    axis    |    axis_out_last_V   |    pointer   |
++------------------------+-----+-----+------------+----------------------+--------------+
+

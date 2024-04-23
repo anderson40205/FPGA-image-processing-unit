@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="canny_edge_detection.cpp" path="C:\Users\ASUS\Desktop\Pynq-Z2-CannyEdgeDetection-master\hls\canny_edge_detection.cpp"/>
+    <originFiles name="canny_edge_detection.h" path="C:\Users\ASUS\Desktop\Pynq-Z2-CannyEdgeDetection-master\hls\canny_edge_detection.h"/>
+    <originFiles name="HlsImProc.hpp" path="C:\Users\ASUS\Desktop\Pynq-Z2-CannyEdgeDetection-master\hls\HlsImProc.hpp"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>

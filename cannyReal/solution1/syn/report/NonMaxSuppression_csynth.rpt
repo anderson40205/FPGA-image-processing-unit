@@ -1,0 +1,233 @@
+
+
+================================================================
+== Vivado HLS Report for 'NonMaxSuppression'
+================================================================
+* Date:           Sat May 20 12:00:32 2023
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        cannyReal
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.65|     8.549|        1.33|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +--------+--------+--------+--------+---------+
+    |     Latency     |     Interval    | Pipeline|
+    |   min  |   max  |   min  |   max  |   Type  |
+    +--------+--------+--------+--------+---------+
+    |  264193|  264193|  264193|  264193|   none  |
+    +--------+--------+--------+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+--------+--------+----------+-----------+-----------+------+----------+
+        |             |     Latency     | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name  |   min  |   max  |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------+--------+--------+----------+-----------+-----------+------+----------+
+        |- Loop 1     |  264192|  264192|       516|          -|          -|   512|    no    |
+        | + Loop 1.1  |     513|     513|         3|          1|          1|   512|    yes   |
+        +-------------+--------+--------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  | URAM|
++-----------------+---------+-------+--------+-------+-----+
+|DSP              |        -|      -|       -|      -|    -|
+|Expression       |        -|      -|       0|    324|    -|
+|FIFO             |        -|      -|       -|      -|    -|
+|Instance         |        -|      -|       -|      -|    -|
+|Memory           |        2|      -|       0|      0|    0|
+|Multiplexer      |        -|      -|       -|    114|    -|
+|Register         |        -|      -|     133|      -|    -|
++-----------------+---------+-------+--------+-------+-----+
+|Total            |        2|      0|     133|    438|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Available        |      280|    220|  106400|  53200|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Utilization (%)  |    ~0   |      0|   ~0   |   ~0  |    0|
++-----------------+---------+-------+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    +------------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+    |      Memory      |        Module        | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +------------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+    |line_buf_grad_U   |NonMaxSuppressionmb6  |        1|  0|   0|    0|   512|    6|     1|         3072|
+    |line_buf_value_U  |Sobel_512u_512u_sfYi  |        1|  0|   0|    0|   512|   24|     1|        12288|
+    +------------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+    |Total             |                      |        2|  0|   0|    0|  1024|   30|     2|        15360|
+    +------------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |xi_fu_279_p2                      |     +    |      0|  0|  14|          10|           1|
+    |yi_fu_239_p2                      |     +    |      0|  0|  14|          10|           1|
+    |and_ln360_fu_550_p2               |    and   |      0|  0|   2|           1|           1|
+    |and_ln367_fu_522_p2               |    and   |      0|  0|   2|           1|           1|
+    |and_ln374_fu_576_p2               |    and   |      0|  0|   2|           1|           1|
+    |and_ln382_1_fu_267_p2             |    and   |      0|  0|   2|           1|           1|
+    |and_ln382_2_fu_638_p2             |    and   |      0|  0|   2|           1|           1|
+    |and_ln382_fu_634_p2               |    and   |      0|  0|   2|           1|           1|
+    |ap_block_state5_pp0_stage0_iter2  |    and   |      0|  0|   2|           1|           1|
+    |icmp_ln323_fu_233_p2              |   icmp   |      0|  0|  13|          10|          11|
+    |icmp_ln324_fu_273_p2              |   icmp   |      0|  0|  13|          10|          11|
+    |icmp_ln353_fu_402_p2              |   icmp   |      0|  0|   8|           2|           1|
+    |icmp_ln354_1_fu_414_p2            |   icmp   |      0|  0|  11|           8|           8|
+    |icmp_ln354_fu_408_p2              |   icmp   |      0|  0|  11|           8|           8|
+    |icmp_ln360_fu_434_p2              |   icmp   |      0|  0|   8|           2|           1|
+    |icmp_ln361_1_fu_446_p2            |   icmp   |      0|  0|  11|           8|           8|
+    |icmp_ln361_fu_440_p2              |   icmp   |      0|  0|  11|           8|           8|
+    |icmp_ln367_fu_466_p2              |   icmp   |      0|  0|   9|           2|           3|
+    |icmp_ln368_1_fu_478_p2            |   icmp   |      0|  0|  11|           8|           8|
+    |icmp_ln368_fu_472_p2              |   icmp   |      0|  0|  11|           8|           8|
+    |icmp_ln374_fu_498_p2              |   icmp   |      0|  0|   8|           2|           2|
+    |icmp_ln375_fu_504_p2              |   icmp   |      0|  0|  11|           8|           8|
+    |icmp_ln382_1_fu_261_p2            |   icmp   |      0|  0|  13|          10|           9|
+    |icmp_ln382_2_fu_301_p2            |   icmp   |      0|  0|  11|           8|           1|
+    |icmp_ln382_3_fu_307_p2            |   icmp   |      0|  0|  13|          10|           9|
+    |icmp_ln382_fu_255_p2              |   icmp   |      0|  0|  11|           8|           1|
+    |ap_block_pp0_stage0_01001         |    or    |      0|  0|   2|           1|           1|
+    |ap_block_state1                   |    or    |      0|  0|   2|           1|           1|
+    |ap_block_state4_pp0_stage0_iter1  |    or    |      0|  0|   2|           1|           1|
+    |or_ln354_fu_420_p2                |    or    |      0|  0|   2|           1|           1|
+    |or_ln360_fu_510_p2                |    or    |      0|  0|   2|           1|           1|
+    |or_ln361_fu_452_p2                |    or    |      0|  0|   2|           1|           1|
+    |or_ln367_fu_564_p2                |    or    |      0|  0|   2|           1|           1|
+    |or_ln368_fu_484_p2                |    or    |      0|  0|   2|           1|           1|
+    |or_ln375_fu_617_p2                |    or    |      0|  0|   2|           1|           1|
+    |fifo4_din                         |  select  |      0|  0|   8|           1|           8|
+    |select_ln353_fu_536_p3            |  select  |      0|  0|   8|           1|           8|
+    |select_ln354_fu_426_p3            |  select  |      0|  0|   8|           1|           1|
+    |select_ln360_fu_556_p3            |  select  |      0|  0|   8|           1|           8|
+    |select_ln361_fu_458_p3            |  select  |      0|  0|   8|           1|           1|
+    |select_ln367_fu_528_p3            |  select  |      0|  0|   8|           1|           8|
+    |select_ln368_fu_490_p3            |  select  |      0|  0|   8|           1|           1|
+    |select_ln374_fu_628_p3            |  select  |      0|  0|   8|           1|           8|
+    |select_ln375_fu_621_p3            |  select  |      0|  0|   8|           1|           1|
+    |ap_enable_pp0                     |    xor   |      0|  0|   2|           1|           2|
+    |xor_ln353_fu_544_p2               |    xor   |      0|  0|   2|           1|           2|
+    |xor_ln360_fu_516_p2               |    xor   |      0|  0|   2|           1|           2|
+    |xor_ln367_fu_570_p2               |    xor   |      0|  0|   2|           1|           2|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |Total                             |          |      0|  0| 324|         169|         175|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                |  27|          5|    1|          5|
+    |ap_done                  |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter2  |  15|          3|    1|          3|
+    |fifo3_grad_blk_n         |   9|          2|    1|          2|
+    |fifo3_value_blk_n        |   9|          2|    1|          2|
+    |fifo4_blk_n              |   9|          2|    1|          2|
+    |real_start               |   9|          2|    1|          2|
+    |xi_0_i_reg_222           |   9|          2|   10|         20|
+    |yi_0_i_reg_211           |   9|          2|   10|         20|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    | 114|         24|   28|         60|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------------------------+----+----+-----+-----------+
+    |                Name                | FF | LUT| Bits| Const Bits|
+    +------------------------------------+----+----+-----+-----------+
+    |and_ln374_reg_759                   |   1|   0|    1|          0|
+    |and_ln382_1_reg_703                 |   1|   0|    1|          0|
+    |ap_CS_fsm                           |   4|   0|    4|          0|
+    |ap_done_reg                         |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter0             |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1             |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2             |   1|   0|    1|          0|
+    |grad_nms_fu_148                     |   2|   0|    2|          0|
+    |icmp_ln324_reg_708                  |   1|   0|    1|          0|
+    |icmp_ln324_reg_708_pp0_iter1_reg    |   1|   0|    1|          0|
+    |icmp_ln368_reg_744                  |   1|   0|    1|          0|
+    |icmp_ln375_reg_749                  |   1|   0|    1|          0|
+    |icmp_ln382_2_reg_729                |   1|   0|    1|          0|
+    |icmp_ln382_2_reg_729_pp0_iter1_reg  |   1|   0|    1|          0|
+    |icmp_ln382_3_reg_734                |   1|   0|    1|          0|
+    |icmp_ln382_3_reg_734_pp0_iter1_reg  |   1|   0|    1|          0|
+    |line_buf_grad_addr_reg_723          |   9|   0|    9|          0|
+    |line_buf_value_addr_reg_717         |   9|   0|    9|          0|
+    |select_ln360_reg_754                |   8|   0|    8|          0|
+    |start_once_reg                      |   1|   0|    1|          0|
+    |value_nms_1_fu_136                  |   8|   0|    8|          0|
+    |value_nms_fu_132                    |   8|   0|    8|          0|
+    |window_buf_0_1_val_1_fu_128         |   8|   0|    8|          0|
+    |window_buf_0_1_val_fu_124           |   8|   0|    8|          0|
+    |window_buf_1_1_val_reg_739          |   8|   0|    8|          0|
+    |window_buf_2_1_val_1_fu_144         |   8|   0|    8|          0|
+    |window_buf_2_1_val_fu_140           |   8|   0|    8|          0|
+    |xi_0_i_reg_222                      |  10|   0|   10|          0|
+    |yi_0_i_reg_211                      |  10|   0|   10|          0|
+    |yi_reg_698                          |  10|   0|   10|          0|
+    +------------------------------------+----+----+-----+-----------+
+    |Total                               | 133|   0|  133|          0|
+    +------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------+-----+-----+------------+-------------------+--------------+
+|      RTL Ports      | Dir | Bits|  Protocol  |   Source Object   |    C Type    |
++---------------------+-----+-----+------------+-------------------+--------------+
+|ap_clk               |  in |    1| ap_ctrl_hs | NonMaxSuppression | return value |
+|ap_rst               |  in |    1| ap_ctrl_hs | NonMaxSuppression | return value |
+|ap_start             |  in |    1| ap_ctrl_hs | NonMaxSuppression | return value |
+|start_full_n         |  in |    1| ap_ctrl_hs | NonMaxSuppression | return value |
+|ap_done              | out |    1| ap_ctrl_hs | NonMaxSuppression | return value |
+|ap_continue          |  in |    1| ap_ctrl_hs | NonMaxSuppression | return value |
+|ap_idle              | out |    1| ap_ctrl_hs | NonMaxSuppression | return value |
+|ap_ready             | out |    1| ap_ctrl_hs | NonMaxSuppression | return value |
+|start_out            | out |    1| ap_ctrl_hs | NonMaxSuppression | return value |
+|start_write          | out |    1| ap_ctrl_hs | NonMaxSuppression | return value |
+|fifo3_value_dout     |  in |    8|   ap_fifo  |    fifo3_value    |    pointer   |
+|fifo3_value_empty_n  |  in |    1|   ap_fifo  |    fifo3_value    |    pointer   |
+|fifo3_value_read     | out |    1|   ap_fifo  |    fifo3_value    |    pointer   |
+|fifo3_grad_dout      |  in |    2|   ap_fifo  |     fifo3_grad    |    pointer   |
+|fifo3_grad_empty_n   |  in |    1|   ap_fifo  |     fifo3_grad    |    pointer   |
+|fifo3_grad_read      | out |    1|   ap_fifo  |     fifo3_grad    |    pointer   |
+|fifo4_din            | out |    8|   ap_fifo  |       fifo4       |    pointer   |
+|fifo4_full_n         |  in |    1|   ap_fifo  |       fifo4       |    pointer   |
+|fifo4_write          | out |    1|   ap_fifo  |       fifo4       |    pointer   |
++---------------------+-----+-----+------------+-------------------+--------------+
+

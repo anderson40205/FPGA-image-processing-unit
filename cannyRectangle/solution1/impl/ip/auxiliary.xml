@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="canny_edge_rectangle" xd:componentRef="canny_edge_rectangle" xd:initiationInterval="2103847" xd:clockPeriod="11.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="axis_in-&gt;data" xd:originalName="axis_in" xd:direction="in" xd:interfaceRef="axis_in" xd:busTypeRef="axis" xd:dataWidth="24"/>
+  <xd:arg xd:name="axis_in-&gt;last" xd:originalName="axis_in" xd:direction="in" xd:interfaceRef="axis_in" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="axis_out-&gt;data" xd:originalName="axis_out" xd:direction="out" xd:interfaceRef="axis_out" xd:busTypeRef="axis" xd:dataWidth="24"/>
+  <xd:arg xd:name="axis_out-&gt;last" xd:originalName="axis_out" xd:direction="out" xd:interfaceRef="axis_out" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="hist_hthr" xd:originalName="hist_hthr" xd:direction="out" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_vld" xd:statusOffset="0x14" xd:dataWidth="8"/>
+  <xd:arg xd:name="hist_lthr" xd:originalName="hist_lthr" xd:direction="out" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x18" xd:handshakeRef="ap_vld" xd:statusOffset="0x1C" xd:dataWidth="8"/>
+  <xd:arg xd:name="bh" xd:originalName="bh" xd:direction="in" xd:interfaceRef="bh" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="8" xd:firstOut="0"/>
+  <xd:arg xd:name="bl" xd:originalName="bl" xd:direction="in" xd:interfaceRef="bl" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="8" xd:firstOut="0"/>
+  <xd:latencyEstimates xd:best-case="2103846" xd:worst-case="2103846" xd:average-case="2103846"/>
+  <xd:resourceEstimates xd:LUT="6011" xd:FF="4273" xd:BRAM="15" xd:DSP="5"/>
+</xd:acceleratorMap>

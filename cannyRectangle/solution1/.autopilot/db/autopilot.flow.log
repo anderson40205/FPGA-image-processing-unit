@@ -1,0 +1,1843 @@
+INFO-FLOW: Workspace C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1 opened at Fri May 26 21:01:10 +0800 2023
+Execute     config_clock -quiet -name default -period 11 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 11ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib E:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq 
+Execute       source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.lib 
+Execute       source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.118 sec.
+Command     ap_source done; 0.12 sec.
+Execute     set_part xc7z020clg400-1 
+Execute       ap_part_info -name xc7z020clg400-1 -data single -quiet 
+Command       ap_part_info done; 0.414 sec.
+Execute       ap_part_info -name xc7z020clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         ap_part_info -data single -name xc7z020-clg400-1 
+Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib E:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute             source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute               source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute               source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute                 source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute               source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 0.522 sec.
+Execute     ap_part_info -data single -name xc7z020clg400-1 
+Execute     ap_part_info -name xc7z020clg400-1 -data resources 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 0.687 sec.
+Execute   set_part xc7z020clg400-1 -tool vivado 
+Execute     ap_part_info -name xc7z020clg400-1 -data single -quiet 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute       get_default_platform 
+Execute       license_isbetapart xc7z020 
+Command       license_isbetapart done; error code: 1; 
+Execute       ap_part_info -data single -name xc7z020-clg400-1 
+Execute       ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_chip_info -quiet -speed slow 
+Execute     add_library xilinx/zynq/zynq_fpv6 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       import_lib E:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute             source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute             source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute               source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     get_default_platform 
+Execute   create_clock -period 11 -name default 
+Execute     config_clock -quiet -name default -period 11 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 11ns.
+Execute   csynth_design 
+Execute     get_config_compile -dump_cfg 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+Execute       get_config_schedule -suppress_dependence_error_break 
+INFO: [HLS 200-10] Analyzing design file 'cannyRectangle/canny_edge_rectangle.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling cannyRectangle/canny_edge_rectangle.cpp as C++
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       is_encrypted cannyRectangle/canny_edge_rectangle.cpp 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "E:/Xilinx/Vivado/2019.1/msys" -hls  -fno-exceptions  -D__llvm__  -E "cannyRectangle/canny_edge_rectangle.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "E:/Xilinx/Vivado/2019.1/common/technology/autopilot" -I "E:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.pp.0.cpp" 
+INFO-FLOW: exec E:/Xilinx/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain E:/Xilinx/Vivado/2019.1/msys -hls -fno-exceptions -D__llvm__ -E cannyRectangle/canny_edge_rectangle.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I E:/Xilinx/Vivado/2019.1/common/technology/autopilot -I E:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.pp.0.cpp
+Command       clang done; 1.112 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec E:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.907 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "E:/Xilinx/Vivado/2019.1/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "E:/Xilinx/Vivado/2019.1/common/technology/autopilot" -I "E:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.pp.0.cpp"  -o "C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec E:/Xilinx/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain E:/Xilinx/Vivado/2019.1/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I E:/Xilinx/Vivado/2019.1/common/technology/autopilot -I E:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.pp.0.cpp -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/useless.bc
+Command       clang done; 2.898 sec.
+INFO-FLOW: Done: GCC PP time: 4.9 seconds per iteration
+Execute       source E:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source E:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute         source E:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/try/try.tcl 
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.pp.0.cpp std=gnu++98 -directive=C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec E:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.852 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.pp.0.cpp std=gnu++98 -directive=C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec E:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/all.directive.json -quiet -fix-errors C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.836 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr E:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/xilinx-dataflow-lawyer.canny_edge_rectangle.pp.0.cpp.diag.yml C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/xilinx-dataflow-lawyer.canny_edge_rectangle.pp.0.cpp.out.log 2> C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/xilinx-dataflow-lawyer.canny_edge_rectangle.pp.0.cpp.err.log 
+Command       ap_eval done; 0.52 sec.
+Execute       source E:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Execute         source E:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+WARNING: [HLS 214-114] Only function calls and local variable declarations are allowed in a dataflow region: cannyRectangle/canny_edge_rectangle.cpp:56:2
+Execute       send_msg_by_id WARNING @200-471@%s%s 1 cannyRectangle/canny_edge_rectangle.cpp 
+WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file cannyRectangle/canny_edge_rectangle.cpp
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.pp.0.cpp std=gnu++98 
+Execute         ap_eval exec -ignorestderr E:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/tidy-3.1.canny_edge_rectangle.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/tidy-3.1.canny_edge_rectangle.pp.0.cpp.out.log 2> C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/tidy-3.1.canny_edge_rectangle.pp.0.cpp.err.log 
+Command         ap_eval done; 1.6 sec.
+Execute         ap_eval exec -ignorestderr E:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/xilinx-legacy-rewriter.canny_edge_rectangle.pp.0.cpp.out.log 2> C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/xilinx-legacy-rewriter.canny_edge_rectangle.pp.0.cpp.err.log 
+Command         ap_eval done; 0.56 sec.
+Command       tidy_31 done; 2.182 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 3.6 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.pragma.1.cpp std=gnu++98 
+INFO-FLOW: exec E:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 1.768 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: Processing labels
+Execute       clang -src C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain E:/Xilinx/Vivado/2019.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "E:/Xilinx/Vivado/2019.1/common/technology/autopilot" -I "E:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.bc" 
+INFO-FLOW: exec E:/Xilinx/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain E:/Xilinx/Vivado/2019.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I E:/Xilinx/Vivado/2019.1/common/technology/autopilot -I E:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.bc
+Command       clang done; 3.111 sec.
+INFO-FLOW: Linking Debug ...
+Execute       llvm-ld C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.g.bc -hls-opt -except-internalize canny_edge_rectangle -LE:/Xilinx/Vivado/2019.1/win64/lib -lhlsm -lhlsmc++ -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/a.g 
+Command       llvm-ld done; 1.072 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 177.723 ; gain = 83.875
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 177.723 ; gain = 83.875
+Execute       get_config_sdx -target 
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+Execute         transform -promote-dbg-pointer C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/a.pp.bc -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/a.pp.0.bc -f 
+Command         transform done; 0.115 sec.
+Execute         llvm-ld C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/a.pp.0.bc -disable-opt -LE:/Xilinx/Vivado/2019.1/win64/lib -lfloatconversion -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/a.g.0 
+Command         llvm-ld done; 1.269 sec.
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top canny_edge_rectangle -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/a.g.0.bc -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+Command         transform done; 0.788 sec.
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:19 . Memory (MB): peak = 217.812 ; gain = 123.965
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/a.g.1.bc -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:59) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' into 'generic_cast_IEEE754<int, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, float>' into '__hls_fptosi_float_i32' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:51) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::sqrt' into 'hlsimproc::HlsImProc::Sobel<1920u, 1080u>' (cannyRectangle/HlsImProc.hpp:265) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_float_i32' into 'hlsimproc::HlsImProc::Sobel<1920u, 1080u>' (cannyRectangle/HlsImProc.hpp:265) automatically.
+Command         transform done; 0.423 sec.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/a.g.2.prechk.bc -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+Command         transform done; 0.201 sec.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:02 ; elapsed = 00:00:20 . Memory (MB): peak = 270.848 ; gain = 177.000
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/a.g.1.bc to C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/a.o.1.bc -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'axis_out.data.V' (cannyRectangle/canny_edge_rectangle.cpp:39).
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'axis_in.data.V' (cannyRectangle/canny_edge_rectangle.cpp:39).
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' (cannyRectangle/HlsImProc.hpp:432) in function 'hlsimproc::HlsImProc::HystThresholdComp<1920u, 1080u>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' (cannyRectangle/HlsImProc.hpp:324) in function 'hlsimproc::HlsImProc::NonMaxSuppression<1920u, 1080u>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' (cannyRectangle/HlsImProc.hpp:221) in function 'hlsimproc::HlsImProc::Sobel<1920u, 1080u>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' (cannyRectangle/HlsImProc.hpp:151) in function 'hlsimproc::HlsImProc::GaussianBlur<1920u, 1080u>' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (cannyRectangle/HlsImProc.hpp:440) in function 'hlsimproc::HlsImProc::HystThresholdComp<1920u, 1080u>' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2' (cannyRectangle/HlsImProc.hpp:447) in function 'hlsimproc::HlsImProc::HystThresholdComp<1920u, 1080u>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2.1' (cannyRectangle/HlsImProc.hpp:448) in function 'hlsimproc::HlsImProc::HystThresholdComp<1920u, 1080u>' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.3' (cannyRectangle/HlsImProc.hpp:453) in function 'hlsimproc::HlsImProc::HystThresholdComp<1920u, 1080u>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.4' (cannyRectangle/HlsImProc.hpp:458) in function 'hlsimproc::HlsImProc::HystThresholdComp<1920u, 1080u>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.4.1' (cannyRectangle/HlsImProc.hpp:459) in function 'hlsimproc::HlsImProc::HystThresholdComp<1920u, 1080u>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (cannyRectangle/HlsImProc.hpp:333) in function 'hlsimproc::HlsImProc::NonMaxSuppression<1920u, 1080u>' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2' (cannyRectangle/HlsImProc.hpp:340) in function 'hlsimproc::HlsImProc::NonMaxSuppression<1920u, 1080u>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2.1' (cannyRectangle/HlsImProc.hpp:341) in function 'hlsimproc::HlsImProc::NonMaxSuppression<1920u, 1080u>' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.3' (cannyRectangle/HlsImProc.hpp:346) in function 'hlsimproc::HlsImProc::NonMaxSuppression<1920u, 1080u>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (cannyRectangle/HlsImProc.hpp:230) in function 'hlsimproc::HlsImProc::Sobel<1920u, 1080u>' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2' (cannyRectangle/HlsImProc.hpp:237) in function 'hlsimproc::HlsImProc::Sobel<1920u, 1080u>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2.1' (cannyRectangle/HlsImProc.hpp:238) in function 'hlsimproc::HlsImProc::Sobel<1920u, 1080u>' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.3' (cannyRectangle/HlsImProc.hpp:243) in function 'hlsimproc::HlsImProc::Sobel<1920u, 1080u>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.4' (cannyRectangle/HlsImProc.hpp:252) in function 'hlsimproc::HlsImProc::Sobel<1920u, 1080u>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.4.1' (cannyRectangle/HlsImProc.hpp:253) in function 'hlsimproc::HlsImProc::Sobel<1920u, 1080u>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.5' (cannyRectangle/HlsImProc.hpp:259) in function 'hlsimproc::HlsImProc::Sobel<1920u, 1080u>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.5.1' (cannyRectangle/HlsImProc.hpp:260) in function 'hlsimproc::HlsImProc::Sobel<1920u, 1080u>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (cannyRectangle/HlsImProc.hpp:159) in function 'hlsimproc::HlsImProc::GaussianBlur<1920u, 1080u>' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2' (cannyRectangle/HlsImProc.hpp:167) in function 'hlsimproc::HlsImProc::GaussianBlur<1920u, 1080u>' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2.1' (cannyRectangle/HlsImProc.hpp:168) in function 'hlsimproc::HlsImProc::GaussianBlur<1920u, 1080u>' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.3' (cannyRectangle/HlsImProc.hpp:174) in function 'hlsimproc::HlsImProc::GaussianBlur<1920u, 1080u>' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.4' (cannyRectangle/HlsImProc.hpp:180) in function 'hlsimproc::HlsImProc::GaussianBlur<1920u, 1080u>' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.4.1' (cannyRectangle/HlsImProc.hpp:181) in function 'hlsimproc::HlsImProc::GaussianBlur<1920u, 1080u>' completely with a factor of 5.
+INFO: [XFORM 203-131] Reshaping array 'line_buf' (cannyRectangle/HlsImProc.hpp:424) in dimension 1 completely.
+INFO: [XFORM 203-131] Reshaping array 'line_buf.value' (cannyRectangle/HlsImProc.hpp:316) in dimension 1 completely.
+INFO: [XFORM 203-131] Reshaping array 'line_buf.grad' (cannyRectangle/HlsImProc.hpp:316) in dimension 1 completely.
+INFO: [XFORM 203-131] Reshaping array 'line_buf' (cannyRectangle/HlsImProc.hpp:199) in dimension 1 completely.
+INFO: [XFORM 203-131] Reshaping array 'line_buf' (cannyRectangle/HlsImProc.hpp:138) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'window_buf' (cannyRectangle/HlsImProc.hpp:425) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'window_buf.value' (cannyRectangle/HlsImProc.hpp:317) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'window_buf.grad' (cannyRectangle/HlsImProc.hpp:317) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'window_buf' (cannyRectangle/HlsImProc.hpp:200) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'H_SOBEL_KERNEL'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'V_SOBEL_KERNEL'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'window_buf' (cannyRectangle/HlsImProc.hpp:139) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'GAUSS_KERNEL'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'window_buf' (cannyRectangle/HlsImProc.hpp:425) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'window_buf.value' (cannyRectangle/HlsImProc.hpp:317) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'window_buf.grad' (cannyRectangle/HlsImProc.hpp:317) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'window_buf' (cannyRectangle/HlsImProc.hpp:200) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'H_SOBEL_KERNEL'  in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'V_SOBEL_KERNEL'  in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'window_buf' (cannyRectangle/HlsImProc.hpp:139) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'GAUSS_KERNEL'  in dimension 2 completely.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:59) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' into 'generic_cast_IEEE754<int, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, float>' into '__hls_fptosi_float_i32' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:51) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::sqrt' into 'hlsimproc::HlsImProc::Sobel<1920u, 1080u>' (cannyRectangle/HlsImProc.hpp:265) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_float_i32' into 'hlsimproc::HlsImProc::Sobel<1920u, 1080u>' (cannyRectangle/HlsImProc.hpp:265) automatically.
+INFO: [XFORM 203-712] Applying dataflow to function 'canny_edge_rectangle', detected/extracted 10 process function(s): 
+	 'canny_edge_rectangle.entry66'
+	 'Block__proc'
+	 'hlsimproc::HlsImProc::AXIS2GrayArray<1920u, 1080u>'
+	 'hlsimproc::HlsImProc::GaussianBlur<1920u, 1080u>'
+	 'hlsimproc::HlsImProc::Sobel<1920u, 1080u>'
+	 'hlsimproc::HlsImProc::NonMaxSuppression<1920u, 1080u>'
+	 'hlsimproc::HlsImProc::ZeroPadding<1920u, 1080u>'
+	 'hlsimproc::HlsImProc::HystThreshold<1920u, 1080u>'
+	 'hlsimproc::HlsImProc::HystThresholdComp<1920u, 1080u>'
+	 'hlsimproc::HlsImProc::GrayArray2AXIS<1920u, 1080u>'.
+WARNING: [XFORM 203-124] Array  'fifo3.value' : may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
+WARNING: [XFORM 203-124] Array  'fifo3.grad' : may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
+Command         transform done; 1.228 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/a.o.1.tmp.bc -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cannyRectangle/HlsImProc.hpp:282:17) to (cannyRectangle/HlsImProc.hpp:299:17) in function 'hlsimproc::HlsImProc::Sobel<1920u, 1080u>'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cannyRectangle/HlsImProc.hpp:324:48) to (cannyRectangle/HlsImProc.hpp:324:41) in function 'hlsimproc::HlsImProc::NonMaxSuppression<1920u, 1080u>'... converting 9 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cannyRectangle/HlsImProc.hpp:432:48) to (cannyRectangle/HlsImProc.hpp:432:41) in function 'hlsimproc::HlsImProc::HystThresholdComp<1920u, 1080u>'... converting 17 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cannyRectangle/HlsImProc.hpp:397:48) to (cannyRectangle/HlsImProc.hpp:397:41) in function 'hlsimproc::HlsImProc::HystThreshold<1920u, 1080u>'... converting 3 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'hlsimproc::HlsImProc::ZeroPadding<1920u, 1080u>' (cannyRectangle/HlsImProc.hpp:475:41)...3 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'hlsimproc::HlsImProc::Sobel<1920u, 1080u>' (cannyRectangle/HlsImProc.hpp:7:41)...3 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'hlsimproc::HlsImProc::NonMaxSuppression<1920u, 1080u>' (cannyRectangle/HlsImProc.hpp:316:41)...3 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'hlsimproc::HlsImProc::HystThresholdComp<1920u, 1080u>' (cannyRectangle/HlsImProc.hpp:424:41)...8 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'hlsimproc::HlsImProc::GaussianBlur<1920u, 1080u>' (cannyRectangle/HlsImProc.hpp:138:41)...21 expression(s) balanced.
+Command         transform done; 0.628 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:22 . Memory (MB): peak = 345.863 ; gain = 252.016
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -ptrLegalization -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/a.o.2.bc -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+WARNING: [XFORM 203-631] Renaming function 'hlsimproc::HlsImProc::ZeroPadding<1920u, 1080u>' to 'ZeroPadding' (cannyRectangle/HlsImProc.hpp:475:41)
+WARNING: [XFORM 203-631] Renaming function 'hlsimproc::HlsImProc::Sobel<1920u, 1080u>' to 'Sobel<1920u, 1080u>' (cannyRectangle/HlsImProc.hpp:7:41)
+WARNING: [XFORM 203-631] Renaming function 'hlsimproc::HlsImProc::NonMaxSuppression<1920u, 1080u>' to 'NonMaxSuppression' (cannyRectangle/HlsImProc.hpp:316:41)
+WARNING: [XFORM 203-631] Renaming function 'hlsimproc::HlsImProc::HystThresholdComp<1920u, 1080u>' to 'HystThresholdComp' (cannyRectangle/HlsImProc.hpp:424:41)
+WARNING: [XFORM 203-631] Renaming function 'hlsimproc::HlsImProc::HystThreshold<1920u, 1080u>' to 'HystThreshold' (cannyRectangle/HlsImProc.hpp:39:41)
+WARNING: [XFORM 203-631] Renaming function 'hlsimproc::HlsImProc::GrayArray2AXIS<1920u, 1080u>' to 'GrayArray2AXIS' (cannyRectangle/HlsImProc.hpp:116:41)
+WARNING: [XFORM 203-631] Renaming function 'hlsimproc::HlsImProc::GaussianBlur<1920u, 1080u>' to 'GaussianBlur' (cannyRectangle/HlsImProc.hpp:138:41)
+WARNING: [XFORM 203-631] Renaming function 'hlsimproc::HlsImProc::AXIS2GrayArray<1920u, 1080u>' to 'AXIS2GrayArray' (cannyRectangle/HlsImProc.hpp:86:41)
+WARNING: [XFORM 203-631] Renaming function 'canny_edge_rectangle.entry66' to 'canny_edge_rectangle.1.1' (cannyRectangle/canny_edge_rectangle.cpp:47:1)
+WARNING: [XFORM 203-631] Renaming function 'canny_edge_rectangle.entry3' to 'canny_edge_rectangle.1.2' 
+WARNING: [XFORM 203-631] Renaming function 'canny_edge_rectangle.1.1' to 'canny_edge_rectangle.2' (cannyRectangle/canny_edge_rectangle.cpp:39:130)
+Command         transform done; 1.202 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:23 . Memory (MB): peak = 465.422 ; gain = 371.574
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 5.893 sec.
+Command     elaborate done; 21.538 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'canny_edge_rectangle' ...
+Execute       ap_set_top_model canny_edge_rectangle 
+WARNING: [SYN 201-103] Legalizing function name 'canny_edge_rectangle.1.2' to 'canny_edge_rectangle_1_2'.
+WARNING: [SYN 201-103] Legalizing function name 'canny_edge_rectangle.2' to 'canny_edge_rectangle_2'.
+WARNING: [SYN 201-103] Legalizing function name 'Block__proc' to 'Block_proc'.
+WARNING: [SYN 201-103] Legalizing function name 'Sobel<1920u, 1080u>' to 'Sobel_1920u_1080u_s'.
+Execute       get_model_list canny_edge_rectangle -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model canny_edge_rectangle 
+Execute       preproc_iomode -model GrayArray2AXIS 
+Execute       preproc_iomode -model HystThresholdComp 
+Execute       preproc_iomode -model HystThreshold 
+Execute       preproc_iomode -model ZeroPadding 
+Execute       preproc_iomode -model NonMaxSuppression 
+Execute       preproc_iomode -model Sobel<1920u, 1080u> 
+Execute       preproc_iomode -model GaussianBlur 
+Execute       preproc_iomode -model AXIS2GrayArray 
+Execute       preproc_iomode -model Block__proc 
+Execute       preproc_iomode -model canny_edge_rectangle.2 
+Execute       preproc_iomode -model canny_edge_rectangle.1.2 
+Execute       get_model_list canny_edge_rectangle -filter all-wo-channel 
+INFO-FLOW: Model list for configure: canny_edge_rectangle.1.2 canny_edge_rectangle.2 Block__proc AXIS2GrayArray GaussianBlur {Sobel<1920u, 1080u>} NonMaxSuppression ZeroPadding HystThreshold HystThresholdComp GrayArray2AXIS canny_edge_rectangle
+INFO-FLOW: Configuring Module : canny_edge_rectangle.1.2 ...
+Execute       set_default_model canny_edge_rectangle.1.2 
+Execute       apply_spec_resource_limit canny_edge_rectangle.1.2 
+INFO-FLOW: Configuring Module : canny_edge_rectangle.2 ...
+Execute       set_default_model canny_edge_rectangle.2 
+Execute       apply_spec_resource_limit canny_edge_rectangle.2 
+INFO-FLOW: Configuring Module : Block__proc ...
+Execute       set_default_model Block__proc 
+Execute       apply_spec_resource_limit Block__proc 
+INFO-FLOW: Configuring Module : AXIS2GrayArray ...
+Execute       set_default_model AXIS2GrayArray 
+Execute       apply_spec_resource_limit AXIS2GrayArray 
+INFO-FLOW: Configuring Module : GaussianBlur ...
+Execute       set_default_model GaussianBlur 
+Execute       apply_spec_resource_limit GaussianBlur 
+INFO-FLOW: Configuring Module : Sobel<1920u, 1080u> ...
+Execute       set_default_model Sobel<1920u, 1080u> 
+Execute       apply_spec_resource_limit Sobel<1920u, 1080u> 
+INFO-FLOW: Configuring Module : NonMaxSuppression ...
+Execute       set_default_model NonMaxSuppression 
+Execute       apply_spec_resource_limit NonMaxSuppression 
+INFO-FLOW: Configuring Module : ZeroPadding ...
+Execute       set_default_model ZeroPadding 
+Execute       apply_spec_resource_limit ZeroPadding 
+INFO-FLOW: Configuring Module : HystThreshold ...
+Execute       set_default_model HystThreshold 
+Execute       apply_spec_resource_limit HystThreshold 
+INFO-FLOW: Configuring Module : HystThresholdComp ...
+Execute       set_default_model HystThresholdComp 
+Execute       apply_spec_resource_limit HystThresholdComp 
+INFO-FLOW: Configuring Module : GrayArray2AXIS ...
+Execute       set_default_model GrayArray2AXIS 
+Execute       apply_spec_resource_limit GrayArray2AXIS 
+INFO-FLOW: Configuring Module : canny_edge_rectangle ...
+Execute       set_default_model canny_edge_rectangle 
+Execute       apply_spec_resource_limit canny_edge_rectangle 
+INFO-FLOW: Model list for preprocess: canny_edge_rectangle.1.2 canny_edge_rectangle.2 Block__proc AXIS2GrayArray GaussianBlur {Sobel<1920u, 1080u>} NonMaxSuppression ZeroPadding HystThreshold HystThresholdComp GrayArray2AXIS canny_edge_rectangle
+INFO-FLOW: Preprocessing Module: canny_edge_rectangle.1.2 ...
+Execute       set_default_model canny_edge_rectangle.1.2 
+Execute       cdfg_preprocess -model canny_edge_rectangle.1.2 
+Execute       rtl_gen_preprocess canny_edge_rectangle.1.2 
+INFO-FLOW: Preprocessing Module: canny_edge_rectangle.2 ...
+Execute       set_default_model canny_edge_rectangle.2 
+Execute       cdfg_preprocess -model canny_edge_rectangle.2 
+Execute       rtl_gen_preprocess canny_edge_rectangle.2 
+INFO-FLOW: Preprocessing Module: Block__proc ...
+Execute       set_default_model Block__proc 
+Execute       cdfg_preprocess -model Block__proc 
+Execute       rtl_gen_preprocess Block__proc 
+INFO-FLOW: Preprocessing Module: AXIS2GrayArray ...
+Execute       set_default_model AXIS2GrayArray 
+Execute       cdfg_preprocess -model AXIS2GrayArray 
+Execute       rtl_gen_preprocess AXIS2GrayArray 
+INFO-FLOW: Preprocessing Module: GaussianBlur ...
+Execute       set_default_model GaussianBlur 
+Execute       cdfg_preprocess -model GaussianBlur 
+Execute       rtl_gen_preprocess GaussianBlur 
+INFO-FLOW: Preprocessing Module: Sobel<1920u, 1080u> ...
+Execute       set_default_model Sobel<1920u, 1080u> 
+Execute       cdfg_preprocess -model Sobel<1920u, 1080u> 
+Execute       rtl_gen_preprocess Sobel<1920u, 1080u> 
+INFO-FLOW: Preprocessing Module: NonMaxSuppression ...
+Execute       set_default_model NonMaxSuppression 
+Execute       cdfg_preprocess -model NonMaxSuppression 
+Execute       rtl_gen_preprocess NonMaxSuppression 
+INFO-FLOW: Preprocessing Module: ZeroPadding ...
+Execute       set_default_model ZeroPadding 
+Execute       cdfg_preprocess -model ZeroPadding 
+Execute       rtl_gen_preprocess ZeroPadding 
+INFO-FLOW: Preprocessing Module: HystThreshold ...
+Execute       set_default_model HystThreshold 
+Execute       cdfg_preprocess -model HystThreshold 
+Execute       rtl_gen_preprocess HystThreshold 
+INFO-FLOW: Preprocessing Module: HystThresholdComp ...
+Execute       set_default_model HystThresholdComp 
+Execute       cdfg_preprocess -model HystThresholdComp 
+Execute       rtl_gen_preprocess HystThresholdComp 
+INFO-FLOW: Preprocessing Module: GrayArray2AXIS ...
+Execute       set_default_model GrayArray2AXIS 
+Execute       cdfg_preprocess -model GrayArray2AXIS 
+Execute       rtl_gen_preprocess GrayArray2AXIS 
+INFO-FLOW: Preprocessing Module: canny_edge_rectangle ...
+Execute       set_default_model canny_edge_rectangle 
+Execute       cdfg_preprocess -model canny_edge_rectangle 
+Execute       rtl_gen_preprocess canny_edge_rectangle 
+INFO-FLOW: Model list for synthesis: canny_edge_rectangle.1.2 canny_edge_rectangle.2 Block__proc AXIS2GrayArray GaussianBlur {Sobel<1920u, 1080u>} NonMaxSuppression ZeroPadding HystThreshold HystThresholdComp GrayArray2AXIS canny_edge_rectangle
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'canny_edge_rectangle_1_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model canny_edge_rectangle.1.2 
+Execute       schedule -model canny_edge_rectangle.1.2 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 22.94 seconds; current allocated memory: 405.738 MB.
+Execute       syn_report -verbosereport -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle_1_2.verbose.sched.rpt 
+Execute       db_write -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle_1_2.sched.adb -f 
+INFO-FLOW: Finish scheduling canny_edge_rectangle.1.2.
+Execute       set_default_model canny_edge_rectangle.1.2 
+Execute       bind -model canny_edge_rectangle.1.2 
+BIND OPTION: model=canny_edge_rectangle.1.2
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.079 seconds; current allocated memory: 405.805 MB.
+Execute       syn_report -verbosereport -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle_1_2.verbose.bind.rpt 
+Execute       db_write -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle_1_2.bind.adb -f 
+INFO-FLOW: Finish binding canny_edge_rectangle.1.2.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'canny_edge_rectangle_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model canny_edge_rectangle.2 
+Execute       schedule -model canny_edge_rectangle.2 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.162 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.232 seconds; current allocated memory: 405.850 MB.
+Execute       syn_report -verbosereport -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle_2.verbose.sched.rpt 
+Execute       db_write -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle_2.sched.adb -f 
+INFO-FLOW: Finish scheduling canny_edge_rectangle.2.
+Execute       set_default_model canny_edge_rectangle.2 
+Execute       bind -model canny_edge_rectangle.2 
+BIND OPTION: model=canny_edge_rectangle.2
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.081 seconds; current allocated memory: 405.971 MB.
+Execute       syn_report -verbosereport -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle_2.verbose.bind.rpt 
+Execute       db_write -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle_2.bind.adb -f 
+INFO-FLOW: Finish binding canny_edge_rectangle.2.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Block__proc 
+Execute       schedule -model Block__proc 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.142 seconds; current allocated memory: 406.005 MB.
+Execute       syn_report -verbosereport -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/Block_proc.verbose.sched.rpt 
+Execute       db_write -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/Block_proc.sched.adb -f 
+INFO-FLOW: Finish scheduling Block__proc.
+Execute       set_default_model Block__proc 
+Execute       bind -model Block__proc 
+BIND OPTION: model=Block__proc
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.078 seconds; current allocated memory: 406.065 MB.
+Execute       syn_report -verbosereport -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/Block_proc.verbose.bind.rpt 
+Execute       db_write -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/Block_proc.bind.adb -f 
+INFO-FLOW: Finish binding Block__proc.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AXIS2GrayArray' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model AXIS2GrayArray 
+Execute       schedule -model AXIS2GrayArray 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+WARNING: [SCHED 204-21] Estimated clock period (10.648ns) exceeds the target (target clock period: 11ns, clock uncertainty: 1.375ns, effective delay budget: 9.625ns).
+WARNING: [SCHED 204-21] The critical path in module 'AXIS2GrayArray' consists of the following:
+	'mul' operation of DSP[33] ('mul_ln544_1', cannyRectangle/HlsImProc.hpp:97) [32]  (3.36 ns)
+	'add' operation of DSP[33] ('add_ln544', cannyRectangle/HlsImProc.hpp:97) [33]  (3.02 ns)
+	'add' operation of DSP[35] ('pix_gray', cannyRectangle/HlsImProc.hpp:97) [35]  (3.02 ns)
+	'select' operation ('phitmp318', cannyRectangle/HlsImProc.hpp:105) [38]  (1.25 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.143 seconds; current allocated memory: 406.211 MB.
+Execute       syn_report -verbosereport -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/AXIS2GrayArray.verbose.sched.rpt 
+INFO: [HLS 200-434] Only 1 loops out of a total 2 loops have been pipelined in this design.
+Execute       db_write -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/AXIS2GrayArray.sched.adb -f 
+INFO-FLOW: Finish scheduling AXIS2GrayArray.
+Execute       set_default_model AXIS2GrayArray 
+Execute       bind -model AXIS2GrayArray 
+BIND OPTION: model=AXIS2GrayArray
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.111 seconds; current allocated memory: 406.369 MB.
+Execute       syn_report -verbosereport -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/AXIS2GrayArray.verbose.bind.rpt 
+Execute       db_write -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/AXIS2GrayArray.bind.adb -f 
+INFO-FLOW: Finish binding AXIS2GrayArray.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'GaussianBlur' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model GaussianBlur 
+Execute       schedule -model GaussianBlur 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.134 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.233 seconds; current allocated memory: 406.927 MB.
+Execute       syn_report -verbosereport -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/GaussianBlur.verbose.sched.rpt 
+Execute       db_write -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/GaussianBlur.sched.adb -f 
+INFO-FLOW: Finish scheduling GaussianBlur.
+Execute       set_default_model GaussianBlur 
+Execute       bind -model GaussianBlur 
+BIND OPTION: model=GaussianBlur
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.197 seconds; current allocated memory: 407.508 MB.
+Execute       syn_report -verbosereport -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/GaussianBlur.verbose.bind.rpt 
+Execute       db_write -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/GaussianBlur.bind.adb -f 
+INFO-FLOW: Finish binding GaussianBlur.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Sobel_1920u_1080u_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Sobel<1920u, 1080u> 
+Execute       schedule -model Sobel<1920u, 1080u> 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 27.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.196 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.379 seconds; current allocated memory: 408.013 MB.
+Execute       syn_report -verbosereport -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/Sobel_1920u_1080u_s.verbose.sched.rpt 
+Execute       db_write -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/Sobel_1920u_1080u_s.sched.adb -f 
+INFO-FLOW: Finish scheduling Sobel<1920u, 1080u>.
+Execute       set_default_model Sobel<1920u, 1080u> 
+Execute       bind -model Sobel<1920u, 1080u> 
+BIND OPTION: model=Sobel<1920u, 1080u>
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.211 seconds; current allocated memory: 408.637 MB.
+Execute       syn_report -verbosereport -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/Sobel_1920u_1080u_s.verbose.bind.rpt 
+Execute       db_write -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/Sobel_1920u_1080u_s.bind.adb -f 
+INFO-FLOW: Finish binding Sobel<1920u, 1080u>.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'NonMaxSuppression' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model NonMaxSuppression 
+Execute       schedule -model NonMaxSuppression 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.12 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.314 seconds; current allocated memory: 409.027 MB.
+Execute       syn_report -verbosereport -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/NonMaxSuppression.verbose.sched.rpt 
+Execute       db_write -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/NonMaxSuppression.sched.adb -f 
+INFO-FLOW: Finish scheduling NonMaxSuppression.
+Execute       set_default_model NonMaxSuppression 
+Execute       bind -model NonMaxSuppression 
+BIND OPTION: model=NonMaxSuppression
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.142 seconds; current allocated memory: 409.393 MB.
+Execute       syn_report -verbosereport -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/NonMaxSuppression.verbose.bind.rpt 
+Execute       db_write -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/NonMaxSuppression.bind.adb -f 
+INFO-FLOW: Finish binding NonMaxSuppression.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'ZeroPadding' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model ZeroPadding 
+Execute       schedule -model ZeroPadding 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.226 seconds; current allocated memory: 409.518 MB.
+Execute       syn_report -verbosereport -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/ZeroPadding.verbose.sched.rpt 
+Execute       db_write -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/ZeroPadding.sched.adb -f 
+INFO-FLOW: Finish scheduling ZeroPadding.
+Execute       set_default_model ZeroPadding 
+Execute       bind -model ZeroPadding 
+BIND OPTION: model=ZeroPadding
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.105 seconds; current allocated memory: 409.648 MB.
+Execute       syn_report -verbosereport -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/ZeroPadding.verbose.bind.rpt 
+Execute       db_write -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/ZeroPadding.bind.adb -f 
+INFO-FLOW: Finish binding ZeroPadding.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'HystThreshold' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model HystThreshold 
+Execute       schedule -model HystThreshold 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.133 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.233 seconds; current allocated memory: 409.747 MB.
+Execute       syn_report -verbosereport -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/HystThreshold.verbose.sched.rpt 
+Execute       db_write -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/HystThreshold.sched.adb -f 
+INFO-FLOW: Finish scheduling HystThreshold.
+Execute       set_default_model HystThreshold 
+Execute       bind -model HystThreshold 
+BIND OPTION: model=HystThreshold
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 409.942 MB.
+Execute       syn_report -verbosereport -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/HystThreshold.verbose.bind.rpt 
+Execute       db_write -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/HystThreshold.bind.adb -f 
+INFO-FLOW: Finish binding HystThreshold.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'HystThresholdComp' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model HystThresholdComp 
+Execute       schedule -model HystThresholdComp 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.189 seconds; current allocated memory: 410.113 MB.
+Execute       syn_report -verbosereport -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/HystThresholdComp.verbose.sched.rpt 
+Execute       db_write -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/HystThresholdComp.sched.adb -f 
+INFO-FLOW: Finish scheduling HystThresholdComp.
+Execute       set_default_model HystThresholdComp 
+Execute       bind -model HystThresholdComp 
+BIND OPTION: model=HystThresholdComp
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.127 seconds; current allocated memory: 410.349 MB.
+Execute       syn_report -verbosereport -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/HystThresholdComp.verbose.bind.rpt 
+Execute       db_write -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/HystThresholdComp.bind.adb -f 
+INFO-FLOW: Finish binding HystThresholdComp.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'GrayArray2AXIS' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model GrayArray2AXIS 
+Execute       schedule -model GrayArray2AXIS 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.181 seconds; current allocated memory: 410.467 MB.
+Execute       syn_report -verbosereport -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/GrayArray2AXIS.verbose.sched.rpt 
+Execute       db_write -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/GrayArray2AXIS.sched.adb -f 
+INFO-FLOW: Finish scheduling GrayArray2AXIS.
+Execute       set_default_model GrayArray2AXIS 
+Execute       bind -model GrayArray2AXIS 
+BIND OPTION: model=GrayArray2AXIS
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.103 seconds; current allocated memory: 410.590 MB.
+Execute       syn_report -verbosereport -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/GrayArray2AXIS.verbose.bind.rpt 
+Execute       db_write -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/GrayArray2AXIS.bind.adb -f 
+INFO-FLOW: Finish binding GrayArray2AXIS.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'canny_edge_rectangle' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model canny_edge_rectangle 
+Execute       schedule -model canny_edge_rectangle 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.119 seconds; current allocated memory: 410.741 MB.
+Execute       syn_report -verbosereport -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.verbose.sched.rpt 
+Execute       db_write -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.sched.adb -f 
+INFO-FLOW: Finish scheduling canny_edge_rectangle.
+Execute       set_default_model canny_edge_rectangle 
+Execute       bind -model canny_edge_rectangle 
+BIND OPTION: model=canny_edge_rectangle
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.388 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.472 seconds; current allocated memory: 411.491 MB.
+Execute       syn_report -verbosereport -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.verbose.bind.rpt 
+Command       syn_report done; 0.172 sec.
+Execute       db_write -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.bind.adb -f 
+INFO-FLOW: Finish binding canny_edge_rectangle.
+Execute       get_model_list canny_edge_rectangle -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess canny_edge_rectangle.1.2 
+Execute       rtl_gen_preprocess canny_edge_rectangle.2 
+Execute       rtl_gen_preprocess Block__proc 
+Execute       rtl_gen_preprocess AXIS2GrayArray 
+Execute       rtl_gen_preprocess GaussianBlur 
+Execute       rtl_gen_preprocess Sobel<1920u, 1080u> 
+Execute       rtl_gen_preprocess NonMaxSuppression 
+Execute       rtl_gen_preprocess ZeroPadding 
+Execute       rtl_gen_preprocess HystThreshold 
+Execute       rtl_gen_preprocess HystThresholdComp 
+Execute       rtl_gen_preprocess GrayArray2AXIS 
+Execute       rtl_gen_preprocess canny_edge_rectangle 
+INFO-FLOW: Model list for RTL generation: canny_edge_rectangle.1.2 canny_edge_rectangle.2 Block__proc AXIS2GrayArray GaussianBlur {Sobel<1920u, 1080u>} NonMaxSuppression ZeroPadding HystThreshold HystThresholdComp GrayArray2AXIS canny_edge_rectangle
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'canny_edge_rectangle_1_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model canny_edge_rectangle.1.2 -vendor xilinx -mg_file C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle_1_2.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'canny_edge_rectangle_1_2'.
+INFO: [HLS 200-111]  Elapsed time: 0.273 seconds; current allocated memory: 411.791 MB.
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.rtl_wrap.cfg.tcl 
+Execute       gen_rtl canny_edge_rectangle.1.2 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/systemc/canny_edge_rectangle_1_2 -synmodules canny_edge_rectangle.1.2 canny_edge_rectangle.2 Block__proc AXIS2GrayArray GaussianBlur {Sobel<1920u, 1080u>} NonMaxSuppression ZeroPadding HystThreshold HystThresholdComp GrayArray2AXIS canny_edge_rectangle 
+Execute       gen_rtl canny_edge_rectangle.1.2 -style xilinx -f -lang vhdl -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/vhdl/canny_edge_rectangle_1_2 
+Execute       gen_rtl canny_edge_rectangle.1.2 -style xilinx -f -lang vlog -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/verilog/canny_edge_rectangle_1_2 
+Execute       syn_report -csynth -model canny_edge_rectangle.1.2 -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/report/canny_edge_rectangle_1_2_csynth.rpt 
+Execute       syn_report -rtlxml -model canny_edge_rectangle.1.2 -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/report/canny_edge_rectangle_1_2_csynth.xml 
+Execute       syn_report -verbosereport -model canny_edge_rectangle.1.2 -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle_1_2.verbose.rpt 
+Execute       db_write -model canny_edge_rectangle.1.2 -f -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle_1_2.adb 
+Execute       gen_tb_info canny_edge_rectangle.1.2 -p C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle_1_2 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'canny_edge_rectangle_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model canny_edge_rectangle.2 -vendor xilinx -mg_file C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle_2.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'canny_edge_rectangle_2'.
+INFO: [HLS 200-111]  Elapsed time: 0.118 seconds; current allocated memory: 412.027 MB.
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.rtl_wrap.cfg.tcl 
+Execute       gen_rtl canny_edge_rectangle.2 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/systemc/canny_edge_rectangle_2 -synmodules canny_edge_rectangle.1.2 canny_edge_rectangle.2 Block__proc AXIS2GrayArray GaussianBlur {Sobel<1920u, 1080u>} NonMaxSuppression ZeroPadding HystThreshold HystThresholdComp GrayArray2AXIS canny_edge_rectangle 
+Execute       gen_rtl canny_edge_rectangle.2 -style xilinx -f -lang vhdl -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/vhdl/canny_edge_rectangle_2 
+Execute       gen_rtl canny_edge_rectangle.2 -style xilinx -f -lang vlog -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/verilog/canny_edge_rectangle_2 
+Execute       syn_report -csynth -model canny_edge_rectangle.2 -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/report/canny_edge_rectangle_2_csynth.rpt 
+Execute       syn_report -rtlxml -model canny_edge_rectangle.2 -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/report/canny_edge_rectangle_2_csynth.xml 
+Execute       syn_report -verbosereport -model canny_edge_rectangle.2 -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle_2.verbose.rpt 
+Execute       db_write -model canny_edge_rectangle.2 -f -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle_2.adb 
+Execute       gen_tb_info canny_edge_rectangle.2 -p C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle_2 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Block_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model Block__proc -vendor xilinx -mg_file C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/Block_proc.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_proc'.
+INFO: [HLS 200-111]  Elapsed time: 0.145 seconds; current allocated memory: 412.225 MB.
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Block__proc -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/systemc/Block_proc -synmodules canny_edge_rectangle.1.2 canny_edge_rectangle.2 Block__proc AXIS2GrayArray GaussianBlur {Sobel<1920u, 1080u>} NonMaxSuppression ZeroPadding HystThreshold HystThresholdComp GrayArray2AXIS canny_edge_rectangle 
+Execute       gen_rtl Block__proc -style xilinx -f -lang vhdl -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/vhdl/Block_proc 
+Execute       gen_rtl Block__proc -style xilinx -f -lang vlog -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/verilog/Block_proc 
+Execute       syn_report -csynth -model Block__proc -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/report/Block_proc_csynth.rpt 
+Execute       syn_report -rtlxml -model Block__proc -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/report/Block_proc_csynth.xml 
+Execute       syn_report -verbosereport -model Block__proc -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/Block_proc.verbose.rpt 
+Execute       db_write -model Block__proc -f -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/Block_proc.adb 
+Execute       gen_tb_info Block__proc -p C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/Block_proc 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AXIS2GrayArray' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model AXIS2GrayArray -vendor xilinx -mg_file C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/AXIS2GrayArray.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'canny_edge_rectangle_mul_mul_15ns_8ns_23_1_1' to 'canny_edge_rectanbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'canny_edge_rectangle_mac_muladd_17ns_8ns_23ns_25_1_1' to 'canny_edge_rectancud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'canny_edge_rectangle_mac_muladd_16ns_8ns_23ns_23_1_1' to 'canny_edge_rectandEe' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'canny_edge_rectanbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'canny_edge_rectancud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'canny_edge_rectandEe': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIS2GrayArray'.
+INFO: [HLS 200-111]  Elapsed time: 0.179 seconds; current allocated memory: 412.650 MB.
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.rtl_wrap.cfg.tcl 
+Execute       gen_rtl AXIS2GrayArray -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/systemc/AXIS2GrayArray -synmodules canny_edge_rectangle.1.2 canny_edge_rectangle.2 Block__proc AXIS2GrayArray GaussianBlur {Sobel<1920u, 1080u>} NonMaxSuppression ZeroPadding HystThreshold HystThresholdComp GrayArray2AXIS canny_edge_rectangle 
+Execute       gen_rtl AXIS2GrayArray -style xilinx -f -lang vhdl -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/vhdl/AXIS2GrayArray 
+Execute       gen_rtl AXIS2GrayArray -style xilinx -f -lang vlog -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/verilog/AXIS2GrayArray 
+Execute       syn_report -csynth -model AXIS2GrayArray -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/report/AXIS2GrayArray_csynth.rpt 
+Execute       syn_report -rtlxml -model AXIS2GrayArray -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/report/AXIS2GrayArray_csynth.xml 
+Execute       syn_report -verbosereport -model AXIS2GrayArray -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/AXIS2GrayArray.verbose.rpt 
+Execute       db_write -model AXIS2GrayArray -f -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/AXIS2GrayArray.adb 
+Execute       gen_tb_info AXIS2GrayArray -p C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/AXIS2GrayArray 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'GaussianBlur' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model GaussianBlur -vendor xilinx -mg_file C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/GaussianBlur.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'GaussianBlur_line_buf' to 'GaussianBlur_lineeOg' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'GaussianBlur'.
+INFO: [HLS 200-111]  Elapsed time: 0.251 seconds; current allocated memory: 413.701 MB.
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.rtl_wrap.cfg.tcl 
+Execute       gen_rtl GaussianBlur -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/systemc/GaussianBlur -synmodules canny_edge_rectangle.1.2 canny_edge_rectangle.2 Block__proc AXIS2GrayArray GaussianBlur {Sobel<1920u, 1080u>} NonMaxSuppression ZeroPadding HystThreshold HystThresholdComp GrayArray2AXIS canny_edge_rectangle 
+Execute       gen_rtl GaussianBlur -style xilinx -f -lang vhdl -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/vhdl/GaussianBlur 
+Execute       gen_rtl GaussianBlur -style xilinx -f -lang vlog -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/verilog/GaussianBlur 
+Execute       syn_report -csynth -model GaussianBlur -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/report/GaussianBlur_csynth.rpt 
+Execute       syn_report -rtlxml -model GaussianBlur -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/report/GaussianBlur_csynth.xml 
+Execute       syn_report -verbosereport -model GaussianBlur -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/GaussianBlur.verbose.rpt 
+Execute       db_write -model GaussianBlur -f -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/GaussianBlur.adb 
+Execute       gen_tb_info GaussianBlur -p C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/GaussianBlur 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Sobel_1920u_1080u_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model Sobel<1920u, 1080u> -vendor xilinx -mg_file C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/Sobel_1920u_1080u_s.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'Sobel_1920u_1080u_s_line_buf' to 'Sobel_1920u_1080ufYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'canny_edge_rectangle_sitofp_32s_32_5_1' to 'canny_edge_rectang8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'canny_edge_rectangle_fsqrt_32ns_32ns_32_12_1' to 'canny_edge_rectanhbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'canny_edge_rectangle_sdiv_20s_11s_20_24_1' to 'canny_edge_rectanibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'canny_edge_rectangle_mul_mul_11s_11s_22_1_1' to 'canny_edge_rectanjbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'canny_edge_rectangle_mac_muladd_11s_11s_22s_22_1_1' to 'canny_edge_rectankbM' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'canny_edge_rectang8j': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'canny_edge_rectanhbi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'canny_edge_rectanibs': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'canny_edge_rectanjbC': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'canny_edge_rectankbM': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Sobel_1920u_1080u_s'.
+Command       create_rtl_model done; 0.11 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.645 seconds; current allocated memory: 415.309 MB.
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Sobel<1920u, 1080u> -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/systemc/Sobel_1920u_1080u_s -synmodules canny_edge_rectangle.1.2 canny_edge_rectangle.2 Block__proc AXIS2GrayArray GaussianBlur {Sobel<1920u, 1080u>} NonMaxSuppression ZeroPadding HystThreshold HystThresholdComp GrayArray2AXIS canny_edge_rectangle 
+Execute       gen_rtl Sobel<1920u, 1080u> -style xilinx -f -lang vhdl -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/vhdl/Sobel_1920u_1080u_s 
+Execute       gen_rtl Sobel<1920u, 1080u> -style xilinx -f -lang vlog -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/verilog/Sobel_1920u_1080u_s 
+Execute       syn_report -csynth -model Sobel<1920u, 1080u> -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/report/Sobel_1920u_1080u_s_csynth.rpt 
+Execute       syn_report -rtlxml -model Sobel<1920u, 1080u> -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/report/Sobel_1920u_1080u_s_csynth.xml 
+Execute       syn_report -verbosereport -model Sobel<1920u, 1080u> -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/Sobel_1920u_1080u_s.verbose.rpt 
+Command       syn_report done; 0.12 sec.
+Execute       db_write -model Sobel<1920u, 1080u> -f -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/Sobel_1920u_1080u_s.adb 
+Execute       gen_tb_info Sobel<1920u, 1080u> -p C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/Sobel_1920u_1080u_s 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'NonMaxSuppression' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model NonMaxSuppression -vendor xilinx -mg_file C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/NonMaxSuppression.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'NonMaxSuppression_line_buf_value' to 'NonMaxSuppressionlbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'NonMaxSuppression_line_buf_grad' to 'NonMaxSuppressionmb6' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'NonMaxSuppression'.
+INFO: [HLS 200-111]  Elapsed time: 0.569 seconds; current allocated memory: 416.195 MB.
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.rtl_wrap.cfg.tcl 
+Execute       gen_rtl NonMaxSuppression -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/systemc/NonMaxSuppression -synmodules canny_edge_rectangle.1.2 canny_edge_rectangle.2 Block__proc AXIS2GrayArray GaussianBlur {Sobel<1920u, 1080u>} NonMaxSuppression ZeroPadding HystThreshold HystThresholdComp GrayArray2AXIS canny_edge_rectangle 
+Execute       gen_rtl NonMaxSuppression -style xilinx -f -lang vhdl -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/vhdl/NonMaxSuppression 
+Execute       gen_rtl NonMaxSuppression -style xilinx -f -lang vlog -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/verilog/NonMaxSuppression 
+Execute       syn_report -csynth -model NonMaxSuppression -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/report/NonMaxSuppression_csynth.rpt 
+Execute       syn_report -rtlxml -model NonMaxSuppression -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/report/NonMaxSuppression_csynth.xml 
+Execute       syn_report -verbosereport -model NonMaxSuppression -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/NonMaxSuppression.verbose.rpt 
+Execute       db_write -model NonMaxSuppression -f -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/NonMaxSuppression.adb 
+Execute       gen_tb_info NonMaxSuppression -p C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/NonMaxSuppression 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'ZeroPadding' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model ZeroPadding -vendor xilinx -mg_file C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/ZeroPadding.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'ZeroPadding'.
+INFO: [HLS 200-111]  Elapsed time: 0.408 seconds; current allocated memory: 416.684 MB.
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.rtl_wrap.cfg.tcl 
+Execute       gen_rtl ZeroPadding -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/systemc/ZeroPadding -synmodules canny_edge_rectangle.1.2 canny_edge_rectangle.2 Block__proc AXIS2GrayArray GaussianBlur {Sobel<1920u, 1080u>} NonMaxSuppression ZeroPadding HystThreshold HystThresholdComp GrayArray2AXIS canny_edge_rectangle 
+Execute       gen_rtl ZeroPadding -style xilinx -f -lang vhdl -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/vhdl/ZeroPadding 
+Execute       gen_rtl ZeroPadding -style xilinx -f -lang vlog -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/verilog/ZeroPadding 
+Execute       syn_report -csynth -model ZeroPadding -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/report/ZeroPadding_csynth.rpt 
+Execute       syn_report -rtlxml -model ZeroPadding -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/report/ZeroPadding_csynth.xml 
+Execute       syn_report -verbosereport -model ZeroPadding -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/ZeroPadding.verbose.rpt 
+Execute       db_write -model ZeroPadding -f -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/ZeroPadding.adb 
+Execute       gen_tb_info ZeroPadding -p C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/ZeroPadding 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'HystThreshold' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model HystThreshold -vendor xilinx -mg_file C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/HystThreshold.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'HystThreshold'.
+INFO: [HLS 200-111]  Elapsed time: 0.232 seconds; current allocated memory: 417.094 MB.
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.rtl_wrap.cfg.tcl 
+Execute       gen_rtl HystThreshold -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/systemc/HystThreshold -synmodules canny_edge_rectangle.1.2 canny_edge_rectangle.2 Block__proc AXIS2GrayArray GaussianBlur {Sobel<1920u, 1080u>} NonMaxSuppression ZeroPadding HystThreshold HystThresholdComp GrayArray2AXIS canny_edge_rectangle 
+Execute       gen_rtl HystThreshold -style xilinx -f -lang vhdl -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/vhdl/HystThreshold 
+Execute       gen_rtl HystThreshold -style xilinx -f -lang vlog -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/verilog/HystThreshold 
+Execute       syn_report -csynth -model HystThreshold -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/report/HystThreshold_csynth.rpt 
+Execute       syn_report -rtlxml -model HystThreshold -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/report/HystThreshold_csynth.xml 
+Execute       syn_report -verbosereport -model HystThreshold -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/HystThreshold.verbose.rpt 
+Execute       db_write -model HystThreshold -f -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/HystThreshold.adb 
+Execute       gen_tb_info HystThreshold -p C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/HystThreshold 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'HystThresholdComp' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model HystThresholdComp -vendor xilinx -mg_file C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/HystThresholdComp.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'HystThresholdComp_line_buf' to 'HystThresholdCompncg' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'HystThresholdComp'.
+INFO: [HLS 200-111]  Elapsed time: 0.243 seconds; current allocated memory: 417.660 MB.
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.rtl_wrap.cfg.tcl 
+Execute       gen_rtl HystThresholdComp -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/systemc/HystThresholdComp -synmodules canny_edge_rectangle.1.2 canny_edge_rectangle.2 Block__proc AXIS2GrayArray GaussianBlur {Sobel<1920u, 1080u>} NonMaxSuppression ZeroPadding HystThreshold HystThresholdComp GrayArray2AXIS canny_edge_rectangle 
+Execute       gen_rtl HystThresholdComp -style xilinx -f -lang vhdl -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/vhdl/HystThresholdComp 
+Execute       gen_rtl HystThresholdComp -style xilinx -f -lang vlog -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/verilog/HystThresholdComp 
+Execute       syn_report -csynth -model HystThresholdComp -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/report/HystThresholdComp_csynth.rpt 
+Execute       syn_report -rtlxml -model HystThresholdComp -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/report/HystThresholdComp_csynth.xml 
+Execute       syn_report -verbosereport -model HystThresholdComp -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/HystThresholdComp.verbose.rpt 
+Execute       db_write -model HystThresholdComp -f -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/HystThresholdComp.adb 
+Execute       gen_tb_info HystThresholdComp -p C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/HystThresholdComp 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'GrayArray2AXIS' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model GrayArray2AXIS -vendor xilinx -mg_file C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/GrayArray2AXIS.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'GrayArray2AXIS'.
+INFO: [HLS 200-111]  Elapsed time: 0.322 seconds; current allocated memory: 418.139 MB.
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.rtl_wrap.cfg.tcl 
+Execute       gen_rtl GrayArray2AXIS -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/systemc/GrayArray2AXIS -synmodules canny_edge_rectangle.1.2 canny_edge_rectangle.2 Block__proc AXIS2GrayArray GaussianBlur {Sobel<1920u, 1080u>} NonMaxSuppression ZeroPadding HystThreshold HystThresholdComp GrayArray2AXIS canny_edge_rectangle 
+Execute       gen_rtl GrayArray2AXIS -style xilinx -f -lang vhdl -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/vhdl/GrayArray2AXIS 
+Execute       gen_rtl GrayArray2AXIS -style xilinx -f -lang vlog -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/verilog/GrayArray2AXIS 
+Execute       syn_report -csynth -model GrayArray2AXIS -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/report/GrayArray2AXIS_csynth.rpt 
+Execute       syn_report -rtlxml -model GrayArray2AXIS -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/report/GrayArray2AXIS_csynth.xml 
+Execute       syn_report -verbosereport -model GrayArray2AXIS -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/GrayArray2AXIS.verbose.rpt 
+Execute       db_write -model GrayArray2AXIS -f -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/GrayArray2AXIS.adb 
+Execute       gen_tb_info GrayArray2AXIS -p C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/GrayArray2AXIS 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'canny_edge_rectangle' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model canny_edge_rectangle -vendor xilinx -mg_file C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'canny_edge_rectangle/axis_in_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'canny_edge_rectangle/axis_in_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'canny_edge_rectangle/axis_out_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'canny_edge_rectangle/axis_out_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'canny_edge_rectangle/hist_hthr' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'canny_edge_rectangle/hist_lthr' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'canny_edge_rectangle/bh' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'canny_edge_rectangle/bl' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'canny_edge_rectangle' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return', 'hist_hthr' and 'hist_lthr' to AXI-Lite port AXILiteS.
+INFO: [SYN 201-210] Renamed object name 'start_for_canny_edge_rectangle_2_U0' to 'start_for_canny_eocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_Block_proc_U0' to 'start_for_Block_ppcA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_HystThreshold_U0' to 'start_for_HystThrqcK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_GaussianBlur_U0' to 'start_for_GaussiarcU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_Sobel_1920u_1080u_U0' to 'start_for_Sobel_1sc4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_NonMaxSuppression_U0' to 'start_for_NonMaxStde' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_ZeroPadding_U0' to 'start_for_ZeroPadudo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_HystThresholdComp_U0' to 'start_for_HystThrvdy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_GrayArray2AXIS_U0' to 'start_for_GrayArrwdI' due to the length limit 20
+WARNING: [RTGEN 206-101] Port 'canny_edge_rectangle/axis_in_TLAST' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'canny_edge_rectangle'.
+Command       create_rtl_model done; 0.143 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.371 seconds; current allocated memory: 419.409 MB.
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.rtl_wrap.cfg.tcl 
+Execute       gen_rtl canny_edge_rectangle -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/systemc/canny_edge_rectangle -synmodules canny_edge_rectangle.1.2 canny_edge_rectangle.2 Block__proc AXIS2GrayArray GaussianBlur {Sobel<1920u, 1080u>} NonMaxSuppression ZeroPadding HystThreshold HystThresholdComp GrayArray2AXIS canny_edge_rectangle 
+Execute       gen_rtl canny_edge_rectangle -istop -style xilinx -f -lang vhdl -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/vhdl/canny_edge_rectangle 
+Execute       gen_rtl canny_edge_rectangle -istop -style xilinx -f -lang vlog -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/verilog/canny_edge_rectangle 
+Execute       syn_report -csynth -model canny_edge_rectangle -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/report/canny_edge_rectangle_csynth.rpt 
+Execute       syn_report -rtlxml -model canny_edge_rectangle -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/syn/report/canny_edge_rectangle_csynth.xml 
+Execute       syn_report -verbosereport -model canny_edge_rectangle -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.verbose.rpt 
+Command       syn_report done; 0.188 sec.
+Execute       db_write -model canny_edge_rectangle -f -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.adb 
+Execute       gen_tb_info canny_edge_rectangle -p C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle 
+Execute       export_constraint_db -f -tool general -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.constraint.tcl 
+Execute       syn_report -designview -model canny_edge_rectangle -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.design.xml 
+Command       syn_report done; 0.204 sec.
+Execute       get_config_rtl -disable_wave_debug 
+Execute       syn_report -wcfg -model canny_edge_rectangle -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model canny_edge_rectangle -o C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.protoinst 
+Execute       get_config_debug -directory 
+Execute       sc_get_clocks canny_edge_rectangle 
+Execute       get_config_export -vivado_clock 
+Execute       sc_get_portdomain canny_edge_rectangle 
+INFO-FLOW: Model list for RTL component generation: canny_edge_rectangle.1.2 canny_edge_rectangle.2 Block__proc AXIS2GrayArray GaussianBlur {Sobel<1920u, 1080u>} NonMaxSuppression ZeroPadding HystThreshold HystThresholdComp GrayArray2AXIS canny_edge_rectangle
+INFO-FLOW: Handling components in module [canny_edge_rectangle_1_2] ... 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle_1_2.compgen.tcl 
+INFO-FLOW: Handling components in module [canny_edge_rectangle_2] ... 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle_2.compgen.tcl 
+INFO-FLOW: Handling components in module [Block_proc] ... 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/Block_proc.compgen.tcl 
+INFO-FLOW: Handling components in module [AXIS2GrayArray] ... 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/AXIS2GrayArray.compgen.tcl 
+INFO-FLOW: Found component canny_edge_rectanbkb.
+INFO-FLOW: Append model canny_edge_rectanbkb
+INFO-FLOW: Found component canny_edge_rectancud.
+INFO-FLOW: Append model canny_edge_rectancud
+INFO-FLOW: Found component canny_edge_rectandEe.
+INFO-FLOW: Append model canny_edge_rectandEe
+INFO-FLOW: Handling components in module [GaussianBlur] ... 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/GaussianBlur.compgen.tcl 
+INFO-FLOW: Found component GaussianBlur_lineeOg.
+INFO-FLOW: Append model GaussianBlur_lineeOg
+INFO-FLOW: Handling components in module [Sobel_1920u_1080u_s] ... 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/Sobel_1920u_1080u_s.compgen.tcl 
+INFO-FLOW: Found component canny_edge_rectang8j.
+INFO-FLOW: Append model canny_edge_rectang8j
+INFO-FLOW: Found component canny_edge_rectanhbi.
+INFO-FLOW: Append model canny_edge_rectanhbi
+INFO-FLOW: Found component canny_edge_rectanibs.
+INFO-FLOW: Append model canny_edge_rectanibs
+INFO-FLOW: Found component canny_edge_rectanjbC.
+INFO-FLOW: Append model canny_edge_rectanjbC
+INFO-FLOW: Found component canny_edge_rectankbM.
+INFO-FLOW: Append model canny_edge_rectankbM
+INFO-FLOW: Found component Sobel_1920u_1080ufYi.
+INFO-FLOW: Append model Sobel_1920u_1080ufYi
+INFO-FLOW: Handling components in module [NonMaxSuppression] ... 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/NonMaxSuppression.compgen.tcl 
+INFO-FLOW: Found component NonMaxSuppressionmb6.
+INFO-FLOW: Append model NonMaxSuppressionmb6
+INFO-FLOW: Handling components in module [ZeroPadding] ... 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/ZeroPadding.compgen.tcl 
+INFO-FLOW: Handling components in module [HystThreshold] ... 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/HystThreshold.compgen.tcl 
+INFO-FLOW: Handling components in module [HystThresholdComp] ... 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/HystThresholdComp.compgen.tcl 
+INFO-FLOW: Handling components in module [GrayArray2AXIS] ... 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/GrayArray2AXIS.compgen.tcl 
+INFO-FLOW: Handling components in module [canny_edge_rectangle] ... 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.compgen.tcl 
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d7_A.
+INFO-FLOW: Append model fifo_w8_d7_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d7_A.
+INFO-FLOW: Append model fifo_w8_d7_A
+INFO-FLOW: Found component fifo_w8_d1_A.
+INFO-FLOW: Append model fifo_w8_d1_A
+INFO-FLOW: Found component fifo_w8_d1_A.
+INFO-FLOW: Append model fifo_w8_d1_A
+INFO-FLOW: Found component fifo_w8_d1_A.
+INFO-FLOW: Append model fifo_w8_d1_A
+INFO-FLOW: Found component fifo_w2_d1_A.
+INFO-FLOW: Append model fifo_w2_d1_A
+INFO-FLOW: Found component fifo_w8_d1_A.
+INFO-FLOW: Append model fifo_w8_d1_A
+INFO-FLOW: Found component fifo_w8_d1_A.
+INFO-FLOW: Append model fifo_w8_d1_A
+INFO-FLOW: Found component fifo_w8_d1_A.
+INFO-FLOW: Append model fifo_w8_d1_A
+INFO-FLOW: Found component fifo_w8_d1_A.
+INFO-FLOW: Append model fifo_w8_d1_A
+INFO-FLOW: Found component start_for_canny_eocq.
+INFO-FLOW: Append model start_for_canny_eocq
+INFO-FLOW: Found component start_for_Block_ppcA.
+INFO-FLOW: Append model start_for_Block_ppcA
+INFO-FLOW: Found component start_for_HystThrqcK.
+INFO-FLOW: Append model start_for_HystThrqcK
+INFO-FLOW: Found component start_for_GaussiarcU.
+INFO-FLOW: Append model start_for_GaussiarcU
+INFO-FLOW: Found component start_for_Sobel_1sc4.
+INFO-FLOW: Append model start_for_Sobel_1sc4
+INFO-FLOW: Found component start_for_NonMaxStde.
+INFO-FLOW: Append model start_for_NonMaxStde
+INFO-FLOW: Found component start_for_ZeroPadudo.
+INFO-FLOW: Append model start_for_ZeroPadudo
+INFO-FLOW: Found component start_for_HystThrvdy.
+INFO-FLOW: Append model start_for_HystThrvdy
+INFO-FLOW: Found component start_for_GrayArrwdI.
+INFO-FLOW: Append model start_for_GrayArrwdI
+INFO-FLOW: Found component canny_edge_rectangle_AXILiteS_s_axi.
+INFO-FLOW: Append model canny_edge_rectangle_AXILiteS_s_axi
+INFO-FLOW: Append model canny_edge_rectangle_1_2
+INFO-FLOW: Append model canny_edge_rectangle_2
+INFO-FLOW: Append model Block_proc
+INFO-FLOW: Append model AXIS2GrayArray
+INFO-FLOW: Append model GaussianBlur
+INFO-FLOW: Append model Sobel_1920u_1080u_s
+INFO-FLOW: Append model NonMaxSuppression
+INFO-FLOW: Append model ZeroPadding
+INFO-FLOW: Append model HystThreshold
+INFO-FLOW: Append model HystThresholdComp
+INFO-FLOW: Append model GrayArray2AXIS
+INFO-FLOW: Append model canny_edge_rectangle
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: canny_edge_rectanbkb canny_edge_rectancud canny_edge_rectandEe GaussianBlur_lineeOg canny_edge_rectang8j canny_edge_rectanhbi canny_edge_rectanibs canny_edge_rectanjbC canny_edge_rectankbM Sobel_1920u_1080ufYi NonMaxSuppressionmb6 fifo_w8_d2_A fifo_w8_d2_A fifo_w8_d2_A fifo_w8_d7_A fifo_w8_d2_A fifo_w8_d7_A fifo_w8_d1_A fifo_w8_d1_A fifo_w8_d1_A fifo_w2_d1_A fifo_w8_d1_A fifo_w8_d1_A fifo_w8_d1_A fifo_w8_d1_A start_for_canny_eocq start_for_Block_ppcA start_for_HystThrqcK start_for_GaussiarcU start_for_Sobel_1sc4 start_for_NonMaxStde start_for_ZeroPadudo start_for_HystThrvdy start_for_GrayArrwdI canny_edge_rectangle_AXILiteS_s_axi canny_edge_rectangle_1_2 canny_edge_rectangle_2 Block_proc AXIS2GrayArray GaussianBlur Sobel_1920u_1080u_s NonMaxSuppression ZeroPadding HystThreshold HystThresholdComp GrayArray2AXIS canny_edge_rectangle
+INFO-FLOW: To file: write model canny_edge_rectanbkb
+INFO-FLOW: To file: write model canny_edge_rectancud
+INFO-FLOW: To file: write model canny_edge_rectandEe
+INFO-FLOW: To file: write model GaussianBlur_lineeOg
+INFO-FLOW: To file: write model canny_edge_rectang8j
+INFO-FLOW: To file: write model canny_edge_rectanhbi
+INFO-FLOW: To file: write model canny_edge_rectanibs
+INFO-FLOW: To file: write model canny_edge_rectanjbC
+INFO-FLOW: To file: write model canny_edge_rectankbM
+INFO-FLOW: To file: write model Sobel_1920u_1080ufYi
+INFO-FLOW: To file: write model NonMaxSuppressionmb6
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d7_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d7_A
+INFO-FLOW: To file: write model fifo_w8_d1_A
+INFO-FLOW: To file: write model fifo_w8_d1_A
+INFO-FLOW: To file: write model fifo_w8_d1_A
+INFO-FLOW: To file: write model fifo_w2_d1_A
+INFO-FLOW: To file: write model fifo_w8_d1_A
+INFO-FLOW: To file: write model fifo_w8_d1_A
+INFO-FLOW: To file: write model fifo_w8_d1_A
+INFO-FLOW: To file: write model fifo_w8_d1_A
+INFO-FLOW: To file: write model start_for_canny_eocq
+INFO-FLOW: To file: write model start_for_Block_ppcA
+INFO-FLOW: To file: write model start_for_HystThrqcK
+INFO-FLOW: To file: write model start_for_GaussiarcU
+INFO-FLOW: To file: write model start_for_Sobel_1sc4
+INFO-FLOW: To file: write model start_for_NonMaxStde
+INFO-FLOW: To file: write model start_for_ZeroPadudo
+INFO-FLOW: To file: write model start_for_HystThrvdy
+INFO-FLOW: To file: write model start_for_GrayArrwdI
+INFO-FLOW: To file: write model canny_edge_rectangle_AXILiteS_s_axi
+INFO-FLOW: To file: write model canny_edge_rectangle_1_2
+INFO-FLOW: To file: write model canny_edge_rectangle_2
+INFO-FLOW: To file: write model Block_proc
+INFO-FLOW: To file: write model AXIS2GrayArray
+INFO-FLOW: To file: write model GaussianBlur
+INFO-FLOW: To file: write model Sobel_1920u_1080u_s
+INFO-FLOW: To file: write model NonMaxSuppression
+INFO-FLOW: To file: write model ZeroPadding
+INFO-FLOW: To file: write model HystThreshold
+INFO-FLOW: To file: write model HystThresholdComp
+INFO-FLOW: To file: write model GrayArray2AXIS
+INFO-FLOW: To file: write model canny_edge_rectangle
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/global.setting.tcl
+Execute       source E:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source E:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute       source E:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source E:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute             source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.127 sec.
+Command       ap_source done; 0.128 sec.
+Execute       source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=11.000 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle_1_2.compgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle_2.compgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/Block_proc.compgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/AXIS2GrayArray.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/GaussianBlur.compgen.tcl 
+INFO: [RTMG 210-278] Implementing memory 'GaussianBlur_lineeOg_ram (RAM)' using block RAMs.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/Sobel_1920u_1080u_s.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-282] Generating pipelined core: 'canny_edge_rectanibs_div'
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+INFO: [RTMG 210-278] Implementing memory 'Sobel_1920u_1080ufYi_ram (RAM)' using block RAMs.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Command       ap_source done; 0.221 sec.
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/NonMaxSuppression.compgen.tcl 
+INFO: [RTMG 210-278] Implementing memory 'NonMaxSuppressionmb6_ram (RAM)' using block RAMs.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/ZeroPadding.compgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/HystThreshold.compgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/HystThresholdComp.compgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/GrayArray2AXIS.compgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'bh_c2_U(fifo_w8_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'bl_c3_U(fifo_w8_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'bh_c_U(fifo_w8_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'bh_c1_U(fifo_w8_d7_A)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'bl_c_U(fifo_w8_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'bl_c2_U(fifo_w8_d7_A)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_canny_eocq_U(start_for_canny_eocq)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Block_ppcA_U(start_for_Block_ppcA)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_HystThrqcK_U(start_for_HystThrqcK)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_GaussiarcU_U(start_for_GaussiarcU)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Sobel_1sc4_U(start_for_Sobel_1sc4)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_NonMaxStde_U(start_for_NonMaxStde)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_ZeroPadudo_U(start_for_ZeroPadudo)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_HystThrvdy_U(start_for_HystThrvdy)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_GrayArrwdI_U(start_for_GrayArrwdI)' using Shift Registers.
+Execute         source ./AXILiteS.slave.tcl 
+Execute         is_m_axi_addr64 
+Command       ap_source done; 0.512 sec.
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/global.setting.tcl
+Execute       source E:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source E:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute       source E:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source E:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute             source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.116 sec.
+Command       ap_source done; 0.116 sec.
+Execute       source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=canny_edge_rectangle xml_exists=0
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.tbgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle_1_2.compgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle_2.compgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/Block_proc.compgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/AXIS2GrayArray.compgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/GaussianBlur.compgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/Sobel_1920u_1080u_s.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/NonMaxSuppression.compgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/ZeroPadding.compgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/HystThreshold.compgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/HystThresholdComp.compgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/GrayArray2AXIS.compgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle_1_2.compgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle_2.compgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/Block_proc.compgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/AXIS2GrayArray.compgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/GaussianBlur.compgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/Sobel_1920u_1080u_s.compgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/NonMaxSuppression.compgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/ZeroPadding.compgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/HystThreshold.compgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/HystThresholdComp.compgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/GrayArray2AXIS.compgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle_1_2.compgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle_2.compgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/Block_proc.compgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/AXIS2GrayArray.compgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/GaussianBlur.compgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/Sobel_1920u_1080u_s.compgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/NonMaxSuppression.compgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/ZeroPadding.compgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/HystThreshold.compgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/HystThresholdComp.compgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/GrayArray2AXIS.compgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.compgen.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.constraint.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=10
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=8
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=1 #modelList=47 #gSsdmPorts=10
+Execute       source E:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_export -xo 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.tbgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.compgen.dataonly.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.compgen.dataonly.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.tbgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.tbgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.tbgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.tbgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.compgen.dataonly.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.constraint.tcl 
+Execute       sc_get_clocks canny_edge_rectangle 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_debug -directory 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/impl/misc/canny_edge_rectangle_ap_fsqrt_10_no_dsp_32_ip.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/impl/misc/canny_edge_rectangle_ap_sitofp_3_no_dsp_32_ip.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle_1_2.tbgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle_2.tbgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/Block_proc.tbgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/AXIS2GrayArray.tbgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/GaussianBlur.tbgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/Sobel_1920u_1080u_s.tbgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/NonMaxSuppression.tbgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/ZeroPadding.tbgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/HystThreshold.tbgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/HystThresholdComp.tbgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/GrayArray2AXIS.tbgen.tcl 
+Execute       source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.tbgen.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_sdx -profile 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -stall_sig_gen 
+Execute       get_config_rtl -profile 
+INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist, skipping opencl info: C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/kernel.internal.xml
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:13 ; elapsed = 00:00:35 . Memory (MB): peak = 502.820 ; gain = 408.973
+INFO: [VHDL 208-304] Generating VHDL RTL for canny_edge_rectangle.
+INFO: [VLOG 209-307] Generating Verilog RTL for canny_edge_rectangle.
+Command     autosyn done; 11.742 sec.
+Command   csynth_design done; 33.293 sec.
+Command ap_source done; 34.102 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1 opened at Tue May 26 21:03:16 +0800 2020
+Execute     config_clock -quiet -name default -period 11 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 11ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib E:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq 
+Execute       source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.lib 
+Execute       source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.119 sec.
+Command     ap_source done; 0.119 sec.
+Execute     set_part xc7z020clg400-1 
+Execute       ap_part_info -name xc7z020clg400-1 -data single -quiet 
+Command       ap_part_info done; 0.429 sec.
+Execute       ap_part_info -name xc7z020clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         ap_part_info -data single -name xc7z020-clg400-1 
+Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib E:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute             source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute               source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute               source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute                 source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute               source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 0.535 sec.
+Execute     ap_part_info -data single -name xc7z020clg400-1 
+Execute     ap_part_info -name xc7z020clg400-1 -data resources 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 0.697 sec.
+Execute   export_design -rtl verilog -format ip_catalog 
+Execute     get_config_export -acc 
+Execute     get_config_export -clock_margin 
+Execute     get_config_export -custom_script 
+Execute     get_config_export -description 
+Execute     get_config_export -display_name 
+Execute     get_config_export -driver_input_dir 
+Execute     get_config_export -ipname 
+Execute     get_config_export -kernel_drc 
+Execute     get_config_export -library 
+Execute     get_config_export -qor_test 
+Execute     get_config_export -sdaccel 
+Execute     get_config_export -sim 
+Execute     get_config_export -taxonomy 
+Execute     get_config_export -use_ip 
+Execute     get_config_export -use_netlist 
+Execute     get_config_export -vendor 
+Execute     get_config_export -version 
+Execute     get_config_export -xo 
+Execute     config_export -format=ip_catalog -rtl=verilog 
+INFO-FLOW: DBG:CMD: export_design_wrap: -format ip_catalog -rtl verilog
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -vivado_clock 
+Execute     get_top 
+Execute     get_config_sdx -target 
+Execute     get_config_rtl -module_auto_prefix 
+Execute     get_config_sdx -target 
+Execute     get_config_sdx -target 
+INFO-FLOW: DBG:CMD:   auto_impl: pack: -export -tool vivado -rtl verilog -sdx-target none
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/global.setting.tcl
+Execute     source E:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute       source E:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source E:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute     source E:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source E:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.112 sec.
+Command     ap_source done; 0.113 sec.
+Execute     source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=11.000 (was NA)
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: automg_wrap -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:CMD:     auto_generate -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/global.setting.tcl
+Execute     source E:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute       source E:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source E:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute     source E:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source E:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.113 sec.
+Command     ap_source done; 0.113 sec.
+Execute     source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=canny_edge_rectangle xml_exists=1
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.tbgen.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle_1_2.compgen.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle_2.compgen.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/Block_proc.compgen.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/AXIS2GrayArray.compgen.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/GaussianBlur.compgen.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/Sobel_1920u_1080u_s.compgen.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/NonMaxSuppression.compgen.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/ZeroPadding.compgen.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/HystThreshold.compgen.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/HystThresholdComp.compgen.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/GrayArray2AXIS.compgen.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle_1_2.compgen.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle_2.compgen.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/Block_proc.compgen.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/AXIS2GrayArray.compgen.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/GaussianBlur.compgen.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/Sobel_1920u_1080u_s.compgen.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/NonMaxSuppression.compgen.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/ZeroPadding.compgen.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/HystThreshold.compgen.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/HystThresholdComp.compgen.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/GrayArray2AXIS.compgen.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.compgen.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle_1_2.compgen.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle_2.compgen.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/Block_proc.compgen.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/AXIS2GrayArray.compgen.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/GaussianBlur.compgen.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/Sobel_1920u_1080u_s.compgen.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/NonMaxSuppression.compgen.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/ZeroPadding.compgen.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/HystThreshold.compgen.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/HystThresholdComp.compgen.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/GrayArray2AXIS.compgen.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.compgen.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.constraint.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=10
+INFO-FLOW: DBG:CMD:       copying IP vlog from C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/impl/verilog
+INFO-FLOW: DBG:CMD:       copying IP vhdl from C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/impl/vhdl
+INFO-FLOW: DBG:CMD:       copy ip_driver_dir 1_0 C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/driver
+INFO-FLOW: DBG:CMD:       generate_ip_script #gSsdmPorts=10
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.compgen.dataonly.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.compgen.dataonly.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.tbgen.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.tbgen.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.tbgen.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.tbgen.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_sdx -target 
+Execute     get_config_debug -directory 
+INFO-FLOW: DBG:CMD:       generate_ip_auxiliary
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=canny_edge_rectangle
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.tbgen.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.tbgen.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_top_info
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=canny_edge_rectangle
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.tbgen.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.tbgen.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_bd_script
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.tbgen.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.constraint.tcl 
+INFO-FLOW: DBG:CMD:       generate_ipi_example_script
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_syn_sh
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       generate_imp_constraints
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.constraint.tcl 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/canny_edge_rectangle.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/global.setting.tcl
+Execute     source E:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute       source E:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source E:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute     source E:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source E:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.113 sec.
+Command     ap_source done; 0.113 sec.
+Execute     source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source E:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:     exec C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/cannyRectangle/solution1/impl/ip/pack.bat
+Command   export_design done; 14.639 sec.
+Command ap_source done; 15.344 sec.
+Execute cleanup_all 

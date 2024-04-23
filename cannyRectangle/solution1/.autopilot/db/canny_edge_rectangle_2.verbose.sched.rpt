@@ -1,0 +1,122 @@
+
+
+================================================================
+== Vivado HLS Report for 'canny_edge_rectangle_2'
+================================================================
+* Date:           Fri May 26 21:01:33 2023
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        cannyRectangle
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  11.00|     7.268|        1.38|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    0|    0|    0|    0|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 7.26>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %bh_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str68, i32 0, i32 0, [1 x i8]* @p_str69, [1 x i8]* @p_str70, [1 x i8]* @p_str71, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str72, [11 x i8]* @ScalarProp_str)"   --->   Operation 2 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %bh_out1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str73, i32 0, i32 0, [1 x i8]* @p_str74, [1 x i8]* @p_str75, [1 x i8]* @p_str76, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str77, [11 x i8]* @ScalarProp_str)"   --->   Operation 3 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %bl_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str78, i32 0, i32 0, [1 x i8]* @p_str79, [1 x i8]* @p_str80, [1 x i8]* @p_str81, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str82, [11 x i8]* @ScalarProp_str)"   --->   Operation 4 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %bl_out2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str83, i32 0, i32 0, [1 x i8]* @p_str84, [1 x i8]* @p_str85, [1 x i8]* @p_str86, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str87, [11 x i8]* @ScalarProp_str)"   --->   Operation 5 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %bl, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str42, i32 0, i32 0, [1 x i8]* @p_str43, [1 x i8]* @p_str44, [1 x i8]* @p_str45, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str46, [11 x i8]* @ScalarProp_str)"   --->   Operation 6 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %bh, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str37, i32 0, i32 0, [1 x i8]* @p_str38, [1 x i8]* @p_str39, [1 x i8]* @p_str40, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str41, [11 x i8]* @ScalarProp_str)"   --->   Operation 7 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (3.63ns)   --->   "%bh_read = call i8 @_ssdm_op_Read.ap_fifo.i8P(i8* %bh)" [cannyRectangle/canny_edge_rectangle.cpp:47]   --->   Operation 8 'read' 'bh_read' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_1 : Operation 9 [1/1] (3.63ns)   --->   "%bl_read = call i8 @_ssdm_op_Read.ap_fifo.i8P(i8* %bl)" [cannyRectangle/canny_edge_rectangle.cpp:47]   --->   Operation 9 'read' 'bl_read' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %bh_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str68, i32 0, i32 0, [1 x i8]* @p_str69, [1 x i8]* @p_str70, [1 x i8]* @p_str71, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str72, [11 x i8]* @ScalarProp_str)"   --->   Operation 10 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (3.63ns)   --->   "call void @_ssdm_op_Write.ap_fifo.i8P(i8* %bh_out, i8 %bh_read)" [cannyRectangle/canny_edge_rectangle.cpp:47->cannyRectangle/canny_edge_rectangle.cpp:39]   --->   Operation 11 'write' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %bh_out1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str73, i32 0, i32 0, [1 x i8]* @p_str74, [1 x i8]* @p_str75, [1 x i8]* @p_str76, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str77, [11 x i8]* @ScalarProp_str)"   --->   Operation 12 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (3.63ns)   --->   "call void @_ssdm_op_Write.ap_fifo.i8P(i8* %bh_out1, i8 %bh_read)" [cannyRectangle/canny_edge_rectangle.cpp:47->cannyRectangle/canny_edge_rectangle.cpp:39]   --->   Operation 13 'write' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %bl_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str78, i32 0, i32 0, [1 x i8]* @p_str79, [1 x i8]* @p_str80, [1 x i8]* @p_str81, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str82, [11 x i8]* @ScalarProp_str)"   --->   Operation 14 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (3.63ns)   --->   "call void @_ssdm_op_Write.ap_fifo.i8P(i8* %bl_out, i8 %bl_read)" [cannyRectangle/canny_edge_rectangle.cpp:47->cannyRectangle/canny_edge_rectangle.cpp:39]   --->   Operation 15 'write' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %bl_out2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str83, i32 0, i32 0, [1 x i8]* @p_str84, [1 x i8]* @p_str85, [1 x i8]* @p_str86, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str87, [11 x i8]* @ScalarProp_str)"   --->   Operation 16 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (3.63ns)   --->   "call void @_ssdm_op_Write.ap_fifo.i8P(i8* %bl_out2, i8 %bl_read)" [cannyRectangle/canny_edge_rectangle.cpp:47->cannyRectangle/canny_edge_rectangle.cpp:39]   --->   Operation 17 'write' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "ret void" [cannyRectangle/canny_edge_rectangle.cpp:39]   --->   Operation 18 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 11ns, clock uncertainty: 1.38ns.
+
+ <State 1>: 7.27ns
+The critical path consists of the following:
+	fifo read on port 'bh' (cannyRectangle/canny_edge_rectangle.cpp:47) [13]  (3.63 ns)
+	fifo write on port 'bh_out' (cannyRectangle/canny_edge_rectangle.cpp:47->cannyRectangle/canny_edge_rectangle.cpp:39) [16]  (3.63 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

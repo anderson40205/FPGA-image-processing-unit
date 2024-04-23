@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_631" tag="SCHEDULE" content="Option &apos;relax_ii_for_timing&apos; is enabled, will increase II to preserve clock frequency constraints."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp&apos; ..."/>
+	<Message severity="WARNING" prefix="[HLS 214-113]" key="HLS 214-113" tag="DATAFLOW,SDX_KERNEL" content="Variables defined outside dataflow region are not supported: ../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:58:47"/>
+	<Message severity="WARNING" prefix="[HLS 200-471]" key="HLS 200-471" tag="DATAFLOW,SDX_KERNEL" content="Dataflow form checks found 1 issue(s) in file ../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 176.984 ; gain = 83.145"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 176.984 ; gain = 83.145"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1467" tag="" content="Starting code transformations ..."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:19 . Memory (MB): peak = 217.258 ; gain = 123.418"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1472" tag="" content="Checking synthesizability ..."/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;fp_struct&lt;float&gt;::mantissa&apos; into &apos;generic_cast_IEEE754&lt;int, (ap_q_mode)6, float&gt;&apos; (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:15) automatically."/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;fp_struct&lt;float&gt;::expv&apos; into &apos;generic_cast_IEEE754&lt;int, (ap_q_mode)6, float&gt;&apos; (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:18) automatically."/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;fp_struct&lt;float&gt;::__signbit&apos; into &apos;generic_cast_IEEE754&lt;int, (ap_q_mode)6, float&gt;&apos; (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:59) automatically."/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;generic_cast_IEEE754&lt;int, (ap_q_mode)6, float&gt;&apos; into &apos;generic_cast_IEEE754&lt;int, float&gt;&apos; (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117) automatically."/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;generic_cast_IEEE754&lt;int, float&gt;&apos; into &apos;__hls_fptosi_float_i32&apos; (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:51) automatically."/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;hls::sqrt&apos; into &apos;hlsimproc::HlsImProc::Sobel&lt;512u, 512u&gt;&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:265) automatically."/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;__hls_fptosi_float_i32&apos; into &apos;hlsimproc::HlsImProc::Sobel&lt;512u, 512u&gt;&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:265) automatically."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Synthesizability Time (s): cpu = 00:00:02 ; elapsed = 00:00:19 . Memory (MB): peak = 268.555 ; gain = 174.715"/>
+	<Message severity="WARNING" prefix="[XFORM 203-1103]" key="XFORM_DATA_PACK_INVALID_346" tag="" content="Ignored data pack directive on non-struct variable &apos;axis_out.data.V&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39)."/>
+	<Message severity="WARNING" prefix="[XFORM 203-1103]" key="XFORM_DATA_PACK_INVALID_346" tag="" content="Ignored data pack directive on non-struct variable &apos;axis_in.data.V&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39)."/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;Loop-1.1&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:432) in function &apos;hlsimproc::HlsImProc::HystThresholdComp&lt;512u, 512u&gt;&apos; for pipelining."/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;Loop-1.1&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:324) in function &apos;hlsimproc::HlsImProc::NonMaxSuppression&lt;512u, 512u&gt;&apos; for pipelining."/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;Loop-1.1&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:221) in function &apos;hlsimproc::HlsImProc::Sobel&lt;512u, 512u&gt;&apos; for pipelining."/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;Loop-1.1&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:151) in function &apos;hlsimproc::HlsImProc::GaussianBlur&lt;512u, 512u&gt;&apos; for pipelining."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1.1&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:440) in function &apos;hlsimproc::HlsImProc::HystThresholdComp&lt;512u, 512u&gt;&apos; completely with a factor of 2."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1.2&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:447) in function &apos;hlsimproc::HlsImProc::HystThresholdComp&lt;512u, 512u&gt;&apos; completely with a factor of 3."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1.2.1&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:448) in function &apos;hlsimproc::HlsImProc::HystThresholdComp&lt;512u, 512u&gt;&apos; completely with a factor of 2."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1.3&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:453) in function &apos;hlsimproc::HlsImProc::HystThresholdComp&lt;512u, 512u&gt;&apos; completely with a factor of 3."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1.4&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:458) in function &apos;hlsimproc::HlsImProc::HystThresholdComp&lt;512u, 512u&gt;&apos; completely with a factor of 3."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1.4.1&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:459) in function &apos;hlsimproc::HlsImProc::HystThresholdComp&lt;512u, 512u&gt;&apos; completely with a factor of 3."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1.1&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:333) in function &apos;hlsimproc::HlsImProc::NonMaxSuppression&lt;512u, 512u&gt;&apos; completely with a factor of 2."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1.2&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:340) in function &apos;hlsimproc::HlsImProc::NonMaxSuppression&lt;512u, 512u&gt;&apos; completely with a factor of 3."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1.2.1&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:341) in function &apos;hlsimproc::HlsImProc::NonMaxSuppression&lt;512u, 512u&gt;&apos; completely with a factor of 2."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1.3&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:346) in function &apos;hlsimproc::HlsImProc::NonMaxSuppression&lt;512u, 512u&gt;&apos; completely with a factor of 3."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1.1&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:230) in function &apos;hlsimproc::HlsImProc::Sobel&lt;512u, 512u&gt;&apos; completely with a factor of 2."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1.2&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:237) in function &apos;hlsimproc::HlsImProc::Sobel&lt;512u, 512u&gt;&apos; completely with a factor of 3."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1.2.1&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:238) in function &apos;hlsimproc::HlsImProc::Sobel&lt;512u, 512u&gt;&apos; completely with a factor of 2."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1.3&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:243) in function &apos;hlsimproc::HlsImProc::Sobel&lt;512u, 512u&gt;&apos; completely with a factor of 3."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1.4&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:252) in function &apos;hlsimproc::HlsImProc::Sobel&lt;512u, 512u&gt;&apos; completely with a factor of 3."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1.4.1&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:253) in function &apos;hlsimproc::HlsImProc::Sobel&lt;512u, 512u&gt;&apos; completely with a factor of 3."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1.5&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:259) in function &apos;hlsimproc::HlsImProc::Sobel&lt;512u, 512u&gt;&apos; completely with a factor of 3."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1.5.1&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:260) in function &apos;hlsimproc::HlsImProc::Sobel&lt;512u, 512u&gt;&apos; completely with a factor of 3."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1.1&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:159) in function &apos;hlsimproc::HlsImProc::GaussianBlur&lt;512u, 512u&gt;&apos; completely with a factor of 4."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1.2&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:167) in function &apos;hlsimproc::HlsImProc::GaussianBlur&lt;512u, 512u&gt;&apos; completely with a factor of 5."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1.2.1&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:168) in function &apos;hlsimproc::HlsImProc::GaussianBlur&lt;512u, 512u&gt;&apos; completely with a factor of 4."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1.3&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:174) in function &apos;hlsimproc::HlsImProc::GaussianBlur&lt;512u, 512u&gt;&apos; completely with a factor of 5."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1.4&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:180) in function &apos;hlsimproc::HlsImProc::GaussianBlur&lt;512u, 512u&gt;&apos; completely with a factor of 5."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1.4.1&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:181) in function &apos;hlsimproc::HlsImProc::GaussianBlur&lt;512u, 512u&gt;&apos; completely with a factor of 5."/>
+	<Message severity="INFO" prefix="[XFORM 203-131]" key="XFORM_RESHAPE_STATUS_125" tag="" content="Reshaping array &apos;line_buf&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:424) in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-131]" key="XFORM_RESHAPE_STATUS_125" tag="" content="Reshaping array &apos;line_buf.value&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:316) in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-131]" key="XFORM_RESHAPE_STATUS_125" tag="" content="Reshaping array &apos;line_buf.grad&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:316) in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-131]" key="XFORM_RESHAPE_STATUS_125" tag="" content="Reshaping array &apos;line_buf&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:199) in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-131]" key="XFORM_RESHAPE_STATUS_125" tag="" content="Reshaping array &apos;line_buf&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:138) in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;window_buf&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:425) in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;window_buf.value&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:317) in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;window_buf.grad&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:317) in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;window_buf&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:200) in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;H_SOBEL_KERNEL&apos;  in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;V_SOBEL_KERNEL&apos;  in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;window_buf&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:139) in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;GAUSS_KERNEL&apos;  in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;window_buf&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:425) in dimension 2 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;window_buf.value&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:317) in dimension 2 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;window_buf.grad&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:317) in dimension 2 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;window_buf&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:200) in dimension 2 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;H_SOBEL_KERNEL&apos;  in dimension 2 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;V_SOBEL_KERNEL&apos;  in dimension 2 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;window_buf&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:139) in dimension 2 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;GAUSS_KERNEL&apos;  in dimension 2 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;fp_struct&lt;float&gt;::mantissa&apos; into &apos;generic_cast_IEEE754&lt;int, (ap_q_mode)6, float&gt;&apos; (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:15) automatically."/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;fp_struct&lt;float&gt;::expv&apos; into &apos;generic_cast_IEEE754&lt;int, (ap_q_mode)6, float&gt;&apos; (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:18) automatically."/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;fp_struct&lt;float&gt;::__signbit&apos; into &apos;generic_cast_IEEE754&lt;int, (ap_q_mode)6, float&gt;&apos; (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:59) automatically."/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;generic_cast_IEEE754&lt;int, (ap_q_mode)6, float&gt;&apos; into &apos;generic_cast_IEEE754&lt;int, float&gt;&apos; (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117) automatically."/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;generic_cast_IEEE754&lt;int, float&gt;&apos; into &apos;__hls_fptosi_float_i32&apos; (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:51) automatically."/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;hls::sqrt&apos; into &apos;hlsimproc::HlsImProc::Sobel&lt;512u, 512u&gt;&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:265) automatically."/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;__hls_fptosi_float_i32&apos; into &apos;hlsimproc::HlsImProc::Sobel&lt;512u, 512u&gt;&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:265) automatically."/>
+	<Message severity="INFO" prefix="[XFORM 203-712]" key="XFORM_DATAFLOW_TRANSFORM_230" tag="DATAFLOW" content="Applying dataflow to function &apos;canny_edge_detection&apos;, detected/extracted 8 process function(s): 
+	 &apos;hlsimproc::HlsImProc::AXIS2GrayArray&lt;512u, 512u&gt;66&apos;
+	 &apos;hlsimproc::HlsImProc::GaussianBlur&lt;512u, 512u&gt;&apos;
+	 &apos;hlsimproc::HlsImProc::Sobel&lt;512u, 512u&gt;&apos;
+	 &apos;hlsimproc::HlsImProc::NonMaxSuppression&lt;512u, 512u&gt;&apos;
+	 &apos;hlsimproc::HlsImProc::ZeroPadding&lt;512u, 512u&gt;&apos;
+	 &apos;hlsimproc::HlsImProc::HystThreshold&lt;512u, 512u&gt;&apos;
+	 &apos;hlsimproc::HlsImProc::HystThresholdComp&lt;512u, 512u&gt;&apos;
+	 &apos;hlsimproc::HlsImProc::GrayArray2AXIS&lt;512u, 512u&gt;&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-124]" key="XFORM_ARRAY_STREAM_WARNING_632" tag="" content="Array  &apos;fifo3.value&apos; : may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order."/>
+	<Message severity="WARNING" prefix="[XFORM 203-124]" key="XFORM_ARRAY_STREAM_WARNING_632" tag="" content="Array  &apos;fifo3.grad&apos; : may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order."/>
+	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:282:17) to (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:299:17) in function &apos;hlsimproc::HlsImProc::Sobel&lt;512u, 512u&gt;&apos;... converting 4 basic blocks."/>
+	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:324:48) to (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:324:41) in function &apos;hlsimproc::HlsImProc::NonMaxSuppression&lt;512u, 512u&gt;&apos;... converting 9 basic blocks."/>
+	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:432:48) to (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:432:41) in function &apos;hlsimproc::HlsImProc::HystThresholdComp&lt;512u, 512u&gt;&apos;... converting 17 basic blocks."/>
+	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:397:48) to (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:397:41) in function &apos;hlsimproc::HlsImProc::HystThreshold&lt;512u, 512u&gt;&apos;... converting 3 basic blocks."/>
+	<Message severity="INFO" prefix="[XFORM 203-11]" key="XFORM_EXPR_BALANCE_STATUS_178" tag="" content="Balancing expressions in function &apos;hlsimproc::HlsImProc::ZeroPadding&lt;512u, 512u&gt;&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:475:41)...3 expression(s) balanced."/>
+	<Message severity="INFO" prefix="[XFORM 203-11]" key="XFORM_EXPR_BALANCE_STATUS_178" tag="" content="Balancing expressions in function &apos;hlsimproc::HlsImProc::Sobel&lt;512u, 512u&gt;&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:7:41)...3 expression(s) balanced."/>
+	<Message severity="INFO" prefix="[XFORM 203-11]" key="XFORM_EXPR_BALANCE_STATUS_178" tag="" content="Balancing expressions in function &apos;hlsimproc::HlsImProc::NonMaxSuppression&lt;512u, 512u&gt;&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:316:41)...3 expression(s) balanced."/>
+	<Message severity="INFO" prefix="[XFORM 203-11]" key="XFORM_EXPR_BALANCE_STATUS_178" tag="" content="Balancing expressions in function &apos;hlsimproc::HlsImProc::HystThresholdComp&lt;512u, 512u&gt;&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:424:41)...8 expression(s) balanced."/>
+	<Message severity="INFO" prefix="[XFORM 203-11]" key="XFORM_EXPR_BALANCE_STATUS_178" tag="" content="Balancing expressions in function &apos;hlsimproc::HlsImProc::GaussianBlur&lt;512u, 512u&gt;&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:138:41)...21 expression(s) balanced."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Pre-synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:21 . Memory (MB): peak = 346.215 ; gain = 252.375"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;hlsimproc::HlsImProc::ZeroPadding&lt;512u, 512u&gt;&apos; to &apos;ZeroPadding&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:475:41)"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;hlsimproc::HlsImProc::Sobel&lt;512u, 512u&gt;&apos; to &apos;Sobel&lt;512u, 512u&gt;&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:7:41)"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;hlsimproc::HlsImProc::NonMaxSuppression&lt;512u, 512u&gt;&apos; to &apos;NonMaxSuppression&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:316:41)"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;hlsimproc::HlsImProc::HystThresholdComp&lt;512u, 512u&gt;&apos; to &apos;HystThresholdComp&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:424:41)"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;hlsimproc::HlsImProc::HystThreshold&lt;512u, 512u&gt;&apos; to &apos;HystThreshold&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:39:41)"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;hlsimproc::HlsImProc::GrayArray2AXIS&lt;512u, 512u&gt;&apos; to &apos;GrayArray2AXIS&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:116:41)"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;hlsimproc::HlsImProc::GaussianBlur&lt;512u, 512u&gt;&apos; to &apos;GaussianBlur&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:138:41)"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;hlsimproc::HlsImProc::AXIS2GrayArray&lt;512u, 512u&gt;66&apos; to &apos;AXIS2GrayArray66&apos; (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:47:41)"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;canny_edge_detection.entry3&apos; to &apos;canny_edge_detection.1.1&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Architecture Synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:22 . Memory (MB): peak = 445.941 ; gain = 352.102"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1317" tag="" content="Starting hardware synthesis ..."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1385" tag="" content="Synthesizing &apos;canny_edge_detection&apos; ..."/>
+	<Message severity="WARNING" prefix="[SYN 201-103]" key="SYN_MODULE_NAME_ILLEGAL_445" tag="" content="Legalizing function name &apos;canny_edge_detection.1.1&apos; to &apos;canny_edge_detection_1_1&apos;."/>
+	<Message severity="WARNING" prefix="[SYN 201-103]" key="SYN_MODULE_NAME_ILLEGAL_445" tag="" content="Legalizing function name &apos;Sobel&lt;512u, 512u&gt;&apos; to &apos;Sobel_512u_512u_s&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;canny_edge_detection_1_1&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 22.292 seconds; current allocated memory: 386.580 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.072 seconds; current allocated memory: 386.647 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;AXIS2GrayArray66&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 1.1&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 3."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_76" tag="SDX_KERNEL,SCHEDULE" content="Estimated clock period (10.648ns) exceeds the target (target clock period: 10.648ns, clock uncertainty: 1.331ns, effective delay budget: 9.317ns)."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_74" tag="SDX_KERNEL,SCHEDULE" content="The critical path in module &apos;AXIS2GrayArray66&apos; consists of the following:
+	&apos;mul&apos; operation of DSP[64] (&apos;mul_ln544_1&apos;, ../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:97-&gt;../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47-&gt;../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39) [63]  (3.36 ns)
+	&apos;add&apos; operation of DSP[64] (&apos;add_ln544&apos;, ../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:97-&gt;../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47-&gt;../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39) [64]  (3.02 ns)
+	&apos;add&apos; operation of DSP[66] (&apos;pix_gray&apos;, ../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:97-&gt;../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47-&gt;../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39) [66]  (3.02 ns)
+	&apos;select&apos; operation (&apos;phitmp318_i_i_i&apos;, ../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:105-&gt;../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47-&gt;../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39) [69]  (1.25 ns)"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.233 seconds; current allocated memory: 386.880 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-434]" key="HLS 200-434" tag="SDX" content="Only 1 loops out of a total 2 loops have been pipelined in this design."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.107 seconds; current allocated memory: 387.185 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;GaussianBlur&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 1.1&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 4."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.224 seconds; current allocated memory: 387.731 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.162 seconds; current allocated memory: 388.314 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;Sobel_512u_512u_s&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 1.1&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 28."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.368 seconds; current allocated memory: 388.864 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.207 seconds; current allocated memory: 389.487 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;NonMaxSuppression&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 1.1&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 3."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.306 seconds; current allocated memory: 389.854 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.137 seconds; current allocated memory: 390.218 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;ZeroPadding&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 1.1&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.22 seconds; current allocated memory: 390.376 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.099 seconds; current allocated memory: 390.504 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;HystThreshold&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 1.1&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 3."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.229 seconds; current allocated memory: 390.606 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.101 seconds; current allocated memory: 390.800 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;HystThresholdComp&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 1.1&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 3."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.187 seconds; current allocated memory: 390.976 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.122 seconds; current allocated memory: 391.211 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;GrayArray2AXIS&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 1.1&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 3."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.177 seconds; current allocated memory: 391.330 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.101 seconds; current allocated memory: 391.451 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;canny_edge_detection&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.114 seconds; current allocated memory: 391.587 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.404 seconds; current allocated memory: 392.237 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;canny_edge_detection_1_1&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;canny_edge_detection_1_1&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.26 seconds; current allocated memory: 392.525 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;AXIS2GrayArray66&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;canny_edge_detection_mul_mul_15ns_8ns_23_1_1&apos; to &apos;canny_edge_detectbkb&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;canny_edge_detection_mac_muladd_17ns_8ns_23ns_25_1_1&apos; to &apos;canny_edge_detectcud&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;canny_edge_detection_mac_muladd_16ns_8ns_23ns_23_1_1&apos; to &apos;canny_edge_detectdEe&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;canny_edge_detectbkb&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;canny_edge_detectcud&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;canny_edge_detectdEe&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;AXIS2GrayArray66&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.146 seconds; current allocated memory: 393.083 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;GaussianBlur&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;GaussianBlur_line_buf&apos; to &apos;GaussianBlur_lineeOg&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;GaussianBlur&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.254 seconds; current allocated memory: 394.164 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;Sobel_512u_512u_s&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;Sobel_512u_512u_s_line_buf&apos; to &apos;Sobel_512u_512u_sfYi&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;canny_edge_detection_sitofp_32s_32_5_1&apos; to &apos;canny_edge_detectg8j&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;canny_edge_detection_fsqrt_32ns_32ns_32_12_1&apos; to &apos;canny_edge_detecthbi&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;canny_edge_detection_sdiv_20s_11s_20_24_1&apos; to &apos;canny_edge_detectibs&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;canny_edge_detection_mul_mul_11s_11s_22_1_1&apos; to &apos;canny_edge_detectjbC&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;canny_edge_detection_mac_muladd_11s_11s_22s_22_1_1&apos; to &apos;canny_edge_detectkbM&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;canny_edge_detectg8j&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;canny_edge_detecthbi&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;canny_edge_detectibs&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;canny_edge_detectjbC&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;canny_edge_detectkbM&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;Sobel_512u_512u_s&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.643 seconds; current allocated memory: 395.817 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;NonMaxSuppression&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;NonMaxSuppression_line_buf_value&apos; to &apos;NonMaxSuppressionlbW&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;NonMaxSuppression_line_buf_grad&apos; to &apos;NonMaxSuppressionmb6&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;NonMaxSuppression&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.532 seconds; current allocated memory: 396.722 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;ZeroPadding&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;ZeroPadding&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.39 seconds; current allocated memory: 397.196 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;HystThreshold&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;HystThreshold&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.23 seconds; current allocated memory: 397.568 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;HystThresholdComp&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;HystThresholdComp_line_buf&apos; to &apos;HystThresholdCompncg&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;HystThresholdComp&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.254 seconds; current allocated memory: 398.117 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;GrayArray2AXIS&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;GrayArray2AXIS&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.309 seconds; current allocated memory: 398.610 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;canny_edge_detection&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;canny_edge_detection/axis_in_data_V&apos; to &apos;axis&apos; (register, both mode)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;canny_edge_detection/axis_in_last_V&apos; to &apos;axis&apos; (register, both mode)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;canny_edge_detection/axis_out_data_V&apos; to &apos;axis&apos; (register, both mode)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;canny_edge_detection/axis_out_last_V&apos; to &apos;axis&apos; (register, both mode)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;canny_edge_detection/hist_hthr&apos; to &apos;s_axilite &amp; ap_none&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;canny_edge_detection/hist_lthr&apos; to &apos;s_axilite &amp; ap_none&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on function &apos;canny_edge_detection&apos; to &apos;s_axilite &amp; ap_ctrl_hs&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_851" tag="" content="Bundling port &apos;return&apos;, &apos;hist_hthr&apos; and &apos;hist_lthr&apos; to AXI-Lite port AXILiteS."/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;start_for_GaussianBlur_U0&apos; to &apos;start_for_Gaussiaocq&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;start_for_HystThreshold_U0&apos; to &apos;start_for_HystThrpcA&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;start_for_Sobel_512u_512u_U0&apos; to &apos;start_for_Sobel_5qcK&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;start_for_NonMaxSuppression_U0&apos; to &apos;start_for_NonMaxSrcU&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;start_for_ZeroPadding_U0&apos; to &apos;start_for_ZeroPadsc4&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;start_for_HystThresholdComp_U0&apos; to &apos;start_for_HystThrtde&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;start_for_GrayArray2AXIS_U0&apos; to &apos;start_for_GrayArrudo&apos; due to the length limit 20"/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_738" tag="" content="Port &apos;canny_edge_detection/axis_in_TLAST&apos; has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;canny_edge_detection&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.319 seconds; current allocated memory: 399.691 MB."/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1790" tag="" content="Implementing memory &apos;GaussianBlur_lineeOg_ram (RAM)&apos; using block RAMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-282]" key="RTMG_282_1796" tag="" content="Generating pipelined core: &apos;canny_edge_detectibs_div&apos;"/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1790" tag="" content="Implementing memory &apos;Sobel_512u_512u_sfYi_ram (RAM)&apos; using block RAMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1790" tag="" content="Implementing memory &apos;NonMaxSuppressionmb6_ram (RAM)&apos; using block RAMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;hist_hthr_c1_U(fifo_w8_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;hist_lthr_c2_U(fifo_w8_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;hist_hthr_c_U(fifo_w8_d6_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;hist_lthr_c_U(fifo_w8_d6_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_Gaussiaocq_U(start_for_Gaussiaocq)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_HystThrpcA_U(start_for_HystThrpcA)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_Sobel_5qcK_U(start_for_Sobel_5qcK)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_NonMaxSrcU_U(start_for_NonMaxSrcU)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_ZeroPadsc4_U(start_for_ZeroPadsc4)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_HystThrtde_U(start_for_HystThrtde)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_GrayArrudo_U(start_for_GrayArrudo)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished generating all RTL models Time (s): cpu = 00:00:12 ; elapsed = 00:00:32 . Memory (MB): peak = 481.473 ; gain = 387.633"/>
+	<Message severity="INFO" prefix="[VHDL 208-304]" key="VHDL_304_1066" tag="" content="Generating VHDL RTL for canny_edge_detection."/>
+	<Message severity="INFO" prefix="[VLOG 209-307]" key="VLOG_307_1067" tag="" content="Generating Verilog RTL for canny_edge_detection."/>
+</Messages>

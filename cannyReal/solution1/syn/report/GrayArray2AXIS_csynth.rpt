@@ -1,0 +1,189 @@
+
+
+================================================================
+== Vivado HLS Report for 'GrayArray2AXIS'
+================================================================
+* Date:           Sat May 20 12:00:33 2023
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        cannyReal
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.65|     3.634|        1.33|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +--------+--------+--------+--------+---------+
+    |     Latency     |     Interval    | Pipeline|
+    |   min  |   max  |   min  |   max  |   Type  |
+    +--------+--------+--------+--------+---------+
+    |  264193|  264193|  264193|  264193|   none  |
+    +--------+--------+--------+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+--------+--------+----------+-----------+-----------+------+----------+
+        |             |     Latency     | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name  |   min  |   max  |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------+--------+--------+----------+-----------+-----------+------+----------+
+        |- Loop 1     |  264192|  264192|       516|          -|          -|   512|    no    |
+        | + Loop 1.1  |     513|     513|         3|          1|          1|   512|    yes   |
+        +-------------+--------+--------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  | URAM|
++-----------------+---------+-------+--------+-------+-----+
+|DSP              |        -|      -|       -|      -|    -|
+|Expression       |        -|      -|       0|    124|    -|
+|FIFO             |        -|      -|       -|      -|    -|
+|Instance         |        -|      -|       -|      -|    -|
+|Memory           |        -|      -|       -|      -|    -|
+|Multiplexer      |        -|      -|       -|    138|    -|
+|Register         |        -|      -|     100|      -|    -|
++-----------------+---------+-------+--------+-------+-----+
+|Total            |        0|      0|     100|    262|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Available        |      280|    220|  106400|  53200|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Utilization (%)  |        0|      0|   ~0   |   ~0  |    0|
++-----------------+---------+-------+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |xi_fu_124_p2                      |     +    |      0|  0|  14|          10|           1|
+    |yi_fu_106_p2                      |     +    |      0|  0|  14|          10|           1|
+    |and_ln125_fu_136_p2               |    and   |      0|  0|   2|           1|           1|
+    |ap_block_pp0_stage0_01001         |    and   |      0|  0|   2|           1|           1|
+    |ap_block_state4_io                |    and   |      0|  0|   2|           1|           1|
+    |ap_block_state4_pp0_stage0_iter1  |    and   |      0|  0|   2|           1|           1|
+    |ap_block_state5_io                |    and   |      0|  0|   2|           1|           1|
+    |axis_dst_data_V_1_load_A          |    and   |      0|  0|   2|           1|           1|
+    |axis_dst_data_V_1_load_B          |    and   |      0|  0|   2|           1|           1|
+    |axis_dst_last_V_1_load_A          |    and   |      0|  0|   2|           1|           1|
+    |axis_dst_last_V_1_load_B          |    and   |      0|  0|   2|           1|           1|
+    |axis_dst_data_V_1_state_cmp_full  |   icmp   |      0|  0|   8|           2|           1|
+    |axis_dst_last_V_1_state_cmp_full  |   icmp   |      0|  0|   8|           2|           1|
+    |icmp_ln118_fu_100_p2              |   icmp   |      0|  0|  13|          10|          11|
+    |icmp_ln119_fu_118_p2              |   icmp   |      0|  0|  13|          10|          11|
+    |icmp_ln125_1_fu_130_p2            |   icmp   |      0|  0|  13|          10|           9|
+    |icmp_ln125_fu_112_p2              |   icmp   |      0|  0|  13|          10|           9|
+    |ap_block_pp0_stage0_11001         |    or    |      0|  0|   2|           1|           1|
+    |ap_block_state1                   |    or    |      0|  0|   2|           1|           1|
+    |ap_block_state2                   |    or    |      0|  0|   2|           1|           1|
+    |ap_enable_pp0                     |    xor   |      0|  0|   2|           1|           2|
+    |ap_enable_reg_pp0_iter1           |    xor   |      0|  0|   2|           2|           1|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |Total                             |          |      0|  0| 124|          79|          59|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------+----+-----------+-----+-----------+
+    |            Name            | LUT| Input Size| Bits| Total Bits|
+    +----------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                   |  27|          5|    1|          5|
+    |ap_done                     |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1     |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter2     |   9|          2|    1|          2|
+    |axis_dst_data_V_1_data_out  |   9|          2|   24|         48|
+    |axis_dst_data_V_1_state     |  15|          3|    2|          6|
+    |axis_dst_last_V_1_data_out  |   9|          2|    1|          2|
+    |axis_dst_last_V_1_state     |  15|          3|    2|          6|
+    |axis_out_TDATA_blk_n        |   9|          2|    1|          2|
+    |fifo7_blk_n                 |   9|          2|    1|          2|
+    |xi_0_i_reg_89               |   9|          2|   10|         20|
+    |yi_0_i_reg_78               |   9|          2|   10|         20|
+    +----------------------------+----+-----------+-----+-----------+
+    |Total                       | 138|         29|   55|        117|
+    +----------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------+----+----+-----+-----------+
+    |               Name               | FF | LUT| Bits| Const Bits|
+    +----------------------------------+----+----+-----+-----------+
+    |and_ln125_reg_175                 |   1|   0|    1|          0|
+    |ap_CS_fsm                         |   4|   0|    4|          0|
+    |ap_done_reg                       |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter0           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2           |   1|   0|    1|          0|
+    |axis_dst_data_V_1_payload_A       |  24|   0|   24|          0|
+    |axis_dst_data_V_1_payload_B       |  24|   0|   24|          0|
+    |axis_dst_data_V_1_sel_rd          |   1|   0|    1|          0|
+    |axis_dst_data_V_1_sel_wr          |   1|   0|    1|          0|
+    |axis_dst_data_V_1_state           |   2|   0|    2|          0|
+    |axis_dst_last_V_1_payload_A       |   1|   0|    1|          0|
+    |axis_dst_last_V_1_payload_B       |   1|   0|    1|          0|
+    |axis_dst_last_V_1_sel_rd          |   1|   0|    1|          0|
+    |axis_dst_last_V_1_sel_wr          |   1|   0|    1|          0|
+    |axis_dst_last_V_1_state           |   2|   0|    2|          0|
+    |icmp_ln119_reg_166                |   1|   0|    1|          0|
+    |icmp_ln119_reg_166_pp0_iter1_reg  |   1|   0|    1|          0|
+    |icmp_ln125_reg_161                |   1|   0|    1|          0|
+    |xi_0_i_reg_89                     |  10|   0|   10|          0|
+    |yi_0_i_reg_78                     |  10|   0|   10|          0|
+    |yi_reg_156                        |  10|   0|   10|          0|
+    +----------------------------------+----+----+-----+-----------+
+    |Total                             | 100|   0|  100|          0|
+    +----------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------+-----+-----+------------+-----------------+--------------+
+|    RTL Ports    | Dir | Bits|  Protocol  |  Source Object  |    C Type    |
++-----------------+-----+-----+------------+-----------------+--------------+
+|ap_clk           |  in |    1| ap_ctrl_hs |  GrayArray2AXIS | return value |
+|ap_rst           |  in |    1| ap_ctrl_hs |  GrayArray2AXIS | return value |
+|ap_start         |  in |    1| ap_ctrl_hs |  GrayArray2AXIS | return value |
+|ap_done          | out |    1| ap_ctrl_hs |  GrayArray2AXIS | return value |
+|ap_continue      |  in |    1| ap_ctrl_hs |  GrayArray2AXIS | return value |
+|ap_idle          | out |    1| ap_ctrl_hs |  GrayArray2AXIS | return value |
+|ap_ready         | out |    1| ap_ctrl_hs |  GrayArray2AXIS | return value |
+|axis_out_TDATA   | out |   24|    axis    | axis_dst_data_V |    pointer   |
+|axis_out_TREADY  |  in |    1|    axis    | axis_dst_data_V |    pointer   |
+|axis_out_TVALID  | out |    1|    axis    | axis_dst_last_V |    pointer   |
+|axis_out_TLAST   | out |    1|    axis    | axis_dst_last_V |    pointer   |
+|fifo7_dout       |  in |    8|   ap_fifo  |      fifo7      |    pointer   |
+|fifo7_empty_n    |  in |    1|   ap_fifo  |      fifo7      |    pointer   |
+|fifo7_read       | out |    1|   ap_fifo  |      fifo7      |    pointer   |
++-----------------+-----+-----+------------+-----------------+--------------+
+

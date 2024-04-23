@@ -1,0 +1,422 @@
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 11ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 11ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'cannyRectangle/canny_edge_rectangle.cpp' ... 
+WARNING: [HLS 214-114] Only function calls and local variable declarations are allowed in a dataflow region: cannyRectangle/canny_edge_rectangle.cpp:56:2
+WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file cannyRectangle/canny_edge_rectangle.cpp
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 177.723 ; gain = 83.875
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 177.723 ; gain = 83.875
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:19 . Memory (MB): peak = 217.812 ; gain = 123.965
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:59) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' into 'generic_cast_IEEE754<int, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, float>' into '__hls_fptosi_float_i32' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:51) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::sqrt' into 'hlsimproc::HlsImProc::Sobel<1920u, 1080u>' (cannyRectangle/HlsImProc.hpp:265) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_float_i32' into 'hlsimproc::HlsImProc::Sobel<1920u, 1080u>' (cannyRectangle/HlsImProc.hpp:265) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:02 ; elapsed = 00:00:20 . Memory (MB): peak = 270.848 ; gain = 177.000
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'axis_out.data.V' (cannyRectangle/canny_edge_rectangle.cpp:39).
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'axis_in.data.V' (cannyRectangle/canny_edge_rectangle.cpp:39).
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' (cannyRectangle/HlsImProc.hpp:432) in function 'hlsimproc::HlsImProc::HystThresholdComp<1920u, 1080u>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' (cannyRectangle/HlsImProc.hpp:324) in function 'hlsimproc::HlsImProc::NonMaxSuppression<1920u, 1080u>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' (cannyRectangle/HlsImProc.hpp:221) in function 'hlsimproc::HlsImProc::Sobel<1920u, 1080u>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' (cannyRectangle/HlsImProc.hpp:151) in function 'hlsimproc::HlsImProc::GaussianBlur<1920u, 1080u>' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (cannyRectangle/HlsImProc.hpp:440) in function 'hlsimproc::HlsImProc::HystThresholdComp<1920u, 1080u>' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2' (cannyRectangle/HlsImProc.hpp:447) in function 'hlsimproc::HlsImProc::HystThresholdComp<1920u, 1080u>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2.1' (cannyRectangle/HlsImProc.hpp:448) in function 'hlsimproc::HlsImProc::HystThresholdComp<1920u, 1080u>' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.3' (cannyRectangle/HlsImProc.hpp:453) in function 'hlsimproc::HlsImProc::HystThresholdComp<1920u, 1080u>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.4' (cannyRectangle/HlsImProc.hpp:458) in function 'hlsimproc::HlsImProc::HystThresholdComp<1920u, 1080u>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.4.1' (cannyRectangle/HlsImProc.hpp:459) in function 'hlsimproc::HlsImProc::HystThresholdComp<1920u, 1080u>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (cannyRectangle/HlsImProc.hpp:333) in function 'hlsimproc::HlsImProc::NonMaxSuppression<1920u, 1080u>' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2' (cannyRectangle/HlsImProc.hpp:340) in function 'hlsimproc::HlsImProc::NonMaxSuppression<1920u, 1080u>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2.1' (cannyRectangle/HlsImProc.hpp:341) in function 'hlsimproc::HlsImProc::NonMaxSuppression<1920u, 1080u>' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.3' (cannyRectangle/HlsImProc.hpp:346) in function 'hlsimproc::HlsImProc::NonMaxSuppression<1920u, 1080u>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (cannyRectangle/HlsImProc.hpp:230) in function 'hlsimproc::HlsImProc::Sobel<1920u, 1080u>' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2' (cannyRectangle/HlsImProc.hpp:237) in function 'hlsimproc::HlsImProc::Sobel<1920u, 1080u>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2.1' (cannyRectangle/HlsImProc.hpp:238) in function 'hlsimproc::HlsImProc::Sobel<1920u, 1080u>' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.3' (cannyRectangle/HlsImProc.hpp:243) in function 'hlsimproc::HlsImProc::Sobel<1920u, 1080u>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.4' (cannyRectangle/HlsImProc.hpp:252) in function 'hlsimproc::HlsImProc::Sobel<1920u, 1080u>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.4.1' (cannyRectangle/HlsImProc.hpp:253) in function 'hlsimproc::HlsImProc::Sobel<1920u, 1080u>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.5' (cannyRectangle/HlsImProc.hpp:259) in function 'hlsimproc::HlsImProc::Sobel<1920u, 1080u>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.5.1' (cannyRectangle/HlsImProc.hpp:260) in function 'hlsimproc::HlsImProc::Sobel<1920u, 1080u>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (cannyRectangle/HlsImProc.hpp:159) in function 'hlsimproc::HlsImProc::GaussianBlur<1920u, 1080u>' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2' (cannyRectangle/HlsImProc.hpp:167) in function 'hlsimproc::HlsImProc::GaussianBlur<1920u, 1080u>' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2.1' (cannyRectangle/HlsImProc.hpp:168) in function 'hlsimproc::HlsImProc::GaussianBlur<1920u, 1080u>' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.3' (cannyRectangle/HlsImProc.hpp:174) in function 'hlsimproc::HlsImProc::GaussianBlur<1920u, 1080u>' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.4' (cannyRectangle/HlsImProc.hpp:180) in function 'hlsimproc::HlsImProc::GaussianBlur<1920u, 1080u>' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.4.1' (cannyRectangle/HlsImProc.hpp:181) in function 'hlsimproc::HlsImProc::GaussianBlur<1920u, 1080u>' completely with a factor of 5.
+INFO: [XFORM 203-131] Reshaping array 'line_buf' (cannyRectangle/HlsImProc.hpp:424) in dimension 1 completely.
+INFO: [XFORM 203-131] Reshaping array 'line_buf.value' (cannyRectangle/HlsImProc.hpp:316) in dimension 1 completely.
+INFO: [XFORM 203-131] Reshaping array 'line_buf.grad' (cannyRectangle/HlsImProc.hpp:316) in dimension 1 completely.
+INFO: [XFORM 203-131] Reshaping array 'line_buf' (cannyRectangle/HlsImProc.hpp:199) in dimension 1 completely.
+INFO: [XFORM 203-131] Reshaping array 'line_buf' (cannyRectangle/HlsImProc.hpp:138) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'window_buf' (cannyRectangle/HlsImProc.hpp:425) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'window_buf.value' (cannyRectangle/HlsImProc.hpp:317) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'window_buf.grad' (cannyRectangle/HlsImProc.hpp:317) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'window_buf' (cannyRectangle/HlsImProc.hpp:200) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'H_SOBEL_KERNEL'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'V_SOBEL_KERNEL'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'window_buf' (cannyRectangle/HlsImProc.hpp:139) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'GAUSS_KERNEL'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'window_buf' (cannyRectangle/HlsImProc.hpp:425) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'window_buf.value' (cannyRectangle/HlsImProc.hpp:317) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'window_buf.grad' (cannyRectangle/HlsImProc.hpp:317) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'window_buf' (cannyRectangle/HlsImProc.hpp:200) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'H_SOBEL_KERNEL'  in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'V_SOBEL_KERNEL'  in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'window_buf' (cannyRectangle/HlsImProc.hpp:139) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'GAUSS_KERNEL'  in dimension 2 completely.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:59) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' into 'generic_cast_IEEE754<int, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, float>' into '__hls_fptosi_float_i32' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:51) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::sqrt' into 'hlsimproc::HlsImProc::Sobel<1920u, 1080u>' (cannyRectangle/HlsImProc.hpp:265) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_float_i32' into 'hlsimproc::HlsImProc::Sobel<1920u, 1080u>' (cannyRectangle/HlsImProc.hpp:265) automatically.
+INFO: [XFORM 203-712] Applying dataflow to function 'canny_edge_rectangle', detected/extracted 10 process function(s): 
+	 'canny_edge_rectangle.entry66'
+	 'Block__proc'
+	 'hlsimproc::HlsImProc::AXIS2GrayArray<1920u, 1080u>'
+	 'hlsimproc::HlsImProc::GaussianBlur<1920u, 1080u>'
+	 'hlsimproc::HlsImProc::Sobel<1920u, 1080u>'
+	 'hlsimproc::HlsImProc::NonMaxSuppression<1920u, 1080u>'
+	 'hlsimproc::HlsImProc::ZeroPadding<1920u, 1080u>'
+	 'hlsimproc::HlsImProc::HystThreshold<1920u, 1080u>'
+	 'hlsimproc::HlsImProc::HystThresholdComp<1920u, 1080u>'
+	 'hlsimproc::HlsImProc::GrayArray2AXIS<1920u, 1080u>'.
+WARNING: [XFORM 203-124] Array  'fifo3.value' : may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
+WARNING: [XFORM 203-124] Array  'fifo3.grad' : may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cannyRectangle/HlsImProc.hpp:282:17) to (cannyRectangle/HlsImProc.hpp:299:17) in function 'hlsimproc::HlsImProc::Sobel<1920u, 1080u>'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cannyRectangle/HlsImProc.hpp:324:48) to (cannyRectangle/HlsImProc.hpp:324:41) in function 'hlsimproc::HlsImProc::NonMaxSuppression<1920u, 1080u>'... converting 9 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cannyRectangle/HlsImProc.hpp:432:48) to (cannyRectangle/HlsImProc.hpp:432:41) in function 'hlsimproc::HlsImProc::HystThresholdComp<1920u, 1080u>'... converting 17 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cannyRectangle/HlsImProc.hpp:397:48) to (cannyRectangle/HlsImProc.hpp:397:41) in function 'hlsimproc::HlsImProc::HystThreshold<1920u, 1080u>'... converting 3 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'hlsimproc::HlsImProc::ZeroPadding<1920u, 1080u>' (cannyRectangle/HlsImProc.hpp:475:41)...3 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'hlsimproc::HlsImProc::Sobel<1920u, 1080u>' (cannyRectangle/HlsImProc.hpp:7:41)...3 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'hlsimproc::HlsImProc::NonMaxSuppression<1920u, 1080u>' (cannyRectangle/HlsImProc.hpp:316:41)...3 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'hlsimproc::HlsImProc::HystThresholdComp<1920u, 1080u>' (cannyRectangle/HlsImProc.hpp:424:41)...8 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'hlsimproc::HlsImProc::GaussianBlur<1920u, 1080u>' (cannyRectangle/HlsImProc.hpp:138:41)...21 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:22 . Memory (MB): peak = 345.863 ; gain = 252.016
+WARNING: [XFORM 203-631] Renaming function 'hlsimproc::HlsImProc::ZeroPadding<1920u, 1080u>' to 'ZeroPadding' (cannyRectangle/HlsImProc.hpp:475:41)
+WARNING: [XFORM 203-631] Renaming function 'hlsimproc::HlsImProc::Sobel<1920u, 1080u>' to 'Sobel<1920u, 1080u>' (cannyRectangle/HlsImProc.hpp:7:41)
+WARNING: [XFORM 203-631] Renaming function 'hlsimproc::HlsImProc::NonMaxSuppression<1920u, 1080u>' to 'NonMaxSuppression' (cannyRectangle/HlsImProc.hpp:316:41)
+WARNING: [XFORM 203-631] Renaming function 'hlsimproc::HlsImProc::HystThresholdComp<1920u, 1080u>' to 'HystThresholdComp' (cannyRectangle/HlsImProc.hpp:424:41)
+WARNING: [XFORM 203-631] Renaming function 'hlsimproc::HlsImProc::HystThreshold<1920u, 1080u>' to 'HystThreshold' (cannyRectangle/HlsImProc.hpp:39:41)
+WARNING: [XFORM 203-631] Renaming function 'hlsimproc::HlsImProc::GrayArray2AXIS<1920u, 1080u>' to 'GrayArray2AXIS' (cannyRectangle/HlsImProc.hpp:116:41)
+WARNING: [XFORM 203-631] Renaming function 'hlsimproc::HlsImProc::GaussianBlur<1920u, 1080u>' to 'GaussianBlur' (cannyRectangle/HlsImProc.hpp:138:41)
+WARNING: [XFORM 203-631] Renaming function 'hlsimproc::HlsImProc::AXIS2GrayArray<1920u, 1080u>' to 'AXIS2GrayArray' (cannyRectangle/HlsImProc.hpp:86:41)
+WARNING: [XFORM 203-631] Renaming function 'canny_edge_rectangle.entry66' to 'canny_edge_rectangle.1.1' (cannyRectangle/canny_edge_rectangle.cpp:47:1)
+WARNING: [XFORM 203-631] Renaming function 'canny_edge_rectangle.entry3' to 'canny_edge_rectangle.1.2' 
+WARNING: [XFORM 203-631] Renaming function 'canny_edge_rectangle.1.1' to 'canny_edge_rectangle.2' (cannyRectangle/canny_edge_rectangle.cpp:39:130)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:23 . Memory (MB): peak = 465.422 ; gain = 371.574
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'canny_edge_rectangle' ...
+WARNING: [SYN 201-103] Legalizing function name 'canny_edge_rectangle.1.2' to 'canny_edge_rectangle_1_2'.
+WARNING: [SYN 201-103] Legalizing function name 'canny_edge_rectangle.2' to 'canny_edge_rectangle_2'.
+WARNING: [SYN 201-103] Legalizing function name 'Block__proc' to 'Block_proc'.
+WARNING: [SYN 201-103] Legalizing function name 'Sobel<1920u, 1080u>' to 'Sobel_1920u_1080u_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'canny_edge_rectangle_1_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 22.94 seconds; current allocated memory: 405.738 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.079 seconds; current allocated memory: 405.805 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'canny_edge_rectangle_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.232 seconds; current allocated memory: 405.850 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.081 seconds; current allocated memory: 405.971 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.142 seconds; current allocated memory: 406.005 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.078 seconds; current allocated memory: 406.065 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AXIS2GrayArray' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+WARNING: [SCHED 204-21] Estimated clock period (10.648ns) exceeds the target (target clock period: 11ns, clock uncertainty: 1.375ns, effective delay budget: 9.625ns).
+WARNING: [SCHED 204-21] The critical path in module 'AXIS2GrayArray' consists of the following:
+	'mul' operation of DSP[33] ('mul_ln544_1', cannyRectangle/HlsImProc.hpp:97) [32]  (3.36 ns)
+	'add' operation of DSP[33] ('add_ln544', cannyRectangle/HlsImProc.hpp:97) [33]  (3.02 ns)
+	'add' operation of DSP[35] ('pix_gray', cannyRectangle/HlsImProc.hpp:97) [35]  (3.02 ns)
+	'select' operation ('phitmp318', cannyRectangle/HlsImProc.hpp:105) [38]  (1.25 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.143 seconds; current allocated memory: 406.211 MB.
+INFO: [HLS 200-434] Only 1 loops out of a total 2 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.111 seconds; current allocated memory: 406.369 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'GaussianBlur' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.233 seconds; current allocated memory: 406.927 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.197 seconds; current allocated memory: 407.508 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Sobel_1920u_1080u_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 27.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.379 seconds; current allocated memory: 408.013 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.211 seconds; current allocated memory: 408.637 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'NonMaxSuppression' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.314 seconds; current allocated memory: 409.027 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.142 seconds; current allocated memory: 409.393 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'ZeroPadding' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.226 seconds; current allocated memory: 409.518 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.105 seconds; current allocated memory: 409.648 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'HystThreshold' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.233 seconds; current allocated memory: 409.747 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 409.942 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'HystThresholdComp' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.189 seconds; current allocated memory: 410.113 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.127 seconds; current allocated memory: 410.349 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'GrayArray2AXIS' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.181 seconds; current allocated memory: 410.467 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.103 seconds; current allocated memory: 410.590 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'canny_edge_rectangle' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.119 seconds; current allocated memory: 410.741 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.472 seconds; current allocated memory: 411.491 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'canny_edge_rectangle_1_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'canny_edge_rectangle_1_2'.
+INFO: [HLS 200-111]  Elapsed time: 0.273 seconds; current allocated memory: 411.791 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'canny_edge_rectangle_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'canny_edge_rectangle_2'.
+INFO: [HLS 200-111]  Elapsed time: 0.118 seconds; current allocated memory: 412.027 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Block_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_proc'.
+INFO: [HLS 200-111]  Elapsed time: 0.145 seconds; current allocated memory: 412.225 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AXIS2GrayArray' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'canny_edge_rectangle_mul_mul_15ns_8ns_23_1_1' to 'canny_edge_rectanbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'canny_edge_rectangle_mac_muladd_17ns_8ns_23ns_25_1_1' to 'canny_edge_rectancud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'canny_edge_rectangle_mac_muladd_16ns_8ns_23ns_23_1_1' to 'canny_edge_rectandEe' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'canny_edge_rectanbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'canny_edge_rectancud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'canny_edge_rectandEe': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIS2GrayArray'.
+INFO: [HLS 200-111]  Elapsed time: 0.179 seconds; current allocated memory: 412.650 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'GaussianBlur' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'GaussianBlur_line_buf' to 'GaussianBlur_lineeOg' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'GaussianBlur'.
+INFO: [HLS 200-111]  Elapsed time: 0.251 seconds; current allocated memory: 413.701 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Sobel_1920u_1080u_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'Sobel_1920u_1080u_s_line_buf' to 'Sobel_1920u_1080ufYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'canny_edge_rectangle_sitofp_32s_32_5_1' to 'canny_edge_rectang8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'canny_edge_rectangle_fsqrt_32ns_32ns_32_12_1' to 'canny_edge_rectanhbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'canny_edge_rectangle_sdiv_20s_11s_20_24_1' to 'canny_edge_rectanibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'canny_edge_rectangle_mul_mul_11s_11s_22_1_1' to 'canny_edge_rectanjbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'canny_edge_rectangle_mac_muladd_11s_11s_22s_22_1_1' to 'canny_edge_rectankbM' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'canny_edge_rectang8j': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'canny_edge_rectanhbi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'canny_edge_rectanibs': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'canny_edge_rectanjbC': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'canny_edge_rectankbM': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Sobel_1920u_1080u_s'.
+INFO: [HLS 200-111]  Elapsed time: 0.645 seconds; current allocated memory: 415.309 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'NonMaxSuppression' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'NonMaxSuppression_line_buf_value' to 'NonMaxSuppressionlbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'NonMaxSuppression_line_buf_grad' to 'NonMaxSuppressionmb6' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'NonMaxSuppression'.
+INFO: [HLS 200-111]  Elapsed time: 0.569 seconds; current allocated memory: 416.195 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'ZeroPadding' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'ZeroPadding'.
+INFO: [HLS 200-111]  Elapsed time: 0.408 seconds; current allocated memory: 416.684 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'HystThreshold' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'HystThreshold'.
+INFO: [HLS 200-111]  Elapsed time: 0.232 seconds; current allocated memory: 417.094 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'HystThresholdComp' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'HystThresholdComp_line_buf' to 'HystThresholdCompncg' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'HystThresholdComp'.
+INFO: [HLS 200-111]  Elapsed time: 0.243 seconds; current allocated memory: 417.660 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'GrayArray2AXIS' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'GrayArray2AXIS'.
+INFO: [HLS 200-111]  Elapsed time: 0.322 seconds; current allocated memory: 418.139 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'canny_edge_rectangle' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'canny_edge_rectangle/axis_in_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'canny_edge_rectangle/axis_in_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'canny_edge_rectangle/axis_out_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'canny_edge_rectangle/axis_out_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'canny_edge_rectangle/hist_hthr' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'canny_edge_rectangle/hist_lthr' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'canny_edge_rectangle/bh' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'canny_edge_rectangle/bl' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'canny_edge_rectangle' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return', 'hist_hthr' and 'hist_lthr' to AXI-Lite port AXILiteS.
+INFO: [SYN 201-210] Renamed object name 'start_for_canny_edge_rectangle_2_U0' to 'start_for_canny_eocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_Block_proc_U0' to 'start_for_Block_ppcA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_HystThreshold_U0' to 'start_for_HystThrqcK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_GaussianBlur_U0' to 'start_for_GaussiarcU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_Sobel_1920u_1080u_U0' to 'start_for_Sobel_1sc4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_NonMaxSuppression_U0' to 'start_for_NonMaxStde' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_ZeroPadding_U0' to 'start_for_ZeroPadudo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_HystThresholdComp_U0' to 'start_for_HystThrvdy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_GrayArray2AXIS_U0' to 'start_for_GrayArrwdI' due to the length limit 20
+WARNING: [RTGEN 206-101] Port 'canny_edge_rectangle/axis_in_TLAST' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'canny_edge_rectangle'.
+INFO: [HLS 200-111]  Elapsed time: 0.371 seconds; current allocated memory: 419.409 MB.
+INFO: [RTMG 210-278] Implementing memory 'GaussianBlur_lineeOg_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-282] Generating pipelined core: 'canny_edge_rectanibs_div'
+INFO: [RTMG 210-278] Implementing memory 'Sobel_1920u_1080ufYi_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'NonMaxSuppressionmb6_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'bh_c2_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'bl_c3_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'bh_c_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'bh_c1_U(fifo_w8_d7_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'bl_c_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'bl_c2_U(fifo_w8_d7_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_canny_eocq_U(start_for_canny_eocq)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Block_ppcA_U(start_for_Block_ppcA)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_HystThrqcK_U(start_for_HystThrqcK)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_GaussiarcU_U(start_for_GaussiarcU)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Sobel_1sc4_U(start_for_Sobel_1sc4)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_NonMaxStde_U(start_for_NonMaxStde)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_ZeroPadudo_U(start_for_ZeroPadudo)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_HystThrvdy_U(start_for_HystThrvdy)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_GrayArrwdI_U(start_for_GrayArrwdI)' using Shift Registers.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:13 ; elapsed = 00:00:35 . Memory (MB): peak = 502.820 ; gain = 408.973
+INFO: [VHDL 208-304] Generating VHDL RTL for canny_edge_rectangle.
+INFO: [VLOG 209-307] Generating Verilog RTL for canny_edge_rectangle.
+INFO: [HLS 200-112] Total elapsed time: 34.604 seconds; peak allocated memory: 419.409 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 11ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.

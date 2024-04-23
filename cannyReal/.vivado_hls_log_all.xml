@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Port 'canny_edge_detection/axis_in_TLAST' has no fanin or fanout and is left dangling.&#xD;&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="cannyReal" solutionName="solution1" date="2023-05-20T12:00:33.804+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-21] The critical path in module 'AXIS2GrayArray66' consists of the following:&#xD;&#xA;&#x9;'mul' operation of DSP[64] ('mul_ln544_1', ../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:97->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39) [63]  (3.36 ns)&#xD;&#xA;&#x9;'add' operation of DSP[64] ('add_ln544', ../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:97->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39) [64]  (3.02 ns)&#xD;&#xA;&#x9;'add' operation of DSP[66] ('pix_gray', ../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:97->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39) [66]  (3.02 ns)&#xD;&#xA;&#x9;'select' operation ('phitmp318_i_i_i', ../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:105->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:47->../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39) [69]  (1.25 ns)" projectName="cannyReal" solutionName="solution1" date="2023-05-20T12:00:27.096+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-21] Estimated clock period (10.648ns) exceeds the target (target clock period: 10.648ns, clock uncertainty: 1.331ns, effective delay budget: 9.317ns)." projectName="cannyReal" solutionName="solution1" date="2023-05-20T12:00:27.091+0800" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'Sobel&lt;512u, 512u>' to 'Sobel_512u_512u_s'." projectName="cannyReal" solutionName="solution1" date="2023-05-20T12:00:26.715+0800" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'canny_edge_detection.1.1' to 'canny_edge_detection_1_1'." projectName="cannyReal" solutionName="solution1" date="2023-05-20T12:00:26.700+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'canny_edge_detection.entry3' to 'canny_edge_detection.1.1' " projectName="cannyReal" solutionName="solution1" date="2023-05-20T12:00:26.688+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hlsimproc::HlsImProc::AXIS2GrayArray&lt;512u, 512u>66' to 'AXIS2GrayArray66' (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:47:41)" projectName="cannyReal" solutionName="solution1" date="2023-05-20T12:00:26.484+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hlsimproc::HlsImProc::GaussianBlur&lt;512u, 512u>' to 'GaussianBlur' (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:138:41)" projectName="cannyReal" solutionName="solution1" date="2023-05-20T12:00:25.924+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hlsimproc::HlsImProc::GrayArray2AXIS&lt;512u, 512u>' to 'GrayArray2AXIS' (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:116:41)" projectName="cannyReal" solutionName="solution1" date="2023-05-20T12:00:25.919+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hlsimproc::HlsImProc::HystThreshold&lt;512u, 512u>' to 'HystThreshold' (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:39:41)" projectName="cannyReal" solutionName="solution1" date="2023-05-20T12:00:25.914+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hlsimproc::HlsImProc::HystThresholdComp&lt;512u, 512u>' to 'HystThresholdComp' (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:424:41)" projectName="cannyReal" solutionName="solution1" date="2023-05-20T12:00:25.905+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hlsimproc::HlsImProc::NonMaxSuppression&lt;512u, 512u>' to 'NonMaxSuppression' (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:316:41)" projectName="cannyReal" solutionName="solution1" date="2023-05-20T12:00:25.897+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hlsimproc::HlsImProc::Sobel&lt;512u, 512u>' to 'Sobel&lt;512u, 512u>' (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:7:41)" projectName="cannyReal" solutionName="solution1" date="2023-05-20T12:00:25.889+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hlsimproc::HlsImProc::ZeroPadding&lt;512u, 512u>' to 'ZeroPadding' (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/HlsImProc.hpp:475:41)" projectName="cannyReal" solutionName="solution1" date="2023-05-20T12:00:25.880+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-124] Array  'fifo3.grad' : may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order." projectName="cannyReal" solutionName="solution1" date="2023-05-20T12:00:25.165+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-124] Array  'fifo3.value' : may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order." projectName="cannyReal" solutionName="solution1" date="2023-05-20T12:00:24.756+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'axis_in.data.V' (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39)." projectName="cannyReal" solutionName="solution1" date="2023-05-20T12:00:24.104+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'axis_out.data.V' (../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:39)." projectName="cannyReal" solutionName="solution1" date="2023-05-20T12:00:24.024+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file ../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp" projectName="cannyReal" solutionName="solution1" date="2023-05-20T12:00:20.984+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-113] Variables defined outside dataflow region are not supported: ../../../../Desktop/Pynq-Z2-CannyEdgeDetection-master/hls/canny_edge_detection.cpp:58:47" projectName="cannyReal" solutionName="solution1" date="2023-05-20T12:00:12.809+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'canny_edge_detection_ap_sitofp_3_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="cannyReal" solutionName="solution1" date="2020-05-20T12:01:14.302+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'canny_edge_detection_ap_fsqrt_10_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="cannyReal" solutionName="solution1" date="2020-05-20T12:01:11.172+0800" type="Warning"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
